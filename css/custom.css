@@ -447,12 +447,14 @@ button {
 #primary-nav.open {
   padding: 0 4% 0 6%;
   opacity: 1;
-  overflow: scroll; }
+  overflow: scroll;
+  width: auto; }
 
 #primary-nav.closed {
   padding: 0;
   opacity: 0 !important;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 0; }
 
 .fadeout {
   opacity: 0;
@@ -572,6 +574,49 @@ article {
     opacity: 0.5;
     text-transform: uppercase;
     font-size: .8em; }
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative; }
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative; }
+
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative; }
+
+.button {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 8em;
+  height: 1em;
+  padding: 1.25em 1.5em 2em 1.5em;
+  color: #67b2e7;
+  opacity: .5;
+  -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  -ms-transition-duration: .25s;
+  -o-transition-duration: .25s;
+  transition-duration: .25s; }
+  .button:hover {
+    background-color: #67b2e7;
+    color: #031d40;
+    opacity: .75; }
+  .button:active {
+    background-color: #67b2e7;
+    color: #031d40;
+    opacity: 1; }
+
+.prev {
+  left: 0; }
+
+.next {
+  right: 0; }
 
 #footer {
   background-color: #031d40;
@@ -862,6 +907,9 @@ h1 {
     @media screen and (min-width: 53.33333em) {
       .figures .numbers {
         font-size: 8em; } }
+
+#orgfigures {
+  padding: 2em 0; }
 
 #scholarship {
   color: #031d40;

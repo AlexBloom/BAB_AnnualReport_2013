@@ -1,4 +1,4 @@
-<?php    $section = 'index'; include_once 'header.php' ?>
+<?php $section = 'index'; include_once 'header.php' ?>
 
 <!-- Index Page -->
 
@@ -65,40 +65,31 @@
 <section class="" id="accomplishments">
 	<h2> 2013 Accomplishments </h2>
 	<h3> Organizational Figures </h3>
-	<ul class="figures clearfix">
-		<li>	
-				<span class="numbers"> $459,140 </span> donated                 
-		
-		</li>
-		<li>	<span class="numbers"> 920,000</span>  miles pedaled            
-		
-		</li>
-		<li>	<span class="numbers"> 21,000 </span> build hours               
-		
-		</li>
-		<li>	<span class="numbers"> 119 </span> build sites                  
-		
-		</li>
-		<li>	<span class="numbers"> 286 </span> riders                       
-		
-		</li>
-		<li>	<span class="numbers"> 319 </span> grant organizations          
-		
-		</li>
-		<li>	<span class="numbers"> $4,877</span>  average raised per rider  
-		
-		</li>
-	</ul>
+	<section class="figures clearfix swipe full-screen" id="orgfigures">	
+		<div class="swipe-wrap">	
+			<div> <span class="numbers"> $459,140 </span> <p> donated</p> </div>
+			<div> <span class="numbers"> 920,000</span>  <p> miles pedaled</p> </div>
+			<div> <span class="numbers"> 21,000 </span> <p> build hours</p></div>
+			<div> <span class="numbers"> 119 </span> <p> build sites</p> </div>
+			<div> <span class="numbers"> 286 </span> <p> riders</p> </div>
+			<div> <span class="numbers"> 319 </span> <p> grant organizations</p> </div>
+			<div> <span class="numbers"> $4,877</span>  <p> average raised per rider</p> </div>
+		</div>
+		<div class="button prev" onclick='orgfigures.prev()'>&larr;</div> 
+    	<div class="button next" onclick='orgfigures.next()'>&rarr;</div>
+	</section>
 	
+	<hr>
+	<article>
 	<h3> Grantee Accomplishments </h3>
-	Bike &amp; Build’s 2012 competitive grantees spent 2013 executing their projects.  Cumulatively, these 66 organizations accomplished: 
+	<p class="intro">Bike &amp; Build’s 2012 competitive grantees spent 2013 executing their projects.  Cumulatively, these 66 organizations accomplished:</p> 
 	<ul class="figures clearfix">
 		<li>	Engaged 13,080 youth or young adults in an affordable housing project </li>
 		<li>	1,127 homes (houses, apartments, units) were built or renovated       </li>
 		<li>	5,978 community members directly impacted by a project                </li>
 	</ul>
 	
-	Bike &amp; Build also developed grantee spotlight videos for nine of these nonprofits. 
+	<p class="intro">Bike &amp; Build also developed grantee spotlight videos for nine of these nonprofits.</p> 
 	<ul class="figures clearfix">
 		<li>	North Shore Community Center – Salem, MA                     </li>
 		<li>	The Epicenter – Green River, UT                              </li>
@@ -132,7 +123,7 @@
 		<li>	Rocky Rockwell, NUS - $7,040.50 </li>
 		<li>	Danielle Raynal, P2S - $6,478.63</li>
 	</ul>
-	
+	</article>
 	
 </section>
 

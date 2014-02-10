@@ -48,6 +48,9 @@ $(document).ready(function () {
    });
    
    
+   //Fire Swipe Classes for Sliders
+   window.orgfigures = $('#orgfigures').Swipe().data('Swipe');
+   
   /*
    //Close Secondary & Tertiary Links
    $('.secondary').addClass('visuallyhidden');

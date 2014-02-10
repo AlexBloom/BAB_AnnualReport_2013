@@ -216,11 +216,13 @@ button{
 	padding:0 4% 0 6%;
 	opacity:1;
 	overflow:scroll;
+	width:auto;
 }
 #primary-nav.closed{
 	padding:0;
 	opacity:0 !important;
-	overflow:hidden;	
+	overflow:hidden;
+	width:0;	
 }
 
 .fadeout{
@@ -361,6 +363,58 @@ article{
 		font-size:.8em;
 		
 	}
+}
+
+
+
+//Swipe Classes
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  
+  :last-child{
+	 // z-index:5000;
+  }
+  
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+.button{
+	display:block;
+	position:absolute;
+	cursor:pointer;
+	top:8em;
+	height:1em;
+	padding:1.25em 1.5em 2em 1.5em;
+	color:$ltblue;
+	opacity:.5;
+	@include quarter-second-transition;
+	
+	&:hover{
+		background-color:$ltblue;
+		color:$dkblue;
+		opacity:.75;
+	}
+	&:active{
+		background-color:$ltblue;
+		color:$dkblue;
+		opacity:1;
+	}
+}
+.prev{
+	left:0;
+}
+.next{
+	right:0;
 }
 
 

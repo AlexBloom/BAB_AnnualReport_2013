@@ -12,8 +12,9 @@
 	<script src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
 	<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-	
+	<script src="js/swipe.js"></script>
 	<script src="js/main.js"></script>
+	
 
 	<script>
 	    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
