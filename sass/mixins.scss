@@ -1,0 +1,72 @@
+/* COLORS ======= */
+
+$text-color: #4e4e4e;
+
+//Neutrals
+$black: #000;
+$dark-grey: #222222;
+$medium-grey: #888888;
+$light-grey: #EEEEEE;
+$white: #FFF;
+
+//TFI New Media Fund Colors
+
+$dkblue:rgba(003,029,064,1);
+$ltblue:rgba(103,178,231,1);
+$red:rgba(226,035,026,1);
+
+$action-color:rgba(226,035,026,1);
+
+
+
+
+/* EMS ======= */
+@function em($target, $context: 15) {
+    @return ($target / $context) * 1em;
+}
+
+@mixin full-bleed-background{
+background-position:50% 0;
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+@mixin quarter-second-transition{
+-webkit-transition-duration: .25s;
+-moz-transition-duration: .25s;
+-ms-transition-duration: .25s;
+-o-transition-duration: .25s;
+transition-duration: .25s;
+}
+
+@mixin half-second-transition{
+-webkit-transition-duration: .5s;
+-moz-transition-duration: .5s;
+-ms-transition-duration: .5s;
+-o-transition-duration: .5s;
+transition-duration: .5s;
+}
+
+@mixin one-em-border-radius{
+-webkit-border-radius: 1em;
+-moz-border-radius: 1em;
+-ms-border-radius: 1em;
+-o-border-radius: 1em;
+border-radius:1em;
+}
+
+@mixin perfect-circle{
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	-ms-border-radius: 50em;
+	-o-border-radius: 50em;
+	border-radius:50em;
+}
+
+@mixin drop-shadow{
+-webkit-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+-moz-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+-ms-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+-o-box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+box-shadow: 0 0.1em 0.4em rgba(0,0,0,0.5); //, 0 0.1em 0.4em $black;
+}

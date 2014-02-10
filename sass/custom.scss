@@ -1,0 +1,497 @@
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+@import "mixins";
+@import "typography";
+@import "modules";
+
+
+#home-callouts{
+	
+}
+
+
+#home-video-container{
+	background-image: url('../img/content/prototype/full-bleed-bg-image.jpg');
+}
+
+#hacks-video-container{
+	background-image: url('../img/content/prototype/project-image.jpg');
+}
+
+
+// PROJECT PAGES
+
+.subnav{
+	margin: 0 auto;
+	width:80%;
+	max-width:50em;
+	padding:1em 0;
+	text-indent:none;
+	dt, dd{
+		font-size:1.25em;
+		float:left;
+		padding:.5em .75em;
+	}
+	dt{
+		font-style:italic;
+		color:$medium-grey;
+	}
+	.active{
+		color:$action-color;
+		border:1px solid $action-color;
+	}
+}
+
+//Jury
+
+.jury{
+	padding:1em 0;
+	background-color:$dark-grey;
+	color:$white;
+}
+
+.jury-members{
+	list-style-type:none;
+	padding:1em 5%;
+	width:90%;
+	
+	li{
+		display:block;
+		float:left;
+		width:90%;
+		padding:1em 5%;
+		text-align:center;
+		
+		img{
+			width:100%;
+			display:block;
+			clear:both;
+			margin-bottom:1em;
+			@include perfect-circle;
+		}
+		
+		span{
+			width:100%;
+		}
+		@media screen and (min-width:(em(480))){
+			width:45%;
+			padding:1em 2.5% 1em 2.5%;
+		}
+		
+		@media screen and (min-width:(em(800))){
+			width:20%;
+			padding:1em 2.5% 1em 2.5%;
+		}
+	}
+}
+
+//Project Lists
+.projects-title{
+	background-color:$medium-grey;
+	color:$white;
+	padding:1em 0;
+	margin:0;
+}
+.projects{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+.project{
+	padding:0;
+	margin:0;
+}
+
+.project-header{
+	background-color:#777;
+	cursor:pointer;
+	position:relative;
+	overflow:hidden;
+	height:300px;
+	
+	@media screen and (min-width:(em(800))){
+		height:500px;
+	}
+	
+	img{
+		display:block;
+		position:absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom:0;
+		width:100%;
+		z-index:2;
+	}
+	.overlay-wrap{
+		
+	}
+	.expand-icon{
+		display:block;
+		clear:both;
+		width:100%;
+		padding:.5em 0;
+		opacity:0;
+		@include quarter-second-transition;
+	}
+	&:hover{
+		.expand-icon{
+			padding:.75em 0 .25em 0;
+			opacity:1;
+		}
+	}
+}
+
+.project-url{
+	position:absolute;
+	bottom:1em;
+	right:1em;
+}
+
+.project-content, .project-content-expanded{
+	width:80%;
+	margin:3em auto;
+	max-width:50em;
+	@include half-second-transition;
+	
+	img{
+		width:100%;
+	}
+}
+
+.project-content .collapsed{
+	max-height:0;
+	overflow:hidden;
+	opacity:0;
+	@include half-second-transition;
+}
+
+.project-content .expanded{
+	max-height:auto;
+	overflow:auto;
+	opacity:1;
+	@include half-second-transition;
+}
+
+.key-speakers{
+	list-style-type:none;
+	padding:0;
+	li{
+		display:block;
+		float:left;
+		width:90%;
+		padding:1em 5%;
+		text-align:left;		
+		img{
+			width:33%;
+			display:block;
+			float:left;
+			//clear:both;
+			@include perfect-circle;
+			margin:0 1em 2em 0;
+		}
+		span{
+			width:100%;
+			padding:1em 0;
+		}
+		@media screen and (min-width:(em(800))){
+			width:45%;
+			padding:1em 5% 1em 0;
+		}
+		
+	}
+}
+
+.team-leaders{
+	list-style-type:none;
+	padding:0;
+	li{
+		display:block;
+		float:left;
+		width:90%;
+		padding:1em 5%;
+		text-align:center;		
+		img{
+			width:100%;
+			display:block;
+			clear:both;
+			@include perfect-circle;
+			margin-bottom:2em;
+		}
+		span{
+			width:100%;
+		}
+		
+		@media screen and (min-width:(em(480))){
+			width:45%;
+			padding:1em 2.5% 1em 2.5%;
+		}
+		
+		@media screen and (min-width:(em(800))){
+			width:29%;
+			padding:1em 4% 1em 0;
+		}
+	}
+}
+
+.core-team{
+	list-style-type:none;
+	padding:0;
+	li{
+		display:block;
+		float:left;
+		width:90%;
+		padding:1em 5%;
+		text-align:center;
+		
+		@media screen and (min-width:(em(800))){
+			width:29%;
+			padding:1em 4% 1em 0;
+		}
+	}
+}
+
+
+
+
+//Individual Section Backgrounds & Tweaks
+
+h1{
+	text-transform:uppercase;
+	letter-spacing:.15em;
+}
+
+
+//01intro
+#intro{
+	background-image:url(../img/content/01intro/cover.jpg);
+}
+
+//02letter
+#letter{
+	color:$dkblue;
+}
+.signatures{
+	list-style-type:none;
+	text-align:center;
+	padding:0;
+	margin:0;
+	li{
+		float:left;
+		width:15%;
+		padding:1em 5%;
+	}
+	img{
+		width:100%;
+	}
+	span{
+		
+	}
+}
+
+//04about
+#about{
+	color:$white;
+	background-color:$red;
+}
+
+//05accomplishments
+#accomplishments{
+	background-color:$dkblue;
+	color:$ltblue;
+}
+.figures{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	li{
+		width:100%;
+	}
+	.numbers{
+		display:block;
+		width:90%;
+		padding:1em 5%;
+		font-size:5em;
+		
+		@media screen and (min-width:(em(800))){
+			font-size:8em;
+		}
+	}
+}
+
+//06scholarships
+#scholarship{
+	color:$dkblue;
+	background-color:$ltblue;
+}
+
+//08hosts
+#hosts{
+	color:$dkblue;
+	background-color:$ltblue;
+}
+//10alumni
+.alumni-list{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-indent:none;
+	li{
+		float:left;
+		padding:1em 0;
+		@media screen and (min-width:(em(800))){
+			width:45%;
+			padding:1em 5% 1em 0;
+		}
+	}
+}
+
+//12support
+#support{
+	color:$dkblue;
+	background-color:$ltblue;
+}
+
+//14contact
+#contact{
+	color:$white;
+	background-color:$dkblue;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+body>section:before, .clearfix:before,
+body>section:after, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+body>section:after, .clearfix:after {
+    clear: both;
+}
+
+body>section, .clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

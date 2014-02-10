@@ -1,0 +1,397 @@
+//Modules
+/* 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// GLOBAL */
+
+
+/* ======================================================== LINKS / BUTTONS  */
+
+a, ul a, p a{
+	color:inherit;
+	text-decoration:underline;
+	@include quarter-second-transition;	
+	
+	&:hover{
+	color:$action-color;
+	text-decoration:underline;
+	}
+	&:active{
+	color:$action-color;
+		
+	}
+	&:visited{
+	text-decoration:line-through;	
+	}
+}
+
+button{
+	color:$white;
+	background-color:transparent;
+	padding:1em;
+	margin:1em;
+	border:1px solid transparent;
+	@include quarter-second-transition;	
+	&:hover{
+	color:$action-color;
+	background-color:$white;
+	border:1px solid transparent;	
+	}
+	&:hover{
+	color:$action-color;
+	background-color:$white;	
+	}
+}
+
+.next-section{
+	display:block;
+	position:absolute;
+	bottom:0;
+	text-align:center;
+	width:100%;
+	padding:1em 0;
+	color:$white;
+	text-decoration:none;
+	@include quarter-second-transition;	
+	&:hover{
+		//background-color:$white;
+		text-decoration:none;
+		color:$white;
+		padding:1.5em 0 .5em 0;
+	}	
+}
+
+/* ======================================================== LISTS */
+
+.basic-list{
+	list-style-type:disc;
+	text-indent:none;
+	padding:0 0 0 1em;
+	color:$medium-grey;
+	li{
+		float:none;
+		text-indent:none;
+	}
+}
+
+.one-column{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	text-indent:none;
+	text-align:left;	
+	>li{
+		float:left;
+		width:90%;
+		padding:1em 5%;
+	}
+}
+.two-columns{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	text-indent:none;
+	text-align:left;	
+	>li{
+		float:left;
+		width:90%;
+		padding:1em 5%;
+	}
+	
+	@media screen and (min-width:(em(800))){
+		>li{
+			width:45%;
+			padding:1em 5% 1em 0;
+		}
+	}
+}
+
+.three-columns{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	text-indent:none;
+	text-align:left;	
+	>li{
+		float:left;
+		width:90%;
+		padding:1em 5%;
+	}
+	
+	@media screen and (min-width:(em(800))){
+		>li:first-child, >li:last-child{
+			width:29%;
+			padding:1em 4% 1em 0;
+		}
+		>li{
+			width:30%;
+			padding:1em 4% 1em 0;
+		}
+	}
+}
+
+/* ======================================================== LOGO / TOGGLE / NAVIGATION  */
+
+#header{
+	#logo{
+		position:fixed;
+		left:0;
+		top:0;
+		z-index:1000;
+		font-size:1.1em;
+		width:3.5em;
+		height:3.5em;
+		cursor:pointer;
+		text-decoration:none;
+		display:block;
+		padding:.75em;
+		text-transform:uppercase;
+		letter-spacing: .15em;
+		@include quarter-second-transition;
+		
+		img{
+			width:100%;
+			@include perfect-circle;
+		}	
+		
+		&:hover{
+			img{
+				
+			}
+		}		
+	}
+}
+
+#primary-nav{
+	position:fixed;
+	width:70%;
+	padding:0;
+	//margin:-.75em 0 0 0;
+	background-color:$action-color;
+	z-index:999;
+	top:0;
+	bottom:0;
+	left:0;
+	max-width:20em;
+	@include quarter-second-transition;		
+	
+	h3{
+		color:$dkblue;
+		margin:.75em;
+		position:fixed;
+		top:0;
+		
+	}
+}
+
+.primary, nav ol {
+	padding: 0;
+	width:100%;
+	color:$white;
+	margin:5em 0 .5em;
+	list-style:decimal-leading-zero!important;
+	li{
+		&:hover{
+			color:$red;
+			}
+		&:active{
+			color:$red;
+		}
+		a{
+			display:block;
+			text-decoration:none;
+			margin-left:-5em;	
+			font-size:1.5em;
+			padding:.25em 1em .25em 5em;
+			line-height:175%;
+			width:150%;
+			&:hover{background-color:$white;color:$red;text-decoration:none;}
+			&:active{background-color:$white;color:$red;text-decoration:none;}
+			
+		}	
+	}
+}
+
+
+#primary-nav.open{
+	padding:0 4% 0 6%;
+	opacity:1;
+	overflow:scroll;
+}
+#primary-nav.closed{
+	padding:0;
+	opacity:0 !important;
+	overflow:hidden;	
+}
+
+.fadeout{
+	opacity:0;
+	@include quarter-second-transition;
+}
+.fadein{
+	opacity:.75;
+	@include quarter-second-transition;
+}
+
+
+/* ======================================================== OPEN / CLOSE */
+
+
+//Projects
+.expanded{
+	opacity:1;
+	max-height:auto;
+	overflow:auto;
+}
+.collapsed{
+	opacity:0;
+	max-height:0;
+	overflow:hidden;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	border-bottom: 1px solid white;
+	@include quarter-second-transition;
+}
+
+
+
+
+/* LAYOUT ====================== */
+
+//Body
+body{
+	margin:0;
+	padding:0;
+
+	//Sections
+	>section{
+		//width:90%;
+		//clear:both;
+		padding:2em 0 0 0;
+		text-align:center;
+		z-index:1;
+	}
+}
+.overlay-wrap{
+	position:absolute;
+	z-index:2;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(0,0,0,0.15);
+}
+.floating-text{
+	display:block;
+	margin: auto;
+	  position: absolute;
+	  top: 0; left: 0; bottom: 0; right: 0;
+	  height:10em;
+	  overflow:visible;
+	color:$white;
+	z-index:2;
+	
+}
+.full-screen{
+	background-size:cover;
+	background-position:center;
+	padding:0;
+	width:100%;
+	position:relative;
+	
+	.video-overlay{
+		
+	}
+	img{
+		width:100%;
+	}
+}
+
+
+//Articles / Content 
+article{
+	position:relative;
+	//width:100%;
+	text-align:left;
+	width:80%;
+	margin:3em auto;
+	max-width:50em;
+	
+	header, footer{
+		width:90%;
+		padding:2em 5%;
+		text-align:center;
+	}
+	.content{
+		
+	}
+	h3{
+		border-top:1px solid;
+		padding-top:1em;
+	}
+	aside{
+		font-size:.85em;
+		font-style:italic;
+		padding:1em 0;
+		clear:both;
+		
+		img{
+			float:left;
+			width:8em;
+			margin:0 1em;
+			@include perfect-circle;
+			
+			@media screen and (min-width:(em(1400))){
+				width:100%;
+				margin:0 0 2em 0;
+			}
+		}
+		
+		@media screen and (min-width:(em(1400))){
+			position:absolute;
+			width:30%;
+			right:-35%;
+		}
+	}
+	.speaker{
+		display: block;
+		margin-left: -4em;
+		position: absolute;
+		opacity:0.5;
+		text-transform:uppercase;
+		font-size:.8em;
+		
+	}
+}
+
+
+//Primary Footer
+#footer{
+	background-color:$dkblue;
+	color:$ltblue;
+	width:100%;
+	padding:1em 0;
+	text-align:center;
+	
+}
+#top{
+	position:fixed;
+	bottom:0;
+	right:0;
+	z-index:1000;
+	display:block;
+	padding:1em;
+	font-size:1em;
+	//opacity:0.75;	
+	color:$medium-grey;
+	background-color:$white;
+	text-decoration:none;
+	@include quarter-second-transition;
+	&:hover{
+		opacity:1;
+		color:$action-color;
+	}
+	&:active{
+		opacity:1;
+		color:$action-color;
+	}
+}
