@@ -7,7 +7,7 @@ $(document).ready(function () {
 		$('body').localScroll();
 	
 		// Size Full-Screen Videos, Images, & Slideshows to window height.
-		$('.full-screen').css({height:$(window).height()});
+		$('.full-screen').css("min-height",$(window).height());
 
 		$(window).resize(function() {
 			$('.full-screen').css({height:$(window).height()});
@@ -18,14 +18,14 @@ $(document).ready(function () {
 	//$('#primary').prepend('<div id="menu-icon">TFI SANDBOX <span> </span> </div>');
 	$('#primary-nav').addClass('closed');
 	
-	$("#logo").click(function(){
+	$("#toggle").click(function(){
 	$('#primary-nav').toggleClass('closed');
 	$('#primary-nav').toggleClass('open');
    });
    
 	$("#primary-nav a").click(function(){
-	$('#primary-nav').toggleClass('closed');
-	$('#primary-nav').toggleClass('open');
+	//$('#primary-nav').toggleClass('closed');
+	//$('#primary-nav').toggleClass('open');
   });
 
    
@@ -50,6 +50,8 @@ $(document).ready(function () {
    
    //Fire Swipe Classes for Sliders
    window.orgfigures = $('#orgfigures').Swipe().data('Swipe');
+   window.grantacc = $('#grantacc').Swipe().data('Swipe');
+   window.highlightedgrantees = $('#highlighted-grantees').Swipe().data('Swipe');
    
   /*
    //Close Secondary & Tertiary Links
@@ -82,25 +84,7 @@ $('.project-content').addClass('collapsed');
            $('#project-1 .project-content').toggleClass('collapsed');
        });
 	   
-	   $('#project-2 .project-header').click(function() {
-           $('#project-2 .project-content').toggleClass('collapsed');
-       });
-	   
-	   $('#project-3 .project-header').click(function() {
-           $('#project-3 .project-content').toggleClass('collapsed');
-       });
-	   
-	   $('#project-4 .project-header').click(function() {
-           $('#project-4 .project-content').toggleClass('collapsed');
-       });
-	   
-	   $('#project-5 .project-header').click(function() {
-           $('#project-5 .project-content').toggleClass('collapsed');
-       });
-	   
-	   $('#project-6 .project-header').click(function() {
-           $('#project-6 .project-content').toggleClass('collapsed');
-       });
+
 
 });
    

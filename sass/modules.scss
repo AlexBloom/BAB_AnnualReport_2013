@@ -110,7 +110,7 @@ button{
 	margin:0;
 	padding:0;
 	text-indent:none;
-	text-align:left;	
+	text-align:center;	
 	>li{
 		float:left;
 		width:90%;
@@ -131,15 +131,12 @@ button{
 
 /* ======================================================== LOGO / TOGGLE / NAVIGATION  */
 
-#header{
-	#logo{
+#header{	
+	#logo, #toggle{
 		position:fixed;
-		left:0;
 		top:0;
 		z-index:1000;
-		font-size:1.1em;
-		width:3.5em;
-		height:3.5em;
+		
 		cursor:pointer;
 		text-decoration:none;
 		display:block;
@@ -147,48 +144,60 @@ button{
 		text-transform:uppercase;
 		letter-spacing: .15em;
 		@include quarter-second-transition;
-		
 		img{
 			width:100%;
 			@include perfect-circle;
-		}	
-		
+		}			
 		&:hover{
 			img{
 				
 			}
 		}		
 	}
+	#logo{
+		width:3.5em;
+		height:3.5em;
+		right:0;
+	}
+	#toggle{
+		background-color:$dark-grey;
+		color:$white;
+		border-right:1px solid $medium-grey;
+		border-bottom:1px solid $medium-grey;
+		width:4em;
+		left:0;
+		padding:1em 0;
+		text-align:center;
+		//overflow:hidden;
+	}
 }
 
 #primary-nav{
 	position:fixed;
+	border-right:1px solid $medium-grey;
 	width:70%;
-	padding:0;
-	//margin:-.75em 0 0 0;
-	background-color:$action-color;
+	padding:2.5em 0 3.5em 0;
+	background-color:$dark-grey;
 	z-index:999;
 	top:0;
 	bottom:0;
 	left:0;
 	max-width:20em;
+	overflow-y:scroll;
+	overflow-x:hidden;
 	@include quarter-second-transition;		
 	
 	h3{
-		color:$dkblue;
-		margin:.75em;
-		position:fixed;
-		top:0;
-		
+		color:$dkblue;		
 	}
 }
 
 .primary, nav ol {
+	list-style-type:none;
 	padding: 0;
 	width:100%;
 	color:$white;
-	margin:5em 0 .5em;
-	list-style:decimal-leading-zero!important;
+	margin:1em 0 .5em;
 	li{
 		&:hover{
 			color:$red;
@@ -199,30 +208,34 @@ button{
 		a{
 			display:block;
 			text-decoration:none;
-			margin-left:-5em;	
-			font-size:1.5em;
-			padding:.25em 1em .25em 5em;
-			line-height:175%;
-			width:150%;
+			margin:0;
+			font-size:1em;
+			padding:.75em 1.5em;
+			line-height:150%;
 			&:hover{background-color:$white;color:$red;text-decoration:none;}
 			&:active{background-color:$white;color:$red;text-decoration:none;}
 			
 		}	
 	}
+	.toc-number{
+		padding-right:1em;
+	}
+	.toc-name{
+		opacity:0;
+		display:none;
+	}
 }
-
 
 #primary-nav.open{
-	padding:0 4% 0 6%;
 	opacity:1;
-	overflow:scroll;
-	width:auto;
+	max-width:auto;
+	.toc-name{
+		opacity:1;
+		display:inline;
+	}
 }
 #primary-nav.closed{
-	padding:0;
-	opacity:0 !important;
-	overflow:hidden;
-	width:0;	
+	max-width:4em;	
 }
 
 .fadeout{
@@ -234,9 +247,7 @@ button{
 	@include quarter-second-transition;
 }
 
-
 /* ======================================================== OPEN / CLOSE */
-
 
 //Projects
 .expanded{
@@ -254,25 +265,21 @@ button{
 	@include quarter-second-transition;
 }
 
-
-
-
 /* LAYOUT ====================== */
-
-//Body
 body{
 	margin:0;
 	padding:0;
-
-	//Sections
+}
+#main{
+	margin-left:4em;
 	>section{
-		//width:90%;
-		//clear:both;
-		padding:2em 0 0 0;
+		padding:2em 0;
+		margin:0;
 		text-align:center;
 		z-index:1;
 	}
 }
+
 .overlay-wrap{
 	position:absolute;
 	z-index:2;
@@ -285,29 +292,23 @@ body{
 .floating-text{
 	display:block;
 	margin: auto;
-	  position: absolute;
-	  top: 0; left: 0; bottom: 0; right: 0;
-	  height:10em;
-	  overflow:visible;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	height:10em;
+	overflow:visible;
 	color:$white;
-	z-index:2;
-	
+	z-index:2;	
 }
 .full-screen{
 	background-size:cover;
 	background-position:center;
-	padding:0;
+	padding:0 !important;
 	width:100%;
 	position:relative;
-	
-	.video-overlay{
-		
-	}
 	img{
 		width:100%;
 	}
 }
-
 
 //Articles / Content 
 article{
@@ -388,11 +389,24 @@ article{
   position: relative;
 }
 
+.article-slider{
+	background-image:url(../img/content/prototype/project-image.jpg);
+	background-size:cover;
+	background-position:center;
+	.wrapper{
+		text-align:left;
+		padding:1em;
+		margin:1em auto;
+		max-width:(em(800));
+		background-color:$dkblue;
+	}
+}
+
 .button{
 	display:block;
 	position:absolute;
 	cursor:pointer;
-	top:8em;
+	top:40%;
 	height:1em;
 	padding:1.25em 1.5em 2em 1.5em;
 	color:$ltblue;
@@ -430,14 +444,14 @@ article{
 #top{
 	position:fixed;
 	bottom:0;
-	right:0;
 	z-index:1000;
 	display:block;
-	padding:1em;
-	font-size:1em;
-	//opacity:0.75;	
+	padding:1em 1.5em;
+	font-size:1em;	
 	color:$medium-grey;
-	background-color:$white;
+	background-color:$dark-grey;
+	color:$white;
+	border-top:1px solid $ltblue;
 	text-decoration:none;
 	@include quarter-second-transition;
 	&:hover{

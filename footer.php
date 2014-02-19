@@ -3,7 +3,7 @@
 	<footer class="clearfix" id="footer">
 		<small>All content &copy; Bike &amp; Build 2014</small></br>
 		<small>Site by <a href="http://digitalfrontiersman.com">The Digital Frontiersman</a></small>
-		<a class="fixed" id="top" href="#intro"> &uarr; </a>
+		
 	</footer>
 
  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
