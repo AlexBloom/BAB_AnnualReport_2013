@@ -60,6 +60,12 @@ button{
 	}	
 }
 
+li{
+	img{
+		border:2px solid $white;
+	}
+}
+
 /* ======================================================== LISTS */
 
 .basic-list{
@@ -293,8 +299,7 @@ body{
 	display:block;
 	margin: auto;
 	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	height:10em;
+	top: 30%; left: 0; right: 0;
 	overflow:visible;
 	color:$white;
 	z-index:2;	
@@ -341,15 +346,16 @@ article{
 			float:left;
 			width:8em;
 			margin:0 1em;
+			border:2px solid $white;
 			@include perfect-circle;
 			
-			@media screen and (min-width:(em(1400))){
+			@media screen and (min-width:(em(1300))){
 				width:100%;
 				margin:0 0 2em 0;
 			}
 		}
 		
-		@media screen and (min-width:(em(1400))){
+		@media screen and (min-width:(em(1300))){
 			position:absolute;
 			width:30%;
 			right:-35%;
@@ -393,12 +399,28 @@ article{
 	background-image:url(../img/content/prototype/project-image.jpg);
 	background-size:cover;
 	background-position:center;
+	position:relative;
+	&:before{
+		opacity:.85;
+		content:" ";
+		position:absolute;
+		background-color:$red;
+		z-index:0;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
 	.wrapper{
+		position:relative;
+		z-index:40;
+		color:$white;
 		text-align:left;
 		padding:1em;
 		margin:1em auto;
 		max-width:(em(800));
-		background-color:$dkblue;
+		//background-color:$dkblue;
+		
 	}
 }
 
@@ -409,18 +431,12 @@ article{
 	top:40%;
 	height:1em;
 	padding:1.25em 1.5em 2em 1.5em;
-	color:$ltblue;
+	color:$dkblue;
+	background-color:$white;
 	opacity:.5;
 	@include quarter-second-transition;
 	
-	&:hover{
-		background-color:$ltblue;
-		color:$dkblue;
-		opacity:.75;
-	}
-	&:active{
-		background-color:$ltblue;
-		color:$dkblue;
+	&:hover, &:active{
 		opacity:1;
 	}
 }

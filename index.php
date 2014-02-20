@@ -11,8 +11,9 @@
 	<section class="full-screen" id="intro">
 		<div class="overlay-wrap">
 			<div class="floating-text" id="">
+				<div class="logo"><img src="img/ui/BB_Logo_White.gif" alt="BB Logo White"></div>
 				<h1>Bike &amp; Build</h1>
-				<p class="subtitle">2013 Annual Report</p>
+				<p class="intro">2013 Annual Report</p>
 			</div>
 			<a class="next-section" id="" href="#letter"> Scroll To Begin <br> <span class="icon icon-down"></span> </a>
 		</div>
@@ -48,9 +49,11 @@
 	
 		<div class="overlay-wrap">
 			<div class="floating-text" id="">
-				<h2>The Affordable Housing Shortage</h2>
+				<h2>The Affordable Housing Shortage</br>
+					<span class="icon icon-play"></span>
+				</h2>
 			</div>
-			<a class="next-section" id="" href="#about"> Watch The Video <br> &darr; </a>
+			<a class="next-section" id="" href="#about"> Watch The Video <br> <span class="icon-down"></span> </a>
 		</div>
 	</section>
 
@@ -228,27 +231,30 @@
 		<section class="clearfix swipe" id="highlighted-grantees">	
 			<div class="swipe-wrap">	
 				<div class="article-slider" id="grantee-1"> 
-						<div class="wrapper"> 
-						<h3>Antelope Valley YouthBuild – Palmdale, CA - $10,000</h3>
-						<p>In 2012 and 2013, Bike & Builders volunteered on a project in the desert of Palmdale that stuck with many of our riders, so much so that 2013’s ME2SB team fully funded their grant. AV YouthBuild is refurbishing a property that will create units for up to 19 young adults in need of homes. Residents will either be current students in the YouthBuild program or recent graduates, particularly single mothers with children under the age of five.</p> 
+					<div class="wrapper"> 
+						<h3>Antelope Valley YouthBuild</h3>
+						<h5>Palmdale, CA - $10,000</h5>
+						<p class="intro">In 2012 and 2013, Bike & Builders volunteered on a project in the desert of Palmdale that stuck with many of our riders, so much so that 2013’s ME2SB team fully funded their grant. AV YouthBuild is refurbishing a property that will create units for up to 19 young adults in need of homes. Residents will either be current students in the YouthBuild program or recent graduates, particularly single mothers with children under the age of five.</p> 
 
 						<p>AV YouthBuild supports about 170 young people in Palmdale each year by working with them to finish high school or obtain their GED while concurrently learning valuable job and leadership skills. Students spend half of their time in the classroom and half on jobsites developing skills in construction, nursing, solar energy production, and fire-fighting. The supportive housing facility will be rent-free, provided tenants maintain positive success in school or their career. When finished, the building will make AV YouthBuild the only YB program in the country with an accompanying housing unit. The facility is part of a long-term “adopt-a-block” strategy, where AV YouthBuild will work on reinvigorating the entire neighborhood, block-by-block. Next year, Bike & Build can look forward to working on a duplex home for local low-income families.</p> 
 
 						<p>One of aspects that drew Bike & Build riders to AV YouthBuild was the chance they got to interact directly with the YB students on the build site. AV YouthBuild Executive Director Rossie Johnson agreed. “The Bike & Builders are the same age as our YouthBuild students, so it’s a great exchange between the groups. It’s a great way for our students to see other young people ‘paying it forward,’ and I know the B&Bers really enjoy working with our group.”</p> 
 						</div>
-					</div>
+				</div>
 				<div class="article-slider" id="grantee-2"> 
 					<div class="wrapper"> 	
-					<h3>Habitat for Humanity Portland/Metro East – Portland, OR - $10,000</h3>
-					<p>Habitat for Humanity Portland/Metro East, engages middle and high school-aged students in their Youth United program. In 2013, they received Bike & Build funds from the Central US route to support the building of a home compliant to Earth Advantage Platinum standards. This home will be the third sponsored by the Youth United program over the last five years, where students have taken an active role in the planning, fundraising, and construction of the home. By raising funds to achieve the Earth Advantage designation, Habitat for Humanity Portland/Metro East is increasing the value of the home now and in the future for its future owners: heating bills can be exorbitant for low-income residents, and future environmental features will enhance the home’s value in the decades to come. The students working on the home are gaining valuable knowledge a range of technical subjects as well.</p>
+					<h3>Habitat for Humanity Portland/Metro East</h3>
+					<h5>Portland, OR - $10,000</h5>
+					<p class="intro">Habitat for Humanity Portland/Metro East, engages middle and high school-aged students in their Youth United program. In 2013, they received Bike & Build funds from the Central US route to support the building of a home compliant to Earth Advantage Platinum standards. This home will be the third sponsored by the Youth United program over the last five years, where students have taken an active role in the planning, fundraising, and construction of the home. By raising funds to achieve the Earth Advantage designation, Habitat for Humanity Portland/Metro East is increasing the value of the home now and in the future for its future owners: heating bills can be exorbitant for low-income residents, and future environmental features will enhance the home’s value in the decades to come. The students working on the home are gaining valuable knowledge a range of technical subjects as well.</p>
 		
 					<p>“It’s a great group of kids from a diverse range of backgrounds that we work with,” said Tor Ostrum, Director of Volunteer Programs and Corporate Engagement. “Many of them use Youth United as a stepping stone to other service work. They are becoming advocates for the affordable housing cause because we engage them in their formative years.” The partnership with Bike & Build is a natural fit. “Portland had a huge biking culture and many active young adults. Our Youth United kids are really excited about Bike & Build too, it’s inspired them and that will carry forward.” </p> 
 					</div>
 				</div>		
 				<div class="article-slider" id="grantee-3"> 
 					<div class="wrapper"> 
-					<h3>Youth Rebuilding New Orleans – New Orleans, LA - $8,350 </h3>
-					<p>Almost ten years after Hurricane Katrina struck the Gulf Coast, there is still a tremendous need for housing for residents of the Big Easy. Youth Rebuilding New Orleans is using the city’s young adults and volunteers for Project HOMEwork, which builds homes for teachers in the area. With such a large need for teachers in New Orleans, Project HOMEwork aims to attract educators to the city to fill this need. “We had the volunteers in our youth, and this became a holistic way to address a serious long-term need for our students,” explained Executive Director William Stoudt.</p>
+					<h3>Youth Rebuilding New Orleans</h3>
+					<h5>New Orleans, LA - $8,350 </h5>
+					<p class="intro">Almost ten years after Hurricane Katrina struck the Gulf Coast, there is still a tremendous need for housing for residents of the Big Easy. Youth Rebuilding New Orleans is using the city’s young adults and volunteers for Project HOMEwork, which builds homes for teachers in the area. With such a large need for teachers in New Orleans, Project HOMEwork aims to attract educators to the city to fill this need. “We had the volunteers in our youth, and this became a holistic way to address a serious long-term need for our students,” explained Executive Director William Stoudt.</p>
 		
 					<p>YRNO’s volunteers come ready to work, but without the tools to get something done, that energy is for naught. Thus, a large portion of the grant to YRNO from B&B’s Southern route will replenish their tool inventory, maximizing volunteer capacity. Other parts of the B&B grant will go to hiring young people who had previously dropped out of high school and are now pursuing their GED. YRNO is training these individuals as site supervisors for the organization’s volunteers. </p>
 
@@ -256,15 +262,16 @@
 					</div>
 				</div>
 				<div class="article-slider" id="grantee-4"> 
-						<div class="wrapper"> 
-						<h3>Pikes Peak Habitat for Humanity – Colorado Springs, CO - $55,000</h3>
-										<p>For the last five summers, Pikes Peak Habitat for Humanity has served as a pre-arranged grant beneficiary for their support of two of our routes, NC2SD and SC2SC. Since the formation of SC2SC in 2009, Pikes Peak has hosted a blitz build with our riders, where Bike & Build riders build as much as possible of a single home. This year, B&B helped construct the Kleine home. </p>
-			
-										<p>“Getting the house is the biggest thing that has ever happened to our family, but working with Bike & Build was a thousand times better,” said Karen Kleine. “The house is just a house, but Bike & Build made it a home.” Karen, her husband Scott, and their four children are planning to finally move in to their home in 2014. The family spent time with both B&B routes on-site. “The first day when I went home, my cheeks hurt from smiling. It was such a treat to hear these young adults talk about what they are doing with their life after the summer. They are going to make a big difference.”</p>
-			
-										<p>Since 2009, Bike & Build has granted over $278,000 to Pikes Peak Habitat, through annual donations that have allowed Bike & Build to put a significant stamp on five homes in the Colorado Springs area.  “It’s amazing to see how much work can be done in a short week’s time,” Andy Petersen, Pikes Peak Habitat’s Development Director, said of Bike & Build riders.  “They are all over the place doing all sorts of different things.” The weeklong stay for the SC route becomes quite the community undertaking as well, so Pikes Peak Habitat helps B&B trip leaders coordinate their stay with a local church and brings in three meals per day. It’s that effort that will allow the Kleine’s to enjoy the dinner table that they haven’t had for lack of space in their current home. “The biggest thing I’m looking forward to is seeing our kids make their rooms their own. They’re really excited about being able to have their friends over.”</p>
+					<div class="wrapper"> 
+						<h3>Pikes Peak Habitat for Humanity</h3>
+						<h5>Colorado Springs, CO - $55,000</h5>
+						<p class="intro">For the last five summers, Pikes Peak Habitat for Humanity has served as a pre-arranged grant beneficiary for their support of two of our routes, NC2SD and SC2SC. Since the formation of SC2SC in 2009, Pikes Peak has hosted a blitz build with our riders, where Bike & Build riders build as much as possible of a single home. This year, B&B helped construct the Kleine home. </p>
+
+						<p>“Getting the house is the biggest thing that has ever happened to our family, but working with Bike & Build was a thousand times better,” said Karen Kleine. “The house is just a house, but Bike & Build made it a home.” Karen, her husband Scott, and their four children are planning to finally move in to their home in 2014. The family spent time with both B&B routes on-site. “The first day when I went home, my cheeks hurt from smiling. It was such a treat to hear these young adults talk about what they are doing with their life after the summer. They are going to make a big difference.”</p>
+
+						<p>Since 2009, Bike & Build has granted over $278,000 to Pikes Peak Habitat, through annual donations that have allowed Bike & Build to put a significant stamp on five homes in the Colorado Springs area.  “It’s amazing to see how much work can be done in a short week’s time,” Andy Petersen, Pikes Peak Habitat’s Development Director, said of Bike & Build riders.  “They are all over the place doing all sorts of different things.” The weeklong stay for the SC route becomes quite the community undertaking as well, so Pikes Peak Habitat helps B&B trip leaders coordinate their stay with a local church and brings in three meals per day. It’s that effort that will allow the Kleine’s to enjoy the dinner table that they haven’t had for lack of space in their current home. “The biggest thing I’m looking forward to is seeing our kids make their rooms their own. They’re really excited about being able to have their friends over.”</p>
 						</div>
-					</div>
+				</div>
 			</div>
 			<div class="button prev" onclick='highlightedgrantees.prev()'> <span class="icon icon-left"> </span> </div> 
 	    	<div class="button next" onclick='highlightedgrantees.next()'> <span class="icon icon-right"> </span> </div>
@@ -294,9 +301,12 @@
 
 			<p class="intro">Over 250 riders participated in Bike & Build in 2013, coming from all across the country. Their numerous backgrounds and interests meshed into single units, with each trip supporting hundreds communities as they pedaled west.  Many of our riders commit to continuing their service long after Bike & Build is complete. These stories of service are but a few of the many that former Bike & Build riders pursue every year. </p>
 
-			<h3>Kristin Anderson and Melissa Panter – Maine to Santa Barbara ’13 – Salem, MA</h3>
+			<h3>Kristin Anderson and Melissa Panter </h3>
+			<h4>Maine to Santa Barbara ’13 – Salem, MA</h4>
 		
-			<aside><small>Kristin Anderson has worked for North Shore Community Development Coalition in Salem, MA for four years, now serving as the Director of Community Development. This summer, she took a sabbatical as a trip leader on ME2SB13. One of ME2SB’s riders, Melissa Panter, now serves as an AmeriCorps member with North Shore CDC after Kristin connected her to the organization. Now the B&B teammates work together to provide low-income residents with quality, affordable housing and community programs to support those individuals and families.</small></aside>
+			<aside class="clearfix">
+				<img src="img/content/09riders/MelissaKristin.jpg" alt="Melissa And Kristin">
+				<small>Kristin Anderson has worked for North Shore Community Development Coalition in Salem, MA for four years, now serving as the Director of Community Development. This summer, she took a sabbatical as a trip leader on ME2SB13. One of ME2SB’s riders, Melissa Panter, now serves as an AmeriCorps member with North Shore CDC after Kristin connected her to the organization. Now the B&B teammates work together to provide low-income residents with quality, affordable housing and community programs to support those individuals and families.</small></aside>
 
 			<p> <strong>Why did you guys apply to Bike & Build?</strong></p>
 			<p><span class="speaker">KA</span> North Shore actually had a volunteer who was meeting her sweat equity for Bike & Build with us last year, so she began telling me about it. I was immediately drawn to it because I’ve always had this dream of biking across the United States. It combined all these things I was passionate about, between biking, working with young adults, service-learning, affordable housing, and put it all in experience. It felt like something I would be crazy not to do.</p>
@@ -314,8 +324,11 @@
 			<p><span class="speaker">MP</span> Being able to see Kristin every day at work has really helped with the transition to real world! We both understand each other’s struggles with not being on the road anymore. On the trip we called Kristin ‘Mom’. She was our rock and coming back into the real world she is still my rock that keeps Bike & Build fresh.</p>
 			<p><span class="speaker">KA</span> I love working with Melissa. It’s nice to have somebody who really gets what North Shore is doing, carrying on the energy and spirit of Bike & Build in this office. And she’s right, it’s great to have somebody to reminisce with too! </p>
 
-			<h3>Zoe Nemever – Central US ’13 – Charlotte, NC</h3>
-			<aside><small>After Bike & Build, Zoe began an AmeriCorps term with Habitat for Humanity of Charlotte in North Carolina. She is also an AmeriCorps*NCCC alum, having served several years ago out of the Vicksburg, MS campus doing Hurricane Katrina recovery in the Gulf Coast.</small></aside> 
+			<h3>Zoe Nemever</h3>
+			<h4>Central US ’13 – Charlotte, NC</h4>
+			<aside class="clearfix">
+				<img src="img/content/09riders/Zoe.jpg" alt="Zoe">
+				<small>After Bike & Build, Zoe began an AmeriCorps term with Habitat for Humanity of Charlotte in North Carolina. She is also an AmeriCorps*NCCC alum, having served several years ago out of the Vicksburg, MS campus doing Hurricane Katrina recovery in the Gulf Coast.</small></aside> 
 
 			<p> <strong>What drew you to Bike & Build?</strong></p>
 			<p>I heard about it when I was 19 and wanted to do it from that moment. Before I applied last year I spent a full afternoon watching Bike & Build videos on YouTube and felt like I needed to be a part of that adventure. I knew I wanted to do more work with Habitat for Humanity, so this this was going to be a great way to experience many different affiliates around the country. I wanted to see what other organizations were doing and become more knowledgeable myself.</p>
@@ -341,7 +354,7 @@
 
 
 		
-				<p><strong>Alumni Council Members</strong></p> 
+				<h3>Alumni Council Members</h3> 
 					<ul class="alumni-list clearfix">	
 						<li> <strong>Kyle Magida</strong> co-president, Caribbean Islands<br>
 							 SUS06, B2SB08 (leader)
@@ -385,7 +398,8 @@
 					</ul>
 		
 
-			<h4>Erin Kinneen – Providence to Seattle ’04 – Seattle, WA</h4>
+			<h3>Erin Kinneen</h3>
+			<h4>Providence to Seattle ’04 – Seattle, WA</h4>
 			<aside class="clearfix">
 				<img class="perfect-circle" src="img/content/10alumni/erin.jpg" alt="Erin">
 				<small>2013 was Erin’s first year on the Bike & Build Alumni Council. She quickly became one of the Council’s most active members, spearheading the $10,000 Alumni Council Emergency Grant Program and co-leading the Alumni Mentoring Program.</small></aside>
@@ -399,7 +413,8 @@
 			<p><strong>What are some more things you’d like to accomplish with the Alumni Council?</strong></p>
 			<p>I want to continue helping to educate new riders. We have such a good network now, so I’d like to help see it grow and thrive. Personally, I’ve been practicing physical therapy for eight years now, so I’d like to serve as a resource for younger riders who might want to get involved in PT as a career.</p>
 
-			<p><strong>Katy Getsie – Providence to Seattle ’10 – Pittsburgh, PA</strong></p>
+			<h3>Katy Getsie </h3>
+			<h4>Providence to Seattle ’10 – Pittsburgh, PA</h4>
 			<aside class="clearfix">
 				<img class="perfect-circle" src="img/content/10alumni/katy.jpg" alt="Katy">
 				<small>Katy is Bike & Build’s 2013 Chris Webber Memorial Fund Fellow. Her fellowship supports her investigation into the strategy many international organizations are employing to fund affordable housing initiatives through microcredit lending, and how they can be applied to alleviate the high housing costs in Pittsburgh, Katy’s hometown. The fellowship will take her research to Nicaragua in 2014.</small></aside>
@@ -458,12 +473,12 @@
 	</section>
 
 	<section class="" id="contact">		
-		<article>
+		
 			<h2>Contact Us</h2>
-			<section class="content">	
+				
 			
 			<h3>Board of Directors</h3>
-			<ul class="team-leaders clearfix">
+			<ul class="people clearfix">
 				<li> <img src="img/content/14contact/StevenTruong.jpg" alt="StevenTruong">
 					<strong> Steve Truong </strong> </br> 
 					<em> Chairman of the Board </em> </br>
@@ -519,7 +534,7 @@
 			</ul>
 
 			<h3>Staff</h3>
-			<ul class="team-leaders clearfix">
+			<ul class="people clearfix">
 				<li> <img src="img/content/14contact/JustinVillere.jpg" alt="JustinVillere">
 				<strong> Justin Villere</strong> </br>
 				Director of Operations and Outreach</br>
@@ -542,8 +557,8 @@
 				</li>
 			</ul>
 
-			</section>
-		</article>
+			
+		
 	</section>
 
 </section>
