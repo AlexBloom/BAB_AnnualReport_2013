@@ -2,10 +2,6 @@
 
 <!-- Index Page -->
 
-<nav id="scrollnav">
-	
-</nav>
-
 <section class="clearfix" id="main">
 
 	<section class="full-screen" id="intro">
@@ -50,11 +46,17 @@
 		<div class="overlay-wrap">
 			<div class="floating-text" id="">
 				<h2>The Affordable Housing Shortage</br>
-					<span class="icon icon-play"></span>
+					<button class="play-video" id="play-home"> <span class="icon icon-play"></span> </button>
 				</h2>
 			</div>
-			<a class="next-section" id="" href="#about"> Watch The Video <br> <span class="icon-down"></span> </a>
 		</div>
+		<div class="video-overlay">
+			<div class="video-inner">
+				<button class="close-video" id="close-home"> <span class="icon icon-close"></span> </button>
+				<iframe width="100%" src="//www.youtube.com/embed/lhfpxB8MADs" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		
 	</section>
 
 	<section class="" id="about">
@@ -436,7 +438,308 @@
 	</section>
 
 	<section class="" id="financials">
+		
 		<h2>Statement of Financials</h2>
+		
+		<h3>Audited Financial Statements</h3>
+		
+		<h4> STATEMENT OF ACTIVITIES </h4>
+		<div class="col2wide clearfix">
+			<div>
+			<table class="table-3">
+				<thead>
+				<tr>
+					<th>Unrestricted Net Assets</th>
+					<th>2013</th>
+					<th>2012</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr> 
+					<td> Donations Income</td>
+					<td> $1,201,090 </td> 
+					<td> $1,284,389  </td> 
+				</tr>
+				<tr> 
+					<td> Application Fees </td>
+					<td> $52,245	</td> 
+					<td> $58,400     </td> 
+				</tr>
+				<tr> 
+					<td> Apparel Sales	</td>
+					<td> $29,719	</td> 
+					<td> $29,937     </td> 
+				</tr>
+				<tr> 
+					<td> Special Event	</td>
+					<td> 	-	</td> 
+					<td> $13,732     </td> 
+				</tr>
+				<tr> 
+					<td> In-Kind Contribution</td>
+					<td> $6,996		</td> 
+					<td> $6,230      </td> 
+				</tr>
+				<tr> 
+					<td> Other Income	</td>
+					<td> $3,695	</td> 
+					<td> $7,707      </td> 
+				</tr>
+				<tr>
+					<td> SUBTOTAL </td>
+					<td>$1,293,745</td>
+					<td>$1,400,395</td>
+				</tr>
+				<tr>
+					<td>Assets Released from Restriction</td>
+					<td>$61,559	</td>
+					<td>$39,531 </td>
+				</tr>
+				<tr>
+					<td>Total Support and Revnue</td>
+					<td>$1,355,304</td>
+					<td>$1,439,926</td>
+				</tr>			
+				</tbody>
+			</table>
+			</div>
+			<div>
+			<table class="table-3">
+				<thead>
+				<tr>
+					<th>Expenses</th>
+					<th>2013</th>
+					<th>2012</th>
+				</tr>
+				</thead>
+				<tbody>			
+				<tr>
+					<td>Program Services</td> 
+					<td>$1,043,357</td> 
+					<td>$1,200,479</td>
+				</tr>
+				<tr>
+					<td>Management and General</td> 
+					<td>$205,794</td> 
+					<td>$183,123  </td>
+				</tr>
+				<tr>
+					<td>Fundraising	</td> 
+					<td>$31,317	</td> 
+					<td>$28,129  </td>
+				</tr>
+				<tr>
+					<td>Subtotal</td> 
+					<td>$1,280,468</td> 
+					<td>$1,411,731</td>
+				</tr>
+				<tr>
+					<td>Change in Unrestricted Net Assets</td> 
+					<td>$74,836	</td> 
+					<td>$28,195 </td>
+				</tr>			
+				</tbody>
+			</table>
+			</div>
+		</div>
+		
+		<table class="table">
+			<thead>
+			<tr>
+				<th>Summary</th>
+				<th>2013</th>
+				<th>2012</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Total Other Income</td>
+				<td>$3,695</td>
+				<td>$7,707</td>
+			</tr>
+			<tr>
+				<td>Change, Total Net Assets</td>
+				<td>$52,108</td>
+				<td>$35,902</td>
+			</tr>
+			<tr>
+				<td>Net Assets, Beginning</td>
+				<td>$156,123</td>
+				<td>$127,928</td>
+			</tr>
+			<tr>
+				<td>Net Assets, Ending</td>
+				<td>$208,231</td>
+				<td>$156,123</td>
+			</tr>
+			</tbody>
+		</table>	
+		
+		<div class="col2wide clearfix">
+			<div>	
+			<h3>Affordable Housing Grants</h3>
+			<table class="table-2">
+				<thead>
+				<tr>
+					<th>Grant Type</th>
+					<th>Value</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Competitive Grant Program</td>
+					<td>$151,400</td>
+				</tr>
+				<tr>
+					<td>Pre-Arranged Partner Contributions</td>
+					<td>$128,189</td>
+				</tr>
+				<tr>
+					<td>Rider $500 Donations</td>
+					<td>$85,000</td>
+				</tr>
+				<tr>
+					<td>On the Road Gifts</td>
+					<td>$31,400</td>
+				</tr>
+				<tr>
+					<td>Alumni Council Emergency Grants</td>
+					<td>$10,000</td>
+				</tr>
+				<tr>
+					<td>Regional Ride Grant</td>
+					<td>$5,000</td>
+				</tr>
+				<tr>
+					<td>CWM Contributions</td>
+					<td>$55,851</td>
+				</tr>
+				<tr>
+					<td>Other</td>
+					<td>$1,800</td>
+				</tr>
+				<tr>
+					<td>Total Bike &amp; Build Grants</td>
+					<td>$468,640</td>
+				</tr>			
+				</tbody>
+			</table>
+			</div>	
+			<div>
+			<h3>Program Expenses</h3>
+			<table class="table-2">
+				<thead>
+				<tr>
+					<th>Expense</th>
+					<th>Value</th>
+				</tr>
+				</thead>					
+				<tbody>
+				<tr>
+					<td>Contributions</td>
+					<td>$468,640</td>
+				</tr>
+				<tr>
+					<td>Trip Gear, Activities</td>
+					<td>$270,761</td>
+				</tr>
+				<tr>
+					<td>Salaries, Benefits, Stipends</td>
+					<td>$169,178</td>
+				</tr>
+				<tr>
+					<td>Auto</td>
+					<td>$68,343</td>
+				</tr>
+				<tr>
+					<td>Insurance</td>
+					<td>$22,349</td>
+				</tr>
+				<tr>
+					<td>Director Travel	</td>
+					<td>$7,472</td>
+				</tr>
+				<tr>
+					<td>Accommodations	</td>
+					<td>$5,835</td>
+				</tr>
+				<tr>
+					<td>Postage and Delivery</td>
+					<td>$923</td>
+				</tr>
+				<tr>
+					<td>Depreciation</td>
+					<td>$28,597</td>
+				</tr>
+				<tr>
+					<td>Other</td>
+					<td>$1,259</td>
+				</tr>
+				<tr>
+					<td>Total Expenses</td>
+					<td>$1,043,357</td>
+				</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+			<h3>Yearly Affordable Housing Grants</h3>
+			<table class="table-2">
+				<thead>
+				<tr>
+					<th>Year</th>
+					<th>Value</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr> 
+					<td>2006</td>
+					<td>$376,820</td>
+				</tr>	
+				<tr> 
+					<td>2007</td>
+					<td>$394,998</td>
+				</tr>	
+				<tr> 
+					<td>2008</td>
+					<td>$494,609</td>
+				</tr>	
+				<tr> 
+					<td>2009</td>
+					<td>$740,044</td>
+				</tr>	
+				<tr> 
+					<td>2010</td>
+					<td>$563,569</td>
+				</tr>	
+				<tr> 
+					<td>2011</td>
+					<td>$608,023</td>
+				</tr>	
+				<tr> 
+					<td>2012</td>
+					<td>$648,857</td>
+				</tr>	
+				<tr> 
+					<td>2013*</td>
+					<td>$468,640</td>
+				</tr>	 
+				</tbody>
+			</table>
+			<small>	*Note: 2013 included slightly higher expenses, plus unanticipated and unusual attrition among riders that prevented us from reaching our overall grant goals. We have set our sights high in 2014 and look forward to reaching those marks.
+			</small>
+		
+		
+		<div>
+		<!-- <canvas id="canvas" width="400" height="300">
+		This text is displayed if your browser does not support HTML5 Canvas.
+		</canvas> -->
+		</div>
+
+	
+		
+		
+		
 	</section>
 
 	<section class="" id="support">
@@ -478,7 +781,7 @@
 				
 			
 			<h3>Board of Directors</h3>
-			<ul class="people clearfix">
+			<ul class="board clearfix">
 				<li> <img src="img/content/14contact/StevenTruong.jpg" alt="StevenTruong">
 					<strong> Steve Truong </strong> </br> 
 					<em> Chairman of the Board </em> </br>
@@ -534,7 +837,7 @@
 			</ul>
 
 			<h3>Staff</h3>
-			<ul class="people clearfix">
+			<ul class="staff clearfix">
 				<li> <img src="img/content/14contact/JustinVillere.jpg" alt="JustinVillere">
 				<strong> Justin Villere</strong> </br>
 				Director of Operations and Outreach</br>
@@ -564,5 +867,44 @@
 </section>
 
 <!-- End Index Page -->
+
+		<script type="text/javascript">
+
+		var myColor = ["#ECD078","#D95B43","#C02942","#542437","#53777A"];
+		var myData = [1000,30,20,60,40];
+
+		function getTotal(){
+		var myTotal = 0;
+		for (var j = 0; j < myData.length; j++) {
+		myTotal += (typeof myData[j] == 'number') ? myData[j] : 0;
+		}
+		return myTotal;
+		}
+
+		function plotData() {
+		var canvas;
+		var ctx;
+		var lastend = 0;
+		var myTotal = getTotal();
+
+		canvas = document.getElementById("canvas");
+		ctx = canvas.getContext("2d");
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+		for (var i = 0; i < myData.length; i++) {
+		ctx.fillStyle = myColor[i];
+		ctx.beginPath();
+		ctx.moveTo(200,150);
+		ctx.arc(200,150,150,lastend,lastend+
+		  (Math.PI*2*(myData[i]/myTotal)),false);
+		ctx.lineTo(200,150);
+		ctx.fill();
+		lastend += Math.PI*2*(myData[i]/myTotal);
+		}
+		}
+
+		plotData();
+
+		</script>
     
 <?php include_once 'footer.php' ?>

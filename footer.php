@@ -1,9 +1,14 @@
 
 
 	<footer class="clearfix" id="footer">
-		<small>All content &copy; Bike &amp; Build 2014</small></br>
-		<small>Site by <a href="http://digitalfrontiersman.com">The Digital Frontiersman</a></small>
-		
+		<nav class="external-nav"> 
+			<ul>
+				<li><a href="http://bikeandbuild.org" target=_blank> Bike &amp; Build Home </a> </li>
+				<li><a href="http://bikeandbuild.org" target=_blank> Affordable Housing Resources </a> </li>
+				<li><a href="mailto:info@bikeandbuild.org" target=_blank> Contact Us </a> </li>
+			</ul>
+		</nav>
+		<small>All content &copy; Bike &amp; Build 2014. Site by <a href="http://digitalfrontiersman.com">The Digital Frontiersman</a></small>
 	</footer>
 
  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -14,6 +19,7 @@
 	<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
 	<script src="js/swipe.js"></script>
 	<script src="js/main.js"></script>
+	
 	
 
 	<script>

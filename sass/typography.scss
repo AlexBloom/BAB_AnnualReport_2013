@@ -53,7 +53,7 @@
 body{
 	font-family:"proxima-nova",helvetica,arial,sans-serif;
 	font-size:.8em;
-	color:$dkblue;
+	color:$text-color;
 	
 	@media screen and (min-width:(em(480))){
 		font-size:1em;
@@ -67,16 +67,20 @@ body{
 30px @ 1:1.5	 
 ----------------------*/
 
+//				font-size: 2.2500em; /* 33.75px */
+//  				line-height: 1.4815em; /* 50px */
+//  			  	margin-top: 0.7407em;  
+//				margin-bottom: 0.0000em; 
 
 h1 			{   font-size: 3.0000em; /* 45px */
   				line-height: 1.1111em; /* 50px */
   			  	margin-top: 0.5556em;  
 				margin-bottom: 0.0000em;
 			}			
-h2 			{  	font-size: 2.2500em; /* 33.75px */
-  				line-height: 1.4815em; /* 50px */
-  			  	margin-top: 0.7407em;  
-				margin-bottom: 0.0000em; 
+h2 			{  	 font-size: 3.0000em; /* 45px */
+  				line-height: 1.1111em; /* 50px */
+  			  	margin-top: 0.5556em;  
+				margin-bottom: 0.0000em;
 			}
 h3 			{ 	font-size: 2.0000em; /* 30px */
   				line-height: 1.6667em; /* 50px */
@@ -147,8 +151,8 @@ blockquote{
 	float:left;  
 	font-style:italic; 
 	font-weight:400; 
-	padding: 0 0 0 2em; 
-	margin: 2em 0 2em;
+	padding: 0 0 0 3em; 
+	margin: 2em 0;
 	@media screen and (min-width:(em(800))){
 		font-size:1.25em;
 	}
@@ -157,9 +161,11 @@ blockquote{
 blockquote:before{
 	content:"\201c";
 	font-size:5em;
-	text-indent:-1.25em;
+	font-weight:300;
+	text-indent:-0.75em;
 	margin-top:.25em;
 	float:left;
+	opacity:0.25;
 }
 
 figure{

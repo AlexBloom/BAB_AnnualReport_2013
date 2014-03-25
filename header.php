@@ -25,18 +25,18 @@
 
 <body> 
 
-	<header class="clearfix" id="header">
-
-			<div class="" id="toggle">
-				TOC <!-- <span class="icon icon-plus"></span> -->
-			</div>
-			
+	<header class="clearfix" id="header">			
 			<div id="logo">
-				<img src="img/ui/bb-logo.gif" alt="Bike And Build Logo">
+				<img src="img/ui/bb-logo.gif" alt="Bike And Build Logo">		        
 			</div>
 
 	<nav  class="clearfix" id="primary-nav" class="closed">
-		
+	
+		<div class="" id="toggle-btn">
+	        <button type="button" id="toggle" role="button" aria-label="Toggle Navigation" class="lines-button x2">
+	          <span class="lines"></span>
+	        </button>
+		</div>
 		<!-- <h5>Table of Contents</h5> -->
 		<ol id="primary">
 			<li> <a href="#intro"> 				<span class="toc-number">01 </span>	<span class="toc-name"> Introduction				</span>	</a> </li>
@@ -54,9 +54,9 @@
 			<li> <a href="#getinvolved"> 		<span class="toc-number">13 </span>	<span class="toc-name"> How To Get Involved			</span>	</a> </li>
 			<li> <a href="#contact"> 			<span class="toc-number">14 </span>	<span class="toc-name"> Contact						</span>	</a> </li>
 		</ol>
-		
-		<a class="" id="top" href="#intro"> <span class="icon icon-up"></span> </a>
 	
+		<a class="" id="top" href="#intro"> <span class="icon icon-up"></span> </a>
+
 	</nav>
 
 	</header>

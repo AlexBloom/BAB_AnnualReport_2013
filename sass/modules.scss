@@ -9,7 +9,7 @@
 a, ul a, p a{
 	color:inherit;
 	text-decoration:underline;
-	@include quarter-second-transition;	
+	//@include quarter-second-transition;	
 	
 	&:hover{
 	color:$action-color;
@@ -110,7 +110,6 @@ li{
 		}
 	}
 }
-
 .three-columns{
 	list-style-type:none;
 	margin:0;
@@ -135,21 +134,37 @@ li{
 	}
 }
 
+
+/* ======================================================== LAYOUTS */
+
+
+
 /* ======================================================== LOGO / TOGGLE / NAVIGATION  */
 
 #header{	
-	#logo, #toggle{
+	#logo{
 		position:fixed;
+		width:3.5em;
+		height:3.5em;
+		right:0;
+		padding:.75em;
+	}
+	#toggle-btn{
+		position:absolute;
+		width:100%;
+		background-color:$white;
+		margin:0;
+		padding: 1em .9em;
+	}
+	
+	#logo, #toggle-btn{
+		display:block;
 		top:0;
 		z-index:1000;
-		
 		cursor:pointer;
 		text-decoration:none;
-		display:block;
-		padding:.75em;
 		text-transform:uppercase;
-		letter-spacing: .15em;
-		@include quarter-second-transition;
+		//@include quarter-second-transition;
 		img{
 			width:100%;
 			@include perfect-circle;
@@ -160,38 +175,168 @@ li{
 			}
 		}		
 	}
-	#logo{
-		width:3.5em;
-		height:3.5em;
-		right:0;
-	}
+	
 	#toggle{
-		background-color:$dark-grey;
-		color:$white;
-		border-right:1px solid $medium-grey;
-		border-bottom:1px solid $medium-grey;
-		width:4em;
 		left:0;
-		padding:1em 0;
+		padding:0;
+		margin: 0 auto;
 		text-align:center;
-		//overflow:hidden;
+		outline:none;
+		background-color:transparent!important;
+		&:hover, &:active{
+			background-color:transparent !important;
+		}
 	}
 }
+
+#top{
+	position:absolute;
+	bottom:0;
+	z-index:1000;
+	display:block;
+	padding:1em 0;
+	width:100%;
+	font-size:1em;	
+	color:$red;
+	background-color:$white;
+	border-top:1px solid $ltblue;
+	text-decoration:none;
+	//@include quarter-second-transition;
+	
+	.icon-up{
+		display:block;
+		width:1em;
+		margin:0 auto;
+	}
+	
+	&:hover{
+		opacity:1;
+		color:$action-color;
+	}
+	&:active{
+		opacity:1;
+		color:$action-color;
+	}
+}
+
+
+//BEGIN MENU ICON
+$button-size : 2em; 
+//common to all three-liners
+.lines-button {
+  padding: $button-size/4 $button-size/4;
+  transition: .1s;
+  cursor: pointer;
+  user-select: none;
+  border-radius: $button-size/8;
+  &:hover {
+    //opacity: 1;
+  }
+  &:active {
+    transition: 0;
+  }
+}
+//common to all three-liners
+@mixin line {
+  display: inline-block;
+  width: $button-size;
+  height: $button-size/8;
+  background-color: $red;
+  border-radius: $button-size/12; 
+  transition: .1s;
+}
+//common to all three-liners
+.lines {
+  @include line;
+  position: relative; 
+  &:before, &:after {
+   @include line;
+    position: absolute;
+    left:0;
+    content: '';
+    -webkit-transform-origin: $button-size/14 center;
+            transform-origin: $button-size/14 center;
+  }
+  &:before { 
+    top: $button-size/4; 
+	width:$button-size/1.25; 
+  }
+  &:after { 
+    top: -$button-size/4;
+	width:$button-size/1.25;  
+  }
+}
+//common to all three-liners
+.lines-button:hover {
+	
+  .lines {
+	  
+    &:before { 
+      //top: $button-size/3.5;
+	  width:$button-size; 
+    }
+    &:after { 
+      //top: -$button-size/3.5;
+	  width:$button-size; 
+    }
+  }
+}
+.lines-button.close {
+  -webkit-transform: scale3d(.8,.8,.8);
+          transform: scale3d(.8,.8,.8);
+}*
+//x2 transitions
+.lines-button.x2{
+    .lines{
+      transition: background .1s .1s ease;
+
+      &:before, &:after{
+        //set transform origin
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+        transition: top .1s .2s ease, -webkit-transform .1s ease;
+        transition: top .1s .2s ease, transform .1s ease;
+      }
+    }
+}
+.lines-button.x2.close{
+  .lines {
+    transition: background .1s 0s ease;
+    background: transparent;
+
+    &:before, &:after{
+      transition: top .1s ease, -webkit-transform .1s .2s ease;//delay the formation of the x till the minus is formed  
+      transition: top .1s ease, transform .1s .2s ease;//delay the formation of the x till the minus is formed  
+      top:0;
+      width: $button-size;
+    }
+    &:before{
+      -webkit-transform: rotate3d(0,0,1,45deg); 
+              transform: rotate3d(0,0,1,45deg); 
+    }
+    &:after{
+      -webkit-transform: rotate3d(0,0,1,-45deg); 
+              transform: rotate3d(0,0,1,-45deg); 
+    }
+  }
+}
+//END MENU ICON
+
+
 
 #primary-nav{
 	position:fixed;
 	border-right:1px solid $medium-grey;
 	width:70%;
 	padding:2.5em 0 3.5em 0;
-	background-color:$dark-grey;
 	z-index:999;
 	top:0;
 	bottom:0;
 	left:0;
 	max-width:20em;
-	overflow-y:scroll;
+	overflow-y:hidden;
 	overflow-x:hidden;
-	@include quarter-second-transition;		
+	//@include quarter-second-transition;		
 	
 	h3{
 		color:$dkblue;		
@@ -199,27 +344,30 @@ li{
 }
 
 .primary, nav ol {
+	position:absolute;
+	width:20em;
+	padding:2.5em 0 3.5em 0;
+	background-color:$white;
+	z-index:999;
+	top:0;
+	bottom:0;
+	left:0;
+	overflow-y:scroll;
 	list-style-type:none;
-	padding: 0;
 	width:100%;
-	color:$white;
+	color:$dkblue;
 	margin:1em 0 .5em;
 	li{
-		&:hover{
-			color:$red;
-			}
-		&:active{
-			color:$red;
-		}
 		a{
 			display:block;
+			position:relative;
 			text-decoration:none;
 			margin:0;
 			font-size:1em;
 			padding:.75em 1.5em;
 			line-height:150%;
 			&:hover{background-color:$white;color:$red;text-decoration:none;}
-			&:active{background-color:$white;color:$red;text-decoration:none;}
+			&:active{background-color:$red;color:$white;text-decoration:none;}
 			
 		}	
 	}
@@ -228,20 +376,25 @@ li{
 	}
 	.toc-name{
 		opacity:0;
-		display:none;
+		width:16em;
+		display:block;
+		position:absolute;
+		top:.75em;
+		left:4em;
 	}
 }
 
 #primary-nav.open{
 	opacity:1;
 	max-width:auto;
+	@include quarter-second-transition;	
 	.toc-name{
-		opacity:1;
-		display:inline;
+		opacity:1;		
 	}
 }
 #primary-nav.closed{
-	max-width:4em;	
+	max-width:4em;
+	@include quarter-second-transition;		
 }
 
 .fadeout{
@@ -273,11 +426,91 @@ li{
 
 /* LAYOUT ====================== */
 body{
-	margin:0;
+	margin:0 0 0 4em;
 	padding:0;
 }
+
+.col1, .col2, .col2wide, .col3,
+.col4, .col5, .col6 {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	text-indent:none;
+	text-align:left;
+	width:100%;
+	>div, >li{
+		float:left;
+		padding:1em;
+		width:95%;
+		padding:1em 2.5%;
+	}
+}
+.col2, .col4, .col6{	
+	@media screen and (min-width:(em(480))){
+		>div, >li{
+			width:45%;
+			padding:1em 2.5%;
+		}
+	}
+}
+
+.col2wide{	
+	@media screen and (min-width:(em(800))){
+		>div, >li{
+			width:45%;
+			padding:1em 2.5%;
+		}
+	}
+}
+
+.col3, .col6{
+	@media screen and (min-width:(em(600))){
+		>div:first-child, >div:last-child, >li:first-child, >li:last-child{
+			width:29%;
+			padding:1em 4% 1em 0;
+		}
+		>div, >li{
+			width:30%;
+			padding:1em 4% 1em 0;
+		}
+	}
+}
+.col4{
+	@media screen and (min-width:(em(800))){
+		>div, >li{
+			width:20%;
+			padding:1em 5% 1em 0;
+		}
+	}
+}
+.col5{
+	@media screen and (min-width:(em(800))){
+		>div, >li {
+			width:15%;
+			padding:1em 5% 1em 0;
+		}
+	}
+}
+.col6{	
+	@media screen and (min-width:(em(800))){
+		>div, >div:first-child, >div:last-child, >li, >li:first-child, >li:last-child{
+			width:13%;
+			padding:1em 3.66% 1em 0;
+		}
+
+	}
+}
+
+
+
+
+
+.overflow-hidden{
+	overflow:hidden;
+}
 #main{
-	margin-left:4em;
+	@include quarter-second-transition;	
+	width:100%;
 	>section{
 		padding:2em 0;
 		margin:0;
@@ -285,7 +518,13 @@ body{
 		z-index:1;
 	}
 }
-
+.menu-open{
+	margin-left:16em;
+	
+}
+.menu-closed{
+	margin:0;
+}
 .overlay-wrap{
 	position:absolute;
 	z-index:2;
@@ -315,14 +554,21 @@ body{
 	}
 }
 
+
+
+
 //Articles / Content 
 article{
 	position:relative;
-	//width:100%;
 	text-align:left;
 	width:80%;
 	margin:3em auto;
 	max-width:50em;
+	
+	@media screen and (min-width:(em(800))){
+		width:80%;
+		margin:3em 0 3em 10%;
+	}
 	
 	header, footer{
 		width:90%;
@@ -373,6 +619,132 @@ article{
 }
 
 
+//Fluid Full-Screen Videos
+.video-overlay{
+	display:none;	
+	position:fixed;	
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index:499;
+	.video-inner{
+		position: absolute;
+		height: auto;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: $black;
+	}
+	iframe{
+		width: 100%;
+		height: 100%;
+	}
+}
+.close-video{
+	position:absolute;
+	top:0;
+	right:0;
+	margin:0;
+	padding:1em;
+	opacity:0.5;
+	//font-size:2em;
+	&:hover{
+		opacity:1;
+	}
+		.icon-close{
+			display:block;
+			vertical-align:bottom;
+			margin:0;
+			width:1em;
+			height:1em;
+			padding:.25em;
+			border:4px solid $white;
+			font-size:2em;
+			@include perfect-circle;
+		}
+}
+
+
+// Fluid Width Videos
+.flexvideo-16-9 {
+	position: relative;
+	padding:0 0 56.5% 0;
+	height: 0;
+	margin: 1em 0;
+}
+.flexvideo-16-9 iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+//Tables
+
+.table, .table-2, .table-3{
+	width:100%;
+	margin:2em 0;
+	text-align:right;
+	color:$dkblue;
+	tr{
+		&:last-child{
+			font-weight:bold;
+			text-transform:uppercase;
+		}
+	}
+	thead{
+		text-transform:uppercase;
+		letter-spacing:.1em;
+		font-weight:900;
+		border-bottom:2px solid $ltblue;
+	}
+	tbody{
+		-webkit-font-feature-settings: 'tnum';
+		-moz-font-feature-settings: 'tnum';
+		-ms-font-feature-settings: 'tnum';
+		//font-family:courier,monospace;
+	}
+	th{
+		margin:1em 0;
+		//width:40%;
+	}
+	td{
+		border-bottom:1px dotted $light-grey;
+		//width:50%;
+		font-family:monospace;
+	}
+	th,td{
+		padding:.5em 1em .5em 0;
+		&:first-child{
+			text-align:left;
+			font-family:"proxima-nova", sans-serif;
+		}
+		&:last-child{
+			padding:.5em 0 .5em 1em!important;
+		}
+	}	
+}
+.table-2{
+	th,td{
+		&:first-child{
+			width:80%;
+		}
+	}
+}
+.table-3{
+	th,td{
+		&:first-child{
+			width:70%;
+		}
+	}
+}
 
 //Swipe Classes
 .swipe {
@@ -456,26 +828,4 @@ article{
 	padding:1em 0;
 	text-align:center;
 	
-}
-#top{
-	position:fixed;
-	bottom:0;
-	z-index:1000;
-	display:block;
-	padding:1em 1.5em;
-	font-size:1em;	
-	color:$medium-grey;
-	background-color:$dark-grey;
-	color:$white;
-	border-top:1px solid $ltblue;
-	text-decoration:none;
-	@include quarter-second-transition;
-	&:hover{
-		opacity:1;
-		color:$action-color;
-	}
-	&:active{
-		opacity:1;
-		color:$action-color;
-	}
 }
