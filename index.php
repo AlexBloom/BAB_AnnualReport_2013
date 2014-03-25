@@ -63,10 +63,10 @@
 		<article>
 			<h2>What Is Bike &amp; Build?</h2>
 			<h3> Our Vision </h3>
-			<p>We envision future generations that are committed to a lifetime of civic engagement and inspire individuals and communities to create fair, decent housing for all Americans.
+			<p class="intro">We envision future generations that are committed to a lifetime of civic engagement and inspire individuals and communities to create fair, decent housing for all Americans.
 			</p>
 			<h3> Our Mission </h3>
-			<p>Through service-oriented cycling trips, Bike &amp; Build benefits affordable housing and empowers young adults for a lifetime of service and civic engagement.
+			<p class="intro">Through service-oriented cycling trips, Bike &amp; Build benefits affordable housing and empowers young adults for a lifetime of service and civic engagement.
 			</p>
 		</article>
 	</section>
@@ -76,13 +76,27 @@
 		<h3> Organizational Figures </h3>
 		<section class="figures clearfix swipe" id="orgfigures">	
 			<div class="swipe-wrap">	
-				<div> <span class="numbers"> $459,140 </span> <p> donated</p> </div>
-				<div> <span class="numbers"> 920,000</span>  <p> miles pedaled</p> </div>
-				<div> <span class="numbers"> 21,000 </span> <p> build hours</p></div>
-				<div> <span class="numbers"> 119 </span> <p> build sites</p> </div>
-				<div> <span class="numbers"> 286 </span> <p> riders</p> </div>
-				<div> <span class="numbers"> 319 </span> <p> grant organizations</p> </div>
-				<div> <span class="numbers"> $4,877</span>  <p> average raised per rider</p> </div>
+				<div id="figure-donated">	
+					<span class="numbers"> $459,140 </span> <h4> donated</h4> 
+				</div>
+				<div id="figure-pedaled"> 
+					<span class="numbers">920,000</span>  <h4> miles pedaled</h4>
+				</div>
+				<div id="figure-buildhours"> 
+					<span class="numbers">21,000 </span> <h4> build hours</h4>
+				</div>
+				<div id="figure-buildsites"> 
+					<span class="numbers">119 </span> <h4> build sites</h4> 
+				</div>
+				<div id="figure-riders"> 
+					<span class="numbers">286 </span> <h4> riders</h4> 
+				</div>
+				<div id="figure-organizations"> 
+					<span class="numbers">319 </span> <h4> grant organizations</h4>
+				</div>
+				<div id="figure-averageraised"> 
+					<span class="numbers">$4,877</span>  <h4> average raised per rider</h4> 
+				</div>
 			</div>
 			<div class="button prev" onclick='orgfigures.prev()'> <span class="icon icon-left"> </span> </div> 
 	    	<div class="button next" onclick='orgfigures.next()'> <span class="icon icon-right"> </span> </div>

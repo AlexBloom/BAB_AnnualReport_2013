@@ -258,18 +258,30 @@ a, ul a, p a {
 button {
   color: white;
   background-color: transparent;
-  padding: 1em;
+  padding: .25em;
   margin: 1em;
-  border: 1px solid transparent;
+  outline: none;
+  border: 0.25em solid white;
   -webkit-transition-duration: .25s;
   -moz-transition-duration: .25s;
   -ms-transition-duration: .25s;
   -o-transition-duration: .25s;
-  transition-duration: .25s; }
+  transition-duration: .25s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+  button .icon-play {
+    font-size: .5em;
+    display: block;
+    width: .5em;
+    height: .5em;
+    padding: 0.25em 0.55em 0.75em 0.45em !important;
+    margin: 0 !important; }
   button:hover {
     color: #e2231a;
-    background-color: white;
-    border: 1px solid transparent; }
+    background-color: white; }
   button:hover {
     color: #e2231a;
     background-color: white; }
@@ -373,11 +385,11 @@ li img {
   text-transform: uppercase; }
   #header #logo img, #header #toggle-btn img {
     width: 100%;
-    -webkit-border-radius: 50em;
-    -moz-border-radius: 50em;
-    -ms-border-radius: 50em;
-    -o-border-radius: 50em;
-    border-radius: 50em; }
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
 #header #toggle {
   left: 0;
   padding: 0;
@@ -723,11 +735,11 @@ article {
       width: 8em;
       margin: 0 1em;
       border: 2px solid white;
-      -webkit-border-radius: 50em;
-      -moz-border-radius: 50em;
-      -ms-border-radius: 50em;
-      -o-border-radius: 50em;
-      border-radius: 50em; }
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
       @media screen and (min-width: 86.66667em) {
         article aside img {
           width: 100%;
@@ -785,11 +797,11 @@ article {
     padding: .25em;
     border: 4px solid white;
     font-size: 2em;
-    -webkit-border-radius: 50em;
-    -moz-border-radius: 50em;
-    -ms-border-radius: 50em;
-    -o-border-radius: 50em;
-    border-radius: 50em; }
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
 
 .flexvideo-16-9 {
   position: relative;
@@ -853,6 +865,19 @@ article {
   float: left;
   width: 100%;
   position: relative; }
+
+.z-up {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  z-index: 2; }
+
+.bg-img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  top: 0;
+  left: 0; }
 
 .article-slider {
   background-image: url(../img/content/prototype/project-image.jpg);
@@ -952,11 +977,11 @@ article {
       display: block;
       clear: both;
       margin-bottom: 1em;
-      -webkit-border-radius: 50em;
-      -moz-border-radius: 50em;
-      -ms-border-radius: 50em;
-      -o-border-radius: 50em;
-      border-radius: 50em; }
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
     .jury-members li span {
       width: 100%; }
     @media screen and (min-width: 32em) {
@@ -1066,11 +1091,11 @@ article {
       width: 33%;
       display: block;
       float: left;
-      -webkit-border-radius: 50em;
-      -moz-border-radius: 50em;
-      -ms-border-radius: 50em;
-      -o-border-radius: 50em;
-      border-radius: 50em;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
       margin: 0 1em 2em 0; }
     .key-speakers li span {
       width: 100%;
@@ -1137,10 +1162,6 @@ h1 {
   color: white;
   background-color: #e2231a; }
 
-#accomplishments {
-  background-color: #031d40;
-  color: #67b2e7; }
-
 .figures {
   list-style-type: none;
   margin: 0;
@@ -1162,6 +1183,27 @@ h1 {
     @media screen and (min-width: 53.33333em) {
       .figures .numbers {
         font-size: 8em; } }
+
+#figure-donated {
+  background-image: url(../img/content/05accomplishments/figures/figure_donated.jpg); }
+
+#figure-pedaled {
+  background-image: url(../img/content/05accomplishments/figures/figure_pedaled.jpg); }
+
+#figure-buildhours {
+  background-image: url(../img/content/05accomplishments/figures/figure_buildhours.jpg); }
+
+#figure-buildsites {
+  background-image: url(../img/content/05accomplishments/figures/figure_buildsites.jpg); }
+
+#figure-riders {
+  background-image: url(../img/content/05accomplishments/figures/figure_riders.jpg); }
+
+#figure-organizations {
+  background-image: url(../img/content/05accomplishments/figures/figure_organizations.jpg); }
+
+#figure-averageraised {
+  background-image: url(../img/content/05accomplishments/figures/figure_averageraised.jpg); }
 
 #orgfigures {
   padding: 2em 0; }
@@ -1185,22 +1227,22 @@ h1 {
     .fundraisers li img {
       width: 80%;
       margin: 0 10%;
-      -webkit-border-radius: 50em;
-      -moz-border-radius: 50em;
-      -ms-border-radius: 50em;
-      -o-border-radius: 50em;
-      border-radius: 50em; }
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
     @media screen and (min-width: 53.33333em) {
       .fundraisers li {
         width: 15%; }
         .fundraisers li img {
           width: 100%;
           margin: 0;
-          -webkit-border-radius: 50em;
-          -moz-border-radius: 50em;
-          -ms-border-radius: 50em;
-          -o-border-radius: 50em;
-          border-radius: 50em; } }
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%; } }
 
 #scholarship {
   color: #031d40;
@@ -1276,11 +1318,11 @@ h1 {
       margin: 0 20% 2em 20%;
       display: block;
       clear: both;
-      -webkit-border-radius: 50em;
-      -moz-border-radius: 50em;
-      -ms-border-radius: 50em;
-      -o-border-radius: 50em;
-      border-radius: 50em; }
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
     .board li span, .staff li span {
       width: 100%; }
     @media screen and (min-width: 32em) {

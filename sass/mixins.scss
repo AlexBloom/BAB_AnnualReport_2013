@@ -58,11 +58,11 @@ border-radius:1em;
 }
 
 @mixin perfect-circle{
-	-webkit-border-radius: 50em;
-	-moz-border-radius: 50em;
-	-ms-border-radius: 50em;
-	-o-border-radius: 50em;
-	border-radius:50em;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius:50%;
 }
 
 @mixin drop-shadow{

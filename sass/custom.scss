@@ -302,8 +302,8 @@ h1{
 
 //05accomplishments
 #accomplishments{
-	background-color:$dkblue;
-	color:$ltblue;
+	//background-color:$dkblue;
+	//color:$ltblue;
 }
 .figures{
 	list-style-type:none;
@@ -320,7 +320,6 @@ h1{
 		
 
 	}
-	
 	.numbers{
 		display:block;
 		width:90%;
@@ -334,10 +333,33 @@ h1{
 	}
 }
 
+#figure-donated{
+	background-image:url(../img/content/05accomplishments/figures/figure_donated.jpg);
+}
+#figure-pedaled{
+	background-image:url(../img/content/05accomplishments/figures/figure_pedaled.jpg);
+}
+#figure-buildhours{
+	background-image:url(../img/content/05accomplishments/figures/figure_buildhours.jpg);
+}
+#figure-buildsites{
+	background-image:url(../img/content/05accomplishments/figures/figure_buildsites.jpg);
+}
+#figure-riders{
+	background-image:url(../img/content/05accomplishments/figures/figure_riders.jpg);
+}
+#figure-organizations{
+	background-image:url(../img/content/05accomplishments/figures/figure_organizations.jpg);
+}
+#figure-averageraised{
+	background-image:url(../img/content/05accomplishments/figures/figure_averageraised.jpg);
+}
+
+
+
 #orgfigures{
 	padding:2em 0;
 }
-
 .numbers{
 	display:block;
 	font-size:3em;
@@ -347,7 +369,6 @@ h1{
 		font-size:4em;
 	}
 }
-
 .fundraisers{
 	list-style-type:none;
 	padding:0;

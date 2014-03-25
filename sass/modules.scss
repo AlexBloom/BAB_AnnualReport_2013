@@ -27,14 +27,25 @@ a, ul a, p a{
 button{
 	color:$white;
 	background-color:transparent;
-	padding:1em;
+	padding:.25em;
 	margin:1em;
-	border:1px solid transparent;
+	outline:none;
+	border:.25em solid $white;
 	@include quarter-second-transition;	
+	@include perfect-circle;
+	
+	.icon-play{
+		font-size:.5em;
+		display:block;
+		width:.5em;
+		height:.5em;
+		padding:.25em .55em .75em .45em!important;
+		margin:0!important;
+	}
+	
 	&:hover{
 	color:$action-color;
-	background-color:$white;
-	border:1px solid transparent;	
+	background-color:$white;	
 	}
 	&:hover{
 	color:$action-color;
@@ -761,12 +772,25 @@ article{
   }
   
 }
-.swipe-wrap > div {
+.swipe-wrap >div {
   float:left;
   width:100%;
   position: relative;
 }
 
+.z-up{
+	position:absolute;
+	top:25%;
+	width:100%;
+	z-index:2;
+}
+.bg-img{
+	position:absolute;
+	z-index:0;
+	width:100%;
+	top:0;
+	left:0;
+}
 .article-slider{
 	background-image:url(../img/content/prototype/project-image.jpg);
 	background-size:cover;
