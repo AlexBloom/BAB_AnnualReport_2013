@@ -302,7 +302,7 @@ h1{
 
 //05accomplishments
 #accomplishments{	
-	h2, h3, h4{
+	h2, h3{
 		color:$ltblue;
 	}
 	
@@ -417,11 +417,12 @@ h1{
 }
 //06scholarships
 #scholarship{
-	color:$dkblue;
-	background-color:$ltblue;
+	//color:$dkblue;
+	//background-color:$ltblue;
 	
 	aside{
 		top:0;
+		//color:$ltblue;
 	}
 }
 
@@ -466,6 +467,21 @@ background-image:url(../img/content/07grantees/grantee_colorado.jpg);
 #riders{
 	color:$ltblue;
 	background-color:$dkblue;
+	
+	.routename{
+		font-size:.5em;
+		font-weight:600;
+		//text-transform:uppercase;
+		vertical-align:middle;
+		&:before{content:"(";margin:0 .25em; font-size:1.25em}
+		&:after{content:")";margin:0 .25em; font-size:1.25em}
+	}
+	
+	.currentlocation{
+		font-size:1em;
+		text-transform:uppercase;
+		letter-spacing:.25em;
+	}
 }
 
 //10alumni

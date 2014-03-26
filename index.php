@@ -45,14 +45,14 @@
 	
 		<div class="overlay-wrap">
 			<div class="floating-text" id="">
-				<h2>The Affordable Housing Shortage</br>
-					<button class="play-video" id="play-home"> <span class="icon icon-play"></span> </button>
-				</h2>
+				<h2>Why We Ride</h2>
+				<button class="play-video circle" id="play-home"> <span class="icon icon-play"></span> </button>
+				<p class="intro">A Look at the Affordable Housing Cause.</p>
 			</div>
 		</div>
 		<div class="video-overlay">
 			<div class="video-inner">
-				<button class="close-video" id="close-home"> <span class="icon icon-close"></span> </button>
+				<button class="close-video circle" id="close-home"> <span class="icon icon-close"></span> </button>
 				<iframe width="100%" src="//www.youtube.com/embed/lhfpxB8MADs" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
@@ -77,7 +77,7 @@
 			<div class="swipe-wrap">	
 				<div class="figure-slider" id="figure-donated">	
 					<div class="wrapper">
-					<span class="numbers"> $459,140 </span> <h4> donated</h4> 
+					<span class="numbers"> $468,640 </span> <h4> donated</h4> 
 					</div>
 				</div>
 				<div class="figure-slider" id="figure-pedaled"> 
@@ -92,7 +92,7 @@
 				</div>
 				<div class="figure-slider" id="figure-buildsites"> 
 					<div class="wrapper">
-					<span class="numbers">119 </span> <h4> build sites</h4> 
+					<span class="numbers">119 </span> <h4> build days</h4> 
 					</div>
 				</div>
 				<div class="figure-slider" id="figure-riders"> 
@@ -178,11 +178,11 @@
 			</div>
 			<div>
 			<h3> Bike &amp; Build Scholarship </h3>
-			<p class="intro">Bike &amp; Build offered its first every scholarship for riders from underprivileged backgrounds to participate. Actually, we awarded two! Check out those stories <a href="#scholarship">on page 6.</a></p>
+			<p class="intro">Bike &amp; Build offered its first scholarship for riders from underprivileged backgrounds to participate. Actually, we awarded two! Check out those stories <a href="#scholarship">on page 6.</a></p>
 			</div>
 		</div>
 	
-		<h3> Top fundraisers </h3>
+		<h3> 2013's Top Fundraisers </h3>
 		<ul class="fundraisers clearfix">
 			<li>
 				<img src="img/content/05accomplishments/fundraisers/Anna.jpg" alt="Anna">	
@@ -217,18 +217,18 @@
 
 		<p>Da’Quan, Daniel, and their teammates pedaled 556 miles from Richmond, VA to Philadelphia as part of The Capital Ride in July. They cumulatively volunteered 312 build hours with 4 affordable housing orgs, advocated for the cause in 9 host communities, and raised $22,455.11 to support Bike & Build and Rebuilding Together Philadelphia.</p>
 
-		<blockquote>“Bike & Build gave me a personal perspective of how the affordable housing cause affects communities outside of my own,” Da’Quan said afterwards. “It also made me realize that I can do something about it. It’s inspiring to serve others and be a part of the solution.” </blockquote>
-		<small> Da’Quan recently enlisted in the Navy, but hopes to lead a Bike & Build trip one day. </small>
+		<blockquote>Bike & Build gave me a personal perspective of how the affordable housing cause affects communities outside of my own,” Da’Quan said afterwards. “It also made me realize that I can do something about it. It’s inspiring to serve others and be a part of the solution.” <small>  <span class="quoteauth">Da'Quan Tucker</span> <span class="authnote">Da’Quan recently enlisted in the Navy, but hopes to lead a Bike & Build trip one day.</span> </small> </blockquote>
+		
 
-		<p>This summer, scholarship recipients will participate in Coastal Drift, Bike & Build’s inaugural ride from Bar Harbor, ME to New York City. Coastal Drift offers the Bike & Build experience condensed into a three week period. Daniel, now a freshman at the University of Delaware, spoke of the value of the experience. “You aren’t just sitting back and talking about helping others. You are actually doing it.”</p> 
+		<p>This summer, scholarship recipients will participate in <a href="http://coastaldrift.org"target=_blank>Coastal Drift,</a> Bike & Build’s inaugural ride from Bar Harbor, ME to New York City. Coastal Drift offers the Bike & Build experience condensed into a three week period. Daniel, now a freshman at the University of Delaware, spoke of the value of the experience. “You aren’t just sitting back and talking about helping others. You are actually doing it.” Learn more at <a href="http://coastaldrift.org"target=_blank>coastaldrift.org.</a></p> 
 		
 			<aside>
-				<strong> You can help Bike &amp; Build provide two full scholarships in 2014.</strong> 
+				<strong> You can help Bike &amp; Build provide four full scholarships in 2014.</strong> 
 				<p> Donate one of two ways</p>
 				<ol>
-					<li>Online by clicking on the <a href="http://bikeandbuild.org/donate"target=_blank>Donate button</a></li>
+					<li>Online here <button><a href="http://www.bikeandbuild.org/scholarship_support"target=_blank>Donate</a></button> </li>
 					<li>
-						Mail checks payable to “Bike & Build” to our office. Write “Scholarship” in the memo.<br>
+						Mail checks payable to “Bike &amp; Build” to our office. Write “Scholarship” in the memo.<br>
 						Bike &amp; Build Inc. <br>
 						6153 Ridge Avenue<br>
 						Philadelphia, PA 19128<br>
@@ -243,7 +243,7 @@
 
 	<section class="" id="grantees">
 		<article>
-			<h2>Grantee Profiles</h2>
+			<h2>Bike & Build Grants</h2>
 			<aside>
 			<strong>Interested in applying for a Bike &amp; Build Grant?</strong> 
 			<p>We fund projects that engage young adults in addressing a demonstrated need in affordable housing. 2014 applications will be available in April and due Friday, June 6. We accept requests from 501(c)(3) organizations between $500 and $10,000. Visit <a href="http://bikeandbuild.org/grants"target=_blank>bikeandbuild.org/grants</a> for application materials.</p>		
@@ -251,15 +251,16 @@
 		
 			<p class="intro"> Bike &amp; Build provides funds to organizations in four ways</p>
 			<ol>
-				<li>The aforementioned Competitive Grant Program. We invite any nonprofit in the U.S. with a project that engages young adults in the affordable housing cause to apply. Applications are available in early April and information can be found at www.bikeandbuild.org/grants. The program is unique in that our riders decide which projects are funded.</li>	
+				<li>Our Competitive Grant Program. We invite any nonprofit in the U.S. with a project that engages young adults in the affordable housing cause to apply. Applications are available in early April and information can be found at <a href="http://bikeandbuild.org/grants"target=_blank> www.bikeandbuild.org/grants</a>. The program is unique in that our riders decide which projects are funded.</li>	
 				<li>Each rider has the opportunity to designate a $500 Rider Grant to the affordable housing organization of their choice.</li>
 				<li>As a thank you to the hosts who so generously provide us with shelter, food, and showers, we empower them to declare an On the Road beneficiary, an affordable housing organization of their choice that receives $100 for hosting Bike & Build.</li> 
-				<li>Bike & Build provides Pre-Arranged Contributions to a few organizations in exchange for key programmatic necessities, such as a support van. </li>		
-			</ol>
-
-			<p>Perhaps the most important task our riders have each summer is awarding the competitive grants to our affordable housing partner organizations. These proposals yield innovative and inspiring projects across the country. Here are just a few of the 40 grants that Bike & Build supported in 2013.</p>  
-
-			
+				<li>Bike & Build provides Pre-Arranged Contributions to a few organizations in exchange for key programmatic necessities, such as our Blitz Build with Pikes Peak Habitat for Humanity in Colorado Springs.</li>		
+			</ol> 
+		</article>
+		
+		<article>
+			<h2>Grantee Profiles</h2>
+			<p class="intro">Perhaps the most important task our riders have each summer is awarding the competitive grants to our affordable housing partner organizations. These proposals yield innovative and inspiring projects across the country. Here are just a few of the 40 grants that Bike & Build supported in 2013.</p>
 		</article>
 		
 		<section class="clearfix swipe" id="highlighted-grantees">	
@@ -333,10 +334,10 @@
 		<article>
 			<h2>Rider Spotlights</h2>
 
-			<p class="intro">Over 250 riders participated in Bike & Build in 2013, coming from all across the country. Their numerous backgrounds and interests meshed into single units, with each trip supporting hundreds communities as they pedaled west.  Many of our riders commit to continuing their service long after Bike & Build is complete. These stories of service are but a few of the many that former Bike & Build riders pursue every year. </p>
+			<p class="intro">286 riders participated in Bike & Build in 2013, coming from all across the country. Their numerous backgrounds and interests meshed into single units, with each trip supporting hundreds communities as they pedaled west.  Many of our riders commit to continuing their service long after Bike & Build is complete. These stories of service are but a few of the many that former Bike & Build riders pursue every year. </p>
 
-			<h3>Kristin Anderson and Melissa Panter </h3>
-			<h4>Maine to Santa Barbara ’13 – Salem, MA</h4>
+			<h3>Kristin Anderson &amp; Melissa Panter <span class="routename">Maine to Santa Barbara ’13</span> </h3>
+			<p class="currentlocation">Now in – Salem, MA</p>
 		
 			<aside class="clearfix">
 				<img src="img/content/09riders/MelissaKristin.jpg" alt="Melissa And Kristin">
@@ -358,8 +359,8 @@
 			<p><span class="speaker">MP</span> Being able to see Kristin every day at work has really helped with the transition to real world! We both understand each other’s struggles with not being on the road anymore. On the trip we called Kristin ‘Mom’. She was our rock and coming back into the real world she is still my rock that keeps Bike & Build fresh.</p>
 			<p><span class="speaker">KA</span> I love working with Melissa. It’s nice to have somebody who really gets what North Shore is doing, carrying on the energy and spirit of Bike & Build in this office. And she’s right, it’s great to have somebody to reminisce with too! </p>
 
-			<h3>Zoe Nemever</h3>
-			<h4>Central US ’13 – Charlotte, NC</h4>
+			<h3>Zoe Nemever <span class="routename">Central US ’13</span></h3>
+			<p class="currentlocation">Now in – Charlotte, NC</p>
 			<aside class="clearfix">
 				<img src="img/content/09riders/Zoe.jpg" alt="Zoe">
 				<small>After Bike & Build, Zoe began an AmeriCorps term with Habitat for Humanity of Charlotte in North Carolina. She is also an AmeriCorps*NCCC alum, having served several years ago out of the Vicksburg, MS campus doing Hurricane Katrina recovery in the Gulf Coast.</small></aside> 
@@ -384,11 +385,11 @@
 
 			<p class="intro">After 11 summers, the Bike & Build alumni network is now over 2,000-strong. Some former riders spoke about the impact Bike & Build had on them, and how they are staying involved in their community. They are represented by a 13-member Alumni Council, made up of former riders from across the country. </p>
 
-			<p>The Bike & Build Alumni Council engages riders in our cause long after they complete a trip. The 2013 Council, led by Kyle Magida (SUS06, B2SB08) and David Neirenberg (SUS05), expanded to 13 members and undertook numerous projects. The Council is the voice of our 2,000+ member network. Alums, learn how to be involved in the Council here.</p>
+			<p>The Bike & Build Alumni Council engages riders in our cause long after they complete a trip. The 2013 Council, led by Kyle Magida (SUS06, B2SB08) and David Neirenberg (SUS05), expanded to 13 members and undertook numerous projects. The Council is the voice of our 2,000+ member network. Alums, learn how to be involved <a href="http://www.bikeandbuild.org/cms/content/view/9204/393/"target=_blank>in the Council here.</a></p>
 		</article>
 
 		
-				<h3>Alumni Council Members</h3> 
+				<h3>2013 Alumni Council Members</h3> 
 					<ul class="alumni-list clearfix">	
 						<li> <h6>Kyle Magida, co-president</h6>
 							  Caribbean Islands<br>
@@ -485,248 +486,243 @@
 	<section class="" id="financials">
 		
 		<h2>Statement of Financials</h2>
-		<h3>Statement of Activities</h3>
-		<div class="col2wide clearfix">
-			<div>
-			<table class="table-3">
-				<thead>
-				<tr>
-					<th>Unrestricted Net Assets</th>
-					<th>2013</th>
-					<th>2012</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr> 
-					<td> Donations Income</td>
-					<td> $1,201,090 </td> 
-					<td> $1,284,389  </td> 
-				</tr>
-				<tr> 
-					<td> Application Fees </td>
-					<td> $52,245	</td> 
-					<td> $58,400     </td> 
-				</tr>
-				<tr> 
-					<td> Apparel Sales	</td>
-					<td> $29,719	</td> 
-					<td> $29,937     </td> 
-				</tr>
-				<tr> 
-					<td> Special Event	</td>
-					<td> 	-	</td> 
-					<td> $13,732     </td> 
-				</tr>
-				<tr> 
-					<td> In-Kind Contribution</td>
-					<td> $6,996		</td> 
-					<td> $6,230      </td> 
-				</tr>
-				<tr> 
-					<td> Other Income	</td>
-					<td> $3,695	</td> 
-					<td> $7,707      </td> 
-				</tr>
-				<tr>
-					<td> SUBTOTAL </td>
-					<td>$1,293,745</td>
-					<td>$1,400,395</td>
-				</tr>
-				<tr>
-					<td>Assets Released from Restriction</td>
-					<td>$61,559	</td>
-					<td>$39,531 </td>
-				</tr>
-				<tr>
-					<td>Total Support and Revenue</td>
-					<td>$1,355,304</td>
-					<td>$1,439,926</td>
-				</tr>			
-				</tbody>
-			</table>
-			</div>
-			<div>
-			<table class="table-3">
-				<thead>
-				<tr>
-					<th>Expenses</th>
-					<th>2013</th>
-					<th>2012</th>
-				</tr>
-				</thead>
-				<tbody>			
-				<tr>
-					<td>Program Services</td> 
-					<td>$1,043,357</td> 
-					<td>$1,200,479</td>
-				</tr>
-				<tr>
-					<td>Management and General</td> 
-					<td>$205,794</td> 
-					<td>$183,123  </td>
-				</tr>
-				<tr>
-					<td>Fundraising	</td> 
-					<td>$31,317	</td> 
-					<td>$28,129  </td>
-				</tr>
-				<tr>
-					<td>Subtotal</td> 
-					<td>$1,280,468</td> 
-					<td>$1,411,731</td>
-				</tr>
-				<tr>
-					<td>Change in Unrestricted Net Assets</td> 
-					<td>$74,836	</td> 
-					<td>$28,195 </td>
-				</tr>			
-				</tbody>
-			</table>
-			</div>
-		</div>
 		
-		<table class="table">
-			<thead>
-			<tr>
-				<th>Summary</th>
-				<th>2013</th>
-				<th>2012</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>Total Other Income</td>
-				<td>$3,695</td>
-				<td>$7,707</td>
-			</tr>
-			<tr>
-				<td>Change, Total Net Assets</td>
-				<td>$52,108</td>
-				<td>$35,902</td>
-			</tr>
-			<tr>
-				<td>Net Assets, Beginning</td>
-				<td>$156,123</td>
-				<td>$127,928</td>
-			</tr>
-			<tr>
-				<td>Net Assets, Ending</td>
-				<td>$208,231</td>
-				<td>$156,123</td>
-			</tr>
-			</tbody>
-		</table>	
-		
-		<div class="col2wide clearfix">
+		<div class="col2wide clearfix">			
+			<div>
+				<h3>Statement of Activities</h3>
+				<table class="table-3">
+					<thead>
+					<tr>
+						<th>Unrestricted Net Assets</th>
+						<th>2013</th>
+						<th>2012</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr> 
+						<td> Donations Income</td>
+						<td> $1,201,090 </td> 
+						<td> $1,284,389  </td> 
+					</tr>
+					<tr> 
+						<td> Application Fees </td>
+						<td> $52,245	</td> 
+						<td> $58,400     </td> 
+					</tr>
+					<tr> 
+						<td> Apparel Sales	</td>
+						<td> $29,719	</td> 
+						<td> $29,937     </td> 
+					</tr>
+					<tr> 
+						<td> Special Event	</td>
+						<td> 	-	</td> 
+						<td> $13,732     </td> 
+					</tr>
+					<tr> 
+						<td> In-Kind Contribution</td>
+						<td> $6,996		</td> 
+						<td> $6,230      </td> 
+					</tr>
+					<tr> 
+						<td> Other Income	</td>
+						<td> $3,695	</td> 
+						<td> $7,707      </td> 
+					</tr>
+					<tr>
+						<td> SUBTOTAL </td>
+						<td>$1,293,745</td>
+						<td>$1,400,395</td>
+					</tr>
+					<tr>
+						<td>Assets Released from Restriction</td>
+						<td>$61,559	</td>
+						<td>$39,531 </td>
+					</tr>
+					<tr>
+						<td>Total Support and Revenue</td>
+						<td>$1,355,304</td>
+						<td>$1,439,926</td>
+					</tr>			
+					</tbody>
+				</table>
+			
+				<table class="table-3">
+					<thead>
+					<tr>
+						<th>Expenses</th>
+						<th>2013</th>
+						<th>2012</th>
+					</tr>
+					</thead>
+					<tbody>			
+					<tr>
+						<td>Program Services</td> 
+						<td>$1,043,357</td> 
+						<td>$1,200,479</td>
+					</tr>
+					<tr>
+						<td>Management and General</td> 
+						<td>$205,794</td> 
+						<td>$183,123  </td>
+					</tr>
+					<tr>
+						<td>Fundraising	</td> 
+						<td>$31,317	</td> 
+						<td>$28,129  </td>
+					</tr>
+					<tr>
+						<td>Subtotal</td> 
+						<td>$1,280,468</td> 
+						<td>$1,411,731</td>
+					</tr>
+					<tr>
+						<td>Change in Unrestricted Net Assets</td> 
+						<td>$74,836	</td> 
+						<td>$28,195 </td>
+					</tr>			
+					</tbody>
+				</table>
+	
+				<table class="table">
+					<thead>
+					<tr>
+						<th>Summary</th>
+						<th>2013</th>
+						<th>2012</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Total Other Income</td>
+						<td>$3,695</td>
+						<td>$7,707</td>
+					</tr>
+					<tr>
+						<td>Change, Total Net Assets</td>
+						<td>$52,108</td>
+						<td>$35,902</td>
+					</tr>
+					<tr>
+						<td>Net Assets, Beginning</td>
+						<td>$156,123</td>
+						<td>$127,928</td>
+					</tr>
+					<tr>
+						<td>Net Assets, Ending</td>
+						<td>$208,231</td>
+						<td>$156,123</td>
+					</tr>
+					</tbody>
+				</table>	
+			</div>
 			<div>	
-			<h3>Affordable Housing Grants</h3>
-			<table class="table-2">
-				<thead>
-				<tr>
-					<th>Grant Type</th>
-					<th>Value</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-					<td>Competitive Grant Program</td>
-					<td>$151,400</td>
-				</tr>
-				<tr>
-					<td>Pre-Arranged Partner Contributions</td>
-					<td>$128,189</td>
-				</tr>
-				<tr>
-					<td>Rider $500 Donations</td>
-					<td>$85,000</td>
-				</tr>
-				<tr>
-					<td>On the Road Gifts</td>
-					<td>$31,400</td>
-				</tr>
-				<tr>
-					<td>Alumni Council Emergency Grants</td>
-					<td>$10,000</td>
-				</tr>
-				<tr>
-					<td>Regional Ride Grant</td>
-					<td>$5,000</td>
-				</tr>
-				<tr>
-					<td>CWM Contributions</td>
-					<td>$55,851</td>
-				</tr>
-				<tr>
-					<td>Other</td>
-					<td>$1,800</td>
-				</tr>
-				<tr>
-					<td>Total Bike &amp; Build Grants</td>
-					<td>$468,640</td>
-				</tr>			
-				</tbody>
-			</table>
-			</div>	
-			<div>
-			<h3>Program Expenses</h3>
-			<table class="table-2" id="expenses">
-				<thead>
-				<tr>
-					<th>Expense</th>
-					<th>Value</th>
-				</tr>
-				</thead>					
-				<tbody>
-				<tr>
-					<td>Contributions</td>
-					<td>$468,640</td>
-				</tr>
-				<tr>
-					<td>Trip Gear, Activities</td>
-					<td>$270,761</td>
-				</tr>
-				<tr>
-					<td>Salaries, Benefits, Stipends</td>
-					<td>$169,178</td>
-				</tr>
-				<tr>
-					<td>Auto</td>
-					<td>$68,343</td>
-				</tr>
-				<tr>
-					<td>Insurance</td>
-					<td>$22,349</td>
-				</tr>
-				<tr>
-					<td>Director Travel	</td>
-					<td>$7,472</td>
-				</tr>
-				<tr>
-					<td>Accommodations	</td>
-					<td>$5,835</td>
-				</tr>
-				<tr>
-					<td>Postage and Delivery</td>
-					<td>$923</td>
-				</tr>
-				<tr>
-					<td>Depreciation</td>
-					<td>$28,597</td>
-				</tr>
-				<tr>
-					<td>Other</td>
-					<td>$1,259</td>
-				</tr>
-				<tr>
-					<td>Total Expenses</td>
-					<td>$1,043,357</td>
-				</tr>
-				</tbody>
-			</table>
+				<h3>Affordable Housing Grants</h3>
+				<table class="table-2">
+					<thead>
+					<tr>
+						<th>Grant Type</th>
+						<th>Value</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Competitive Grant Program</td>
+						<td>$151,400</td>
+					</tr>
+					<tr>
+						<td>Pre-Arranged Partner Contributions</td>
+						<td>$128,189</td>
+					</tr>
+					<tr>
+						<td>Rider $500 Donations</td>
+						<td>$85,000</td>
+					</tr>
+					<tr>
+						<td>On the Road Gifts</td>
+						<td>$31,400</td>
+					</tr>
+					<tr>
+						<td>Alumni Council Emergency Grants</td>
+						<td>$10,000</td>
+					</tr>
+					<tr>
+						<td>Regional Ride Grant</td>
+						<td>$5,000</td>
+					</tr>
+					<tr>
+						<td>CWM Contributions</td>
+						<td>$55,851</td>
+					</tr>
+					<tr>
+						<td>Other</td>
+						<td>$1,800</td>
+					</tr>
+					<tr>
+						<td>Total Bike &amp; Build Grants</td>
+						<td>$468,640</td>
+					</tr>			
+					</tbody>
+				</table>
+				<h3>Program Expenses</h3>
+				<table class="table-2" id="expenses">
+					<thead>
+					<tr>
+						<th>Expense</th>
+						<th>Value</th>
+					</tr>
+					</thead>					
+					<tbody>
+					<tr>
+						<td>Contributions</td>
+						<td>$468,640</td>
+					</tr>
+					<tr>
+						<td>Trip Gear, Activities</td>
+						<td>$270,761</td>
+					</tr>
+					<tr>
+						<td>Salaries, Benefits, Stipends</td>
+						<td>$169,178</td>
+					</tr>
+					<tr>
+						<td>Auto</td>
+						<td>$68,343</td>
+					</tr>
+					<tr>
+						<td>Insurance</td>
+						<td>$22,349</td>
+					</tr>
+					<tr>
+						<td>Director Travel	</td>
+						<td>$7,472</td>
+					</tr>
+					<tr>
+						<td>Accommodations	</td>
+						<td>$5,835</td>
+					</tr>
+					<tr>
+						<td>Postage and Delivery</td>
+						<td>$923</td>
+					</tr>
+					<tr>
+						<td>Depreciation</td>
+						<td>$28,597</td>
+					</tr>
+					<tr>
+						<td>Other</td>
+						<td>$1,259</td>
+					</tr>
+					<tr>
+						<td>Total Expenses</td>
+						<td>$1,043,357</td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		
-		<h2>76.6% of money raised goes directly to support Bike &amp; Build's mission</h2>
+		<h2>On average, from 2009-2013, 87.1% of money raised directly supported Bike &amp; Build's mission.</h2>
 		
 			<h3>Yearly Affordable Housing Grants</h3>
 			<table class="table-2">
@@ -792,27 +788,51 @@
 		<h2>Supporting Bike &amp; Build</h2>
 
 		<p class="intro">Our donors and partners share our passion for the affordable housing cause, cycling, and service. There are multiple ways you can join us to alleviate this country’s affordable housing crisis and connect young adults to a lifetime of community engagement.</p>
-
-		<h3> Donate</h3>
-		<p>Not including contributions to our grantees, it costs Bike &amp; Build about $0.81 per mile to support each rider across the country. Support can come in many ways. Visit bikeandbuild.org/donate to contribute. Donors can make a general donation or support a chosen rider through the drop down menu.</p> 
-		<small> You may also mail a check to:<br>
-		Bike &amp; Build<br>
-		6153 Ridge Ave<br>
-		Philadelphia, PA 19128
-		</small>
-
-		<h3> Partner with Bike &amp; Build</h3>
-		<p>Bike &amp; Build has multiple sponsors that provide valuable support. Their contributions towards bikes, gear, food, and other essentials enable us to grant more money to affordable housing organizations. Thank you to our 2013 partners! We look forward to working with you again!</p>
-
-		<h3> Follow Riders Across the Country</h3>
-		<p>Our website, bikeandbuild.org, allows the public to track our riders as they cross the country. Each trip is tracked through the “Route Tracker,” which logs daily mileage, host sites, and official journal entries. Additionally, many riders blog throughout the journey; these also are accessible through the Bike &amp; Build website.</p> 
-
-		<h3> Support Affordable Housing in Your Community</h3>
-		<p>Bike &amp; Builders inspire the many community members we meet to invest in improving this country’s affordable housing accessibility. Do you know of an organization in your community that could benefit from a Bike &amp; Build grant? Send them to our website and encourage them to apply this summer. You can also take action; simply call up your local affiliate and volunteer!</p>
-
-		<h3> Spread the Word!</h3>
-		<p>Much of Bike &amp; Build’s recruitment comes from word-of-mouth. Our alumni and community hosts are our most effective recruiters for future riders. If you know a young adult who would benefit from a Bike &amp; Build summer, send them to <a href="http://bikeandbuild.org"target=_blank>bikeandbuild.org</a>. We also maintain a strong presence on Facebook and Twitter (@bikebuild). We provide frequent updates and news for our riders, partners, and alumni, so “Like” and “Follow” us.</p>
+		
 		</article>
+		<div class="col3 clearfix">
+			<div>
+				<h3> Donate</h3>
+				<p>Not including contributions to our grantees, it costs Bike &amp; Build about <strong>$0.81 per mile</strong> to support each rider across the country. Support can come in many ways. Visit <a href="http://bikeandbuild.org/donate"target=_blank>bikeandbuild.org/donate</a> to contribute. Donors can make a general donation or support a chosen rider through the drop down menu.</p> 
+				<small> You may also mail a check to:<br>
+				Bike &amp; Build<br>
+				6153 Ridge Ave<br>
+				Philadelphia, PA 19128
+				</small>
+			</div>
+			<div>
+				<h3> Partner with Bike &amp; Build</h3>
+				<p>Bike &amp; Build has multiple sponsors that provide valuable support. Their contributions towards bikes, gear, food, and other essentials enable us to grant more money to affordable housing organizations. Thank you to our 2013 partners! We look forward to working with you again!</p>
+			</div>
+			
+			<div>
+				<h3> Follow Riders Across the Country</h3>
+				<p>Our website, <a href="http://bikeandbuild.org"target=_blank>bikeandbuild.org</a>, allows the public to track our riders as they cross the country. Each trip is tracked through the <a href="http://www.bikeandbuild.org/cms/content/view/109/230/"target=_blank>“Route Tracker,”</a> which logs daily mileage, host sites, and official journal entries. Additionally, many riders blog throughout the journey; these also are accessible through the Bike &amp; Build website.</p>
+			</div>
+			
+		</div>
+		<div class="col2 clearfix">
+			<div>
+				<h3> Support Affordable Housing in Your Community</h3>
+				<p>Bike &amp; Builders inspire the many community members we meet to invest in improving this country’s affordable housing accessibility. Do you know of an organization in your community that could benefit from a Bike &amp; Build grant? Send them to our website and encourage them to apply this summer. You can also take action; simply call up your local affiliate and volunteer!</p>
+			</div>
+			<div>
+				<h3> Spread the Word!</h3>
+				<p>Much of Bike &amp; Build’s recruitment comes from word-of-mouth. Our alumni and community hosts are our most effective recruiters for future riders. If you know a young adult who would benefit from a Bike &amp; Build summer, send them to <a href="http://bikeandbuild.org"target=_blank>bikeandbuild.org</a>. </p>
+			
+				<p>We also maintain a strong presence on social media:</br>
+				<a href="https://www.facebook.com/bikeandbuild"target=_blank><span class="icon icon-facebook"></span>Facebook</a>, 
+				<a href="https://twitter.com/bikebuild"target=_blank><span class="icon icon-twitter"></span>Twitter</a>, and 
+				<a href="http://instagram.com/bikeandbuild"target=_blank><span class="icon icon-instagram"></span>Instagram</a>. We provide frequent updates and news for our riders, partners, and alumni, so “Like” and “Follow” us for updates.
+				</p>
+			</div>
+		</div>
+		
+
+		
+		
+		
+		
 	</section>
 
 	<section class="" id="getinvolved">

@@ -26,28 +26,46 @@ a, ul a, p a{
 
 button{
 	color:$white;
-	background-color:transparent;
+	background-color:$action-color;
+	//padding:1em 1.25em;
 	padding:.25em;
-	margin:1em;
+	margin:1em 0;
 	outline:none;
-	border:.25em solid $white;
-	@include quarter-second-transition;	
-	@include perfect-circle;
+	border:none;
+	display:block;
+	clear:both;
+	font-weight:400;
+	@include half-em-border-radius;
+	
+	a{
+		color:$white;
+		text-transform:uppercase;
+		text-decoration:none;
+		letter-spacing:.25em;
+		&:hover,&:active{
+			text-decoration:none;
+			color:$black;
+		}
+	}	
 	
 	.icon-play{
-		font-size:.5em;
+		font-size:2em;
 		display:block;
 		width:.5em;
 		height:.5em;
 		padding:.25em .55em .75em .45em!important;
 		margin:0!important;
 	}
+}
+
+button.circle{
+	background-color:transparent;
+	border:.5em solid $white;
+	padding:.25em;
+	@include quarter-second-transition;	
+	@include perfect-circle;
 	
-	&:hover{
-	color:$action-color;
-	background-color:$white;	
-	}
-	&:hover{
+	&:hover, &:active{
 	color:$action-color;
 	background-color:$white;	
 	}
@@ -449,7 +467,7 @@ body{
 	text-indent:none;
 	text-align:left;
 	width:100%;
-	>div, >li{
+	>div, >li, >nav, >small{
 		float:left;
 		padding:1em;
 		width:95%;
@@ -467,7 +485,7 @@ body{
 
 .col2wide{	
 	@media screen and (min-width:(em(800))){
-		>div, >li{
+		>div, >li, >nav, >small{
 			width:45%;
 			padding:1em 2.5%;
 		}
@@ -477,12 +495,12 @@ body{
 .col3, .col6{
 	@media screen and (min-width:(em(600))){
 		>div:first-child, >div:last-child, >li:first-child, >li:last-child{
-			width:29%;
-			padding:1em 4% 1em 0;
+			width:28%;
+			padding:1em 2.5%;
 		}
 		>div, >li{
-			width:30%;
-			padding:1em 4% 1em 0;
+			width:28%;
+			padding:1em 2.5%;
 		}
 	}
 }
@@ -847,4 +865,21 @@ article{
 	padding:1em 0;
 	text-align:center;
 	
+}
+#external-nav{
+	width:95%;
+	padding:0 2.5%;
+	ul{
+		margin:0;
+		padding:0;
+	}
+	li{
+		float:left;
+		padding:0 1em 0 0;
+	}
+}
+#copyright{
+	display:block;
+	width:95%;
+	margin:0 2.5%;
 }

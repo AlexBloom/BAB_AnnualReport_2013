@@ -57,6 +57,15 @@ transition-duration: .5s;
 border-radius:1em;
 }
 
+@mixin half-em-border-radius{
+-webkit-border-radius: 0.5em;
+-moz-border-radius: 0.5em;
+-ms-border-radius: 0.5em;
+-o-border-radius: 0.5em;
+border-radius:0.5em;
+}
+
+
 @mixin perfect-circle{
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
