@@ -879,26 +879,23 @@ article {
   top: 0;
   left: 0; }
 
-.article-slider {
-  background-image: url(../img/content/prototype/project-image.jpg);
+.grantee-slider, .figure-slider {
   background-size: cover;
   background-position: center;
   position: relative; }
-  .article-slider:before {
+  .grantee-slider:before, .figure-slider:before {
     opacity: .85;
     content: " ";
     position: absolute;
-    background-color: #e2231a;
     z-index: 0;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0; }
-  .article-slider .wrapper {
+  .grantee-slider .wrapper, .figure-slider .wrapper {
     position: relative;
     z-index: 40;
     color: white;
-    text-align: left;
     padding: 1em;
     margin: 1em auto;
     max-width: 53.33333em; }
@@ -1162,69 +1159,75 @@ h1 {
   color: white;
   background-color: #e2231a; }
 
-.figures {
+#accomplishments h2, #accomplishments h3, #accomplishments h4 {
+  color: #67b2e7; }
+#accomplishments .figures {
   list-style-type: none;
   margin: 0;
   padding: 0; }
-  .figures li {
+  #accomplishments .figures li {
     float: left;
     width: 100%;
     padding: 1em 0; }
-    @media screen and (min-width: 53.33333em) {
-      .figures li {
+    @media screen and (min-width: 40em) {
+      #accomplishments .figures li {
         width: 45%;
         padding: 1em 5% 1em 0; } }
-  .figures .numbers {
+    @media screen and (min-width: 53.33333em) {
+      #accomplishments .figures li {
+        width: 29%;
+        padding: 1em 4% 1em 0; } }
+  #accomplishments .figures .numbers {
     display: block;
     width: 90%;
-    padding: 1em 5%;
+    padding: 1.25em 5% .5em 5%;
     font-size: 5em;
     margin: 0; }
-    @media screen and (min-width: 53.33333em) {
-      .figures .numbers {
+    @media screen and (min-width: 40em) {
+      #accomplishments .figures .numbers {
         font-size: 8em; } }
-
-#figure-donated {
-  background-image: url(../img/content/05accomplishments/figures/figure_donated.jpg); }
-
-#figure-pedaled {
-  background-image: url(../img/content/05accomplishments/figures/figure_pedaled.jpg); }
-
-#figure-buildhours {
-  background-image: url(../img/content/05accomplishments/figures/figure_buildhours.jpg); }
-
-#figure-buildsites {
-  background-image: url(../img/content/05accomplishments/figures/figure_buildsites.jpg); }
-
-#figure-riders {
-  background-image: url(../img/content/05accomplishments/figures/figure_riders.jpg); }
-
-#figure-organizations {
-  background-image: url(../img/content/05accomplishments/figures/figure_organizations.jpg); }
-
-#figure-averageraised {
-  background-image: url(../img/content/05accomplishments/figures/figure_averageraised.jpg); }
-
-#orgfigures {
+    @media screen and (min-width: 53.33333em) {
+      #accomplishments .figures .numbers {
+        font-size: 10em; } }
+  #accomplishments .figures h4 {
+    padding-bottom: 3em; }
+#accomplishments #figure-donated {
+  background-image: url(../img/content/05accomplishments/figures/donated.jpg); }
+#accomplishments #figure-pedaled {
+  background-image: url(../img/content/05accomplishments/figures/pedaled.jpg); }
+#accomplishments #figure-buildhours {
+  background-image: url(../img/content/05accomplishments/figures/buildhours.jpg); }
+#accomplishments #figure-buildsites {
+  background-image: url(../img/content/05accomplishments/figures/buildsites.jpg); }
+#accomplishments #figure-riders {
+  background-image: url(../img/content/05accomplishments/figures/riders.jpg); }
+#accomplishments #figure-organizations {
+  background-image: url(../img/content/05accomplishments/figures/organizations.jpg); }
+#accomplishments #figure-averageraised {
+  background-image: url(../img/content/05accomplishments/figures/averageraised.jpg); }
+#accomplishments .figure-slider {
+  min-height: 33.33333em;
+  text-align: center; }
+  #accomplishments .figure-slider:before {
+    background-color: #67b2e7; }
+#accomplishments #orgfigures {
   padding: 2em 0; }
-
-.numbers {
+#accomplishments .numbers {
   display: block;
   font-size: 3em;
-  margin: 0 0 .5em -.05em; }
+  margin: .5em 0 .5em -.05em; }
   @media screen and (min-width: 53.33333em) {
-    .numbers {
+    #accomplishments .numbers {
       font-size: 4em; } }
-
-.fundraisers {
+#accomplishments .fundraisers {
   list-style-type: none;
   padding: 0; }
-  .fundraisers li {
+  #accomplishments .fundraisers li {
     float: left;
     width: 45%;
     padding: 1em 2.5%;
     text-align: center; }
-    .fundraisers li img {
+    #accomplishments .fundraisers li img {
       width: 80%;
       margin: 0 10%;
       -webkit-border-radius: 50%;
@@ -1233,9 +1236,9 @@ h1 {
       -o-border-radius: 50%;
       border-radius: 50%; }
     @media screen and (min-width: 53.33333em) {
-      .fundraisers li {
+      #accomplishments .fundraisers li {
         width: 15%; }
-        .fundraisers li img {
+        #accomplishments .fundraisers li img {
           width: 100%;
           margin: 0;
           -webkit-border-radius: 50%;
@@ -1252,10 +1255,15 @@ h1 {
 
 #grantees {
   background-color: white;
-  color: #e2231a;
+  color: #031d40;
   padding: 2em 0 0 0 !important; }
   #grantees .swipe {
-    background-color: #e2231a; }
+    background-color: #031d40; }
+
+.grantee-slider {
+  text-align: left; }
+  .grantee-slider:before {
+    background-color: #031d40; }
 
 #grantee-1 {
   background-image: url(../img/content/07grantees/grantee_antelopevalley.jpg); }
@@ -1282,20 +1290,32 @@ h1 {
 
 .alumni-list {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 10%;
   list-style-type: none;
   text-indent: none; }
   .alumni-list li {
     float: left;
-    padding: 1em 0; }
-    @media screen and (min-width: 53.33333em) {
+    padding: 1em 0;
+    text-align: left; }
+    @media screen and (min-width: 40em) {
       .alumni-list li {
         width: 45%;
+        padding: 1em 5% 1em 0; } }
+    @media screen and (min-width: 76.66667em) {
+      .alumni-list li {
+        width: 29%;
+        padding: 1em 4% 1em 0; } }
+    @media screen and (min-width: 120em) {
+      .alumni-list li {
+        width: 20%;
         padding: 1em 5% 1em 0; } }
 
 #financials {
   text-align: left !important;
   padding: 2em 5% !important; }
+
+#expenses td:last-child {
+  color: #e2231a; }
 
 #support {
   color: #031d40;

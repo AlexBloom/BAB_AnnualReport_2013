@@ -301,10 +301,12 @@ h1{
 }
 
 //05accomplishments
-#accomplishments{
-	//background-color:$dkblue;
-	//color:$ltblue;
-}
+#accomplishments{	
+	h2, h3, h4{
+		color:$ltblue;
+	}
+	
+
 .figures{
 	list-style-type:none;
 	margin:0;
@@ -313,9 +315,13 @@ h1{
 		float:left;
 		width:100%;
 		padding:1em 0;
-		@media screen and (min-width:(em(800))){
+		@media screen and (min-width:(em(600))){
 			width:45%;
 			padding:1em 5% 1em 0;
+		}
+		@media screen and (min-width:(em(800))){
+			width:29%;
+			padding:1em 4% 1em 0;
 		}
 		
 
@@ -323,39 +329,53 @@ h1{
 	.numbers{
 		display:block;
 		width:90%;
-		padding:1em 5%;
+		padding:1.25em 5% .5em 5%;
 		font-size:5em;
 		margin:0;
-	
-		@media screen and (min-width:(em(800))){
+		@media screen and (min-width:(em(600))){
 			font-size:8em;
 		}
+		@media screen and (min-width:(em(800))){
+			font-size:10em;
+		}
+	}
+	h4{
+		padding-bottom:3em;
 	}
 }
 
 #figure-donated{
-	background-image:url(../img/content/05accomplishments/figures/figure_donated.jpg);
+	background-image:url(../img/content/05accomplishments/figures/donated.jpg);
 }
 #figure-pedaled{
-	background-image:url(../img/content/05accomplishments/figures/figure_pedaled.jpg);
+	background-image:url(../img/content/05accomplishments/figures/pedaled.jpg);
 }
 #figure-buildhours{
-	background-image:url(../img/content/05accomplishments/figures/figure_buildhours.jpg);
+	background-image:url(../img/content/05accomplishments/figures/buildhours.jpg);
 }
 #figure-buildsites{
-	background-image:url(../img/content/05accomplishments/figures/figure_buildsites.jpg);
+	background-image:url(../img/content/05accomplishments/figures/buildsites.jpg);
 }
 #figure-riders{
-	background-image:url(../img/content/05accomplishments/figures/figure_riders.jpg);
+	background-image:url(../img/content/05accomplishments/figures/riders.jpg);
 }
 #figure-organizations{
-	background-image:url(../img/content/05accomplishments/figures/figure_organizations.jpg);
+	background-image:url(../img/content/05accomplishments/figures/organizations.jpg);
 }
 #figure-averageraised{
-	background-image:url(../img/content/05accomplishments/figures/figure_averageraised.jpg);
+	background-image:url(../img/content/05accomplishments/figures/averageraised.jpg);
 }
 
-
+.figure-slider{
+	min-height:(em(500));
+	text-align:center;
+	.wrapper{
+		//text-align:center;
+	}
+	&:before{
+		background-color:$ltblue;
+	}
+}
 
 #orgfigures{
 	padding:2em 0;
@@ -363,7 +383,7 @@ h1{
 .numbers{
 	display:block;
 	font-size:3em;
-	margin:0 0 .5em -.05em;
+	margin:.5em 0 .5em -.05em;
 	
 	@media screen and (min-width:(em(800))){
 		font-size:4em;
@@ -394,7 +414,7 @@ h1{
 		
 	}
 }
-
+}
 //06scholarships
 #scholarship{
 	color:$dkblue;
@@ -409,10 +429,17 @@ h1{
 
 #grantees{
 	background-color:$white;
-	color:$red;
+	color:$dkblue;
 	padding:2em 0 0 0!important;
 	.swipe{
-		background-color:$red;
+		background-color:$dkblue;
+	}
+}
+
+.grantee-slider{
+	text-align:left;
+	&:before{
+		background-color:$dkblue;
 	}
 }
 
@@ -447,16 +474,26 @@ background-image:url(../img/content/07grantees/grantee_colorado.jpg);
 }
 .alumni-list{
 	margin:0;
-	padding:0;
+	padding:0 0 0 10%;
 	list-style-type:none;
 	text-indent:none;
 	li{
 		float:left;
 		padding:1em 0;
-		@media screen and (min-width:(em(800))){
+		text-align:left;
+		@media screen and (min-width:(em(600))){
 			width:45%;
 			padding:1em 5% 1em 0;
 		}
+		@media screen and (min-width:(em(1150))){
+			width:29%;
+			padding:1em 4% 1em 0;
+		}
+		@media screen and (min-width:(em(1800))){
+			width:20%;
+			padding:1em 5% 1em 0;
+		}
+		
 	}
 }
 
@@ -465,6 +502,14 @@ background-image:url(../img/content/07grantees/grantee_colorado.jpg);
 #financials{
 	text-align:left!important;
 	padding:2em 5%!important;
+}
+
+#expenses{
+	td{
+		&:last-child{
+			color:$red;
+		}
+	}
 }
 
 //12support

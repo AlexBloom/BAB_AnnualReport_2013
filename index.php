@@ -73,29 +73,42 @@
 
 	<section class="" id="accomplishments">
 		<h2> 2013 Accomplishments </h2>
-		<h3> Organizational Figures </h3>
 		<section class="figures clearfix swipe" id="orgfigures">	
 			<div class="swipe-wrap">	
-				<div id="figure-donated">	
+				<div class="figure-slider" id="figure-donated">	
+					<div class="wrapper">
 					<span class="numbers"> $459,140 </span> <h4> donated</h4> 
+					</div>
 				</div>
-				<div id="figure-pedaled"> 
+				<div class="figure-slider" id="figure-pedaled"> 
+					<div class="wrapper">
 					<span class="numbers">920,000</span>  <h4> miles pedaled</h4>
+					</div>
 				</div>
-				<div id="figure-buildhours"> 
+				<div class="figure-slider" id="figure-buildhours"> 
+					<div class="wrapper">
 					<span class="numbers">21,000 </span> <h4> build hours</h4>
+					</div>
 				</div>
-				<div id="figure-buildsites"> 
+				<div class="figure-slider" id="figure-buildsites"> 
+					<div class="wrapper">
 					<span class="numbers">119 </span> <h4> build sites</h4> 
+					</div>
 				</div>
-				<div id="figure-riders"> 
+				<div class="figure-slider" id="figure-riders"> 
+					<div class="wrapper">
 					<span class="numbers">286 </span> <h4> riders</h4> 
+					</div>
 				</div>
-				<div id="figure-organizations"> 
+				<div class="figure-slider" id="figure-organizations"> 
+					<div class="wrapper">
 					<span class="numbers">319 </span> <h4> grant organizations</h4>
+					</div>
 				</div>
-				<div id="figure-averageraised"> 
+				<div class="figure-slider" id="figure-averageraised"> 
+					<div class="wrapper">
 					<span class="numbers">$4,877</span>  <h4> average raised per rider</h4> 
+					</div>
 				</div>
 			</div>
 			<div class="button prev" onclick='orgfigures.prev()'> <span class="icon icon-left"> </span> </div> 
@@ -104,63 +117,70 @@
 	
 		
 		
-		<article>
-		<h3> Grantee Accomplishments </h3>
-		<p class="intro">Bike &amp; Build’s 2012 competitive grantees spent 2013 executing their projects. Cumulatively, these 66 organizations accomplished:</p> 
+		<div class="col1 clearfix">
+			<div>
+				<h3> Grantee Accomplishments </h3>
+				<p class="intro">Bike &amp; Build’s 2012 competitive grantees spent 2013 executing their projects. Cumulatively, these 66 organizations accomplished:</p> 
 		
-		<ul class="three-columns clearfix">
-			<li><span class="numbers"> 13,080 </span> <p> youth and young adults engaged in an affordable housing project </p> </li>
-			<li><span class="numbers"> 1,127</span>  <p> homes (houses, apartments, units) were built or renovated </p> </li>
-			<li><span class="numbers"> 5,978 </span> <p> community members directly impacted by a project </p> </li>
-		</ul>
+				<ul class="three-columns clearfix">
+					<li><span class="numbers"> 13,080 </span> <p> youth and young adults engaged in an affordable housing project </p> </li>
+					<li><span class="numbers"> 1,127</span>  <p> homes (houses, apartments, units) were built or renovated </p> </li>
+					<li><span class="numbers"> 5,978 </span> <p> community members directly impacted by a project </p> </li>
+				</ul>
 		
-		<hr>
-	
-		<p class="intro">Bike &amp; Build also developed grantee spotlight videos for nine of these nonprofits.</p> 
-		<ul class="figures clearfix">
-			<li> <strong>North Shore Community Center </strong> <br>
-				Salem, MA                     
-			</li>
-			<li> <strong>The Epicenter </strong> <br>
-				Green River, UT                              
-			</li>
-			<li> <strong>Sussex County Habitat for Humanity </strong> <br>
-				Georgetown, DE          
-			</li>
-			<li> <strong>Flatirons Habitat for Humanity </strong> <br>
-				Lafayette, CO               
-			</li>
-			<li> <strong>Habitat for Humanity of the Chesapeake </strong> <br>
-				Baltimore, MD       
-			</li>
-			<li> <strong>Habitat for Humanity of Kent County </strong> <br>
-				Grand Rapids, MI       
-			</li>
-			<li> <strong>Crispus Attucks Association </strong> <br>
-				York, PA                       
-			</li>
-			<li> <strong>Habitat for Humanity of the Greater Teton Area </strong> <br>
-				Jackson, WY 
-			</li>
-			<li> <strong>Rebuilding Together Springfield </strong> <br>
-				Springfield, MA 			 
-			</li>
-		</ul>
-	
-		<h3> Bike &amp; Build Scholarship </h3>
-		<p class="intro">Bike &amp; Build offered its first every scholarship for riders from underprivileged backgrounds to participate. Actually, we awarded two! Check out those stories on page ---- (link to that page later in the report).</p>
-
-		<h3> Alumni Council activities </h3>
-		<p class="intro">The Bike &amp; Build Alumni Council engages riders in our cause long after they complete a trip. In 2013, the Council took on numerous projects, including:</p>
-		<ul> 
-			<li>	Granting $10,000 in emergency funds to organizations addressing the disasters from Superstorm Sandy, the tornadoes in Oklahoma, and the floods in Colorado. </li>
-			<li>	Organizing a fundraising campaign to support the Bike &amp; Build Scholarship. Alumni funded the partial scholarship for Daniel’s bike in 2013, and has set a goal to fund a full scholarship in 2014! </li>
-			<li>	Operating a mentoring program between alumni and new riders. </li>
-			<li>	Carrying out numerous recruitment activities to spread the word about Bike &amp; Build to future riders.
-		Check out more about how they are extending Bike &amp; Build’s community impact  on page _-- (link to that page later in the report).</li>
-		</ul>
-	
-		</article>
+				<hr>
+		
+				<p class="intro">Bike &amp; Build also developed grantee spotlight videos for nine of these nonprofits.</p> 
+				<ul class="figures clearfix">
+					<li> <strong>North Shore Community Center </strong> <br>
+						Salem, MA                     
+					</li>
+					<li> <strong>The Epicenter </strong> <br>
+						Green River, UT                              
+					</li>
+					<li> <strong>Sussex County Habitat for Humanity </strong> <br>
+						Georgetown, DE          
+					</li>
+					<li> <strong>Flatirons Habitat for Humanity </strong> <br>
+						Lafayette, CO               
+					</li>
+					<li> <strong>Habitat for Humanity of the Chesapeake </strong> <br>
+						Baltimore, MD       
+					</li>
+					<li> <strong>Habitat for Humanity of Kent County </strong> <br>
+						Grand Rapids, MI       
+					</li>
+					<li> <strong>Crispus Attucks Association </strong> <br>
+						York, PA                       
+					</li>
+					<li> <strong>Habitat for Humanity of the Greater Teton Area </strong> <br>
+						Jackson, WY 
+					</li>
+					<li> <strong>Rebuilding Together Springfield </strong> <br>
+						Springfield, MA 			 
+					</li>
+				</ul>
+			<hr>
+			</div>
+			
+		</div>
+		<div class="col2 clearfix">
+			<div>
+			<h3> Alumni Council activities </h3>
+			<p class="intro">The Bike &amp; Build Alumni Council engages riders in our cause long after they complete a trip. In 2013, the Council took on numerous projects, including:</p>
+			<ul> 
+				<li>	Granting $10,000 in emergency funds to organizations addressing the disasters from Superstorm Sandy, the tornadoes in Oklahoma, and the floods in Colorado. </li>
+				<li>	Organizing a fundraising campaign to support the Bike &amp; Build Scholarship. Alumni funded the partial scholarship for Daniel’s bike in 2013, and has set a goal to fund a full scholarship in 2014! </li>
+				<li>	Operating a mentoring program between alumni and new riders. </li>
+				<li>	Carrying out numerous recruitment activities to spread the word about Bike &amp; Build to future riders.
+			Check out more about how they are extending Bike &amp; Build’s community impact <a href="#alumni">on page 10.</a></li>
+			</ul>
+			</div>
+			<div>
+			<h3> Bike &amp; Build Scholarship </h3>
+			<p class="intro">Bike &amp; Build offered its first every scholarship for riders from underprivileged backgrounds to participate. Actually, we awarded two! Check out those stories <a href="#scholarship">on page 6.</a></p>
+			</div>
+		</div>
 	
 		<h3> Top fundraisers </h3>
 		<ul class="fundraisers clearfix">
@@ -189,9 +209,8 @@
 	</section>
 
 	<section class="" id="scholarship">
-		<h2>Bike &amp; Build Scholarship</h2>
-	
 		<article>
+		<h2>Bike &amp; Build Scholarship</h2>
 		<p class="intro">Many young adults in the U.S. have the motivation to serve their communities but do not have the means. These are individuals who have lived the affordable housing crisis. In 2013, Bike & Build set out to engage a young person in our rides who without financial support would not have been able to participate. Thanks to the generosity of donors, we exceeded our goal and awarded two Bike & Build Scholarships!</p>
 
 		<p>The Bike & Build Scholarship increases access to our trips for young adults from at-risk backgrounds in our hometown of Philadelphia. It supports those who might not otherwise have this life-changing opportunity. Our two 2013 recipients, Da’Quan Tucker (full scholarship) and Daniel Farmer (half scholarship), were selected because of their compelling stories and interest in supporting affordable housing.</p> 
@@ -223,8 +242,12 @@
 	</section>
 
 	<section class="" id="grantees">
-		<h2>Grantee Profiles</h2>
 		<article>
+			<h2>Grantee Profiles</h2>
+			<aside>
+			<strong>Interested in applying for a Bike &amp; Build Grant?</strong> 
+			<p>We fund projects that engage young adults in addressing a demonstrated need in affordable housing. 2014 applications will be available in April and due Friday, June 6. We accept requests from 501(c)(3) organizations between $500 and $10,000. Visit <a href="http://bikeandbuild.org/grants"target=_blank>bikeandbuild.org/grants</a> for application materials.</p>		
+			</aside>
 		
 			<p class="intro"> Bike &amp; Build provides funds to organizations in four ways</p>
 			<ol>
@@ -236,19 +259,14 @@
 
 			<p>Perhaps the most important task our riders have each summer is awarding the competitive grants to our affordable housing partner organizations. These proposals yield innovative and inspiring projects across the country. Here are just a few of the 40 grants that Bike & Build supported in 2013.</p>  
 
-			<aside>
-				<hr>
-			<strong>Interested in applying for a Bike & Build Grant?</strong> 
-			<p>We fund projects that engage young adults in addressing a demonstrated need in affordable housing. 2014 applications will be available in April and due Friday, June 6. We accept requests from 501(c)(3) organizations between $500 and $10,000. Visit <a href="http://bikeandbuild.org/grants"target=_blank>bikeandbuild.org/grants</a> for application materials.</p>		
-			</aside>
+			
 		</article>
-		
 		
 		<section class="clearfix swipe" id="highlighted-grantees">	
 			<div class="swipe-wrap">	
-				<div class="article-slider" id="grantee-1"> 
+				<div class="grantee-slider" id="grantee-1"> 
 					<div class="wrapper"> 
-						<h3>Antelope Valley YouthBuild</h3>
+						<h2>Antelope Valley YouthBuild</h2>
 						<h5>Palmdale, CA - $10,000</h5>
 						<p class="intro">In 2012 and 2013, Bike & Builders volunteered on a project in the desert of Palmdale that stuck with many of our riders, so much so that 2013’s ME2SB team fully funded their grant. AV YouthBuild is refurbishing a property that will create units for up to 19 young adults in need of homes. Residents will either be current students in the YouthBuild program or recent graduates, particularly single mothers with children under the age of five.</p> 
 
@@ -257,18 +275,18 @@
 						<p>One of aspects that drew Bike & Build riders to AV YouthBuild was the chance they got to interact directly with the YB students on the build site. AV YouthBuild Executive Director Rossie Johnson agreed. “The Bike & Builders are the same age as our YouthBuild students, so it’s a great exchange between the groups. It’s a great way for our students to see other young people ‘paying it forward,’ and I know the B&Bers really enjoy working with our group.”</p> 
 						</div>
 				</div>
-				<div class="article-slider" id="grantee-2"> 
+				<div class="grantee-slider" id="grantee-2"> 
 					<div class="wrapper"> 	
-					<h3>Habitat for Humanity Portland/Metro East</h3>
+					<h2>Habitat for Humanity Portland/Metro East</h2>
 					<h5>Portland, OR - $10,000</h5>
 					<p class="intro">Habitat for Humanity Portland/Metro East, engages middle and high school-aged students in their Youth United program. In 2013, they received Bike & Build funds from the Central US route to support the building of a home compliant to Earth Advantage Platinum standards. This home will be the third sponsored by the Youth United program over the last five years, where students have taken an active role in the planning, fundraising, and construction of the home. By raising funds to achieve the Earth Advantage designation, Habitat for Humanity Portland/Metro East is increasing the value of the home now and in the future for its future owners: heating bills can be exorbitant for low-income residents, and future environmental features will enhance the home’s value in the decades to come. The students working on the home are gaining valuable knowledge a range of technical subjects as well.</p>
 		
 					<p>“It’s a great group of kids from a diverse range of backgrounds that we work with,” said Tor Ostrum, Director of Volunteer Programs and Corporate Engagement. “Many of them use Youth United as a stepping stone to other service work. They are becoming advocates for the affordable housing cause because we engage them in their formative years.” The partnership with Bike & Build is a natural fit. “Portland had a huge biking culture and many active young adults. Our Youth United kids are really excited about Bike & Build too, it’s inspired them and that will carry forward.” </p> 
 					</div>
 				</div>		
-				<div class="article-slider" id="grantee-3"> 
+				<div class="grantee-slider" id="grantee-3"> 
 					<div class="wrapper"> 
-					<h3>Youth Rebuilding New Orleans</h3>
+					<h2>Youth Rebuilding New Orleans</h2>
 					<h5>New Orleans, LA - $8,350 </h5>
 					<p class="intro">Almost ten years after Hurricane Katrina struck the Gulf Coast, there is still a tremendous need for housing for residents of the Big Easy. Youth Rebuilding New Orleans is using the city’s young adults and volunteers for Project HOMEwork, which builds homes for teachers in the area. With such a large need for teachers in New Orleans, Project HOMEwork aims to attract educators to the city to fill this need. “We had the volunteers in our youth, and this became a holistic way to address a serious long-term need for our students,” explained Executive Director William Stoudt.</p>
 		
@@ -277,9 +295,9 @@
 					<p>The organization’s culture is defined by their young people. Between site supervisors and office staff, YRNO’s average employee age is 22 years old. Much like Bike & Build, the idealism and energy of its young people drives the organization. </p>
 					</div>
 				</div>
-				<div class="article-slider" id="grantee-4"> 
+				<div class="grantee-slider" id="grantee-4"> 
 					<div class="wrapper"> 
-						<h3>Pikes Peak Habitat for Humanity</h3>
+						<h2>Pikes Peak Habitat for Humanity</h2>
 						<h5>Colorado Springs, CO - $55,000</h5>
 						<p class="intro">For the last five summers, Pikes Peak Habitat for Humanity has served as a pre-arranged grant beneficiary for their support of two of our routes, NC2SD and SC2SC. Since the formation of SC2SC in 2009, Pikes Peak has hosted a blitz build with our riders, where Bike & Build riders build as much as possible of a single home. This year, B&B helped construct the Kleine home. </p>
 
@@ -367,53 +385,66 @@
 			<p class="intro">After 11 summers, the Bike & Build alumni network is now over 2,000-strong. Some former riders spoke about the impact Bike & Build had on them, and how they are staying involved in their community. They are represented by a 13-member Alumni Council, made up of former riders from across the country. </p>
 
 			<p>The Bike & Build Alumni Council engages riders in our cause long after they complete a trip. The 2013 Council, led by Kyle Magida (SUS06, B2SB08) and David Neirenberg (SUS05), expanded to 13 members and undertook numerous projects. The Council is the voice of our 2,000+ member network. Alums, learn how to be involved in the Council here.</p>
-
+		</article>
 
 		
 				<h3>Alumni Council Members</h3> 
 					<ul class="alumni-list clearfix">	
-						<li> <strong>Kyle Magida</strong> co-president, Caribbean Islands<br>
+						<li> <h6>Kyle Magida, co-president</h6>
+							  Caribbean Islands<br>
 							 SUS06, B2SB08 (leader)
 						</li>
-						<li> <strong>Dave Nierenberg</strong> co-president, Atlanta, GA<br>
+						<li> <h6>Dave Nierenberg, co-president</h6> 
+							 Atlanta, GA<br>
 							 SUS05 (leader)
 						</li>
-						<li> <strong>Connor Ashenbrucker</strong> San Francisco, CA<br>
+						<li> <h6>Connor Ashenbrucker</h6> 
+							 San Francisco, CA<br>
 							 P2SF10, CR12 (leader)
 						</li>
-						<li> <strong>Gina Bargiachi</strong> Memphis, TN<br>
+						<li> <h6>Gina Bargiachi</h6> 
+							 Memphis, TN<br>
 							 SC2SC12
 						</li>
-						<li> <strong>Jesse Cohn</strong> Somerville, MA<br>
+						<li> <h6>Jesse Cohn</h6> 
+							 Somerville, MA<br>
 							 P2SF08, P2S11 (leader), CWM13
 						</li>
-						<li> <strong>Kelly Donovan</strong> Philadelphia, PA<br>
+						<li> <h6>Kelly Donovan</h6> 
+							 Philadelphia, PA<br>
 							 ME2SB12
 						</li>
-						<li> <strong>Sonya Hirsch</strong> Denver, CO<br>
+						<li> <h6>Sonya Hirsch</h6> 
+							 Denver, CO<br>
 							 CUS08, P2SF09 (leader), CWM10,13
 						</li>
-						<li> <strong>Barbara Joseph</strong> Seattle, WA<br>
+						<li> <h6>Barbara Joseph</h6> 
+							 Seattle, WA<br>
 							 P2S08, CUS09 (leader), CWM10
 						</li>
-						<li> <strong>Erin Kinneen</strong> Seattle, WA<br>
+						<li> <h6>Erin Kinneen</h6> 
+							 Seattle, WA<br>
 							 P2S04
 						</li>
-						<li> <strong>Joe Lace</strong> New York, NY<br>
+						<li> <h6>Joe Lace</h6> 
+							 New York, NY<br>
 							 NUS05, CWM09-13
 						</li>
-						<li> <strong>Joey Parker</strong> Charlotte, NC<br>
+						<li> <h6>Joey Parker</h6> 
+							 Charlotte, NC<br>
 							 NC2SD11 (leader), CWM12-13
 						</li>
-						<li> <strong>Michael Skocpol</strong> Washington, DC<br>
+						<li> <h6>Michael Skocpol</h6> 
+							 Washington, DC<br>
 							 P2S08, NUS11 (leader)
 						</li>
-						<li> <strong>Becca Stievater</strong> Berkeley, CA<br>
+						<li> <h6>Becca Stievater</h6> 
+							 Berkeley, CA<br>
 							 NUS05, P2SF07 (leader), CWM08-12
 						</li>
 					</ul>
-		
-
+			
+		<article>
 			<h3>Erin Kinneen</h3>
 			<h4>Providence to Seattle ’04 – Seattle, WA</h4>
 			<aside class="clearfix">
@@ -454,10 +485,7 @@
 	<section class="" id="financials">
 		
 		<h2>Statement of Financials</h2>
-		
-		<h3>Audited Financial Statements</h3>
-		
-		<h4> STATEMENT OF ACTIVITIES </h4>
+		<h3>Statement of Activities</h3>
 		<div class="col2wide clearfix">
 			<div>
 			<table class="table-3">
@@ -510,7 +538,7 @@
 					<td>$39,531 </td>
 				</tr>
 				<tr>
-					<td>Total Support and Revnue</td>
+					<td>Total Support and Revenue</td>
 					<td>$1,355,304</td>
 					<td>$1,439,926</td>
 				</tr>			
@@ -641,7 +669,7 @@
 			</div>	
 			<div>
 			<h3>Program Expenses</h3>
-			<table class="table-2">
+			<table class="table-2" id="expenses">
 				<thead>
 				<tr>
 					<th>Expense</th>
@@ -697,6 +725,9 @@
 			</table>
 			</div>
 		</div>
+		
+		<h2>76.6% of money raised goes directly to support Bike &amp; Build's mission</h2>
+		
 			<h3>Yearly Affordable Housing Grants</h3>
 			<table class="table-2">
 				<thead>

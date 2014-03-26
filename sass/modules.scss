@@ -791,8 +791,7 @@ article{
 	top:0;
 	left:0;
 }
-.article-slider{
-	background-image:url(../img/content/prototype/project-image.jpg);
+.grantee-slider, .figure-slider{
 	background-size:cover;
 	background-position:center;
 	position:relative;
@@ -800,7 +799,6 @@ article{
 		opacity:.85;
 		content:" ";
 		position:absolute;
-		background-color:$red;
 		z-index:0;
 		top:0;
 		bottom:0;
@@ -811,12 +809,9 @@ article{
 		position:relative;
 		z-index:40;
 		color:$white;
-		text-align:left;
 		padding:1em;
 		margin:1em auto;
-		max-width:(em(800));
-		//background-color:$dkblue;
-		
+		max-width:(em(800));		
 	}
 }
 
