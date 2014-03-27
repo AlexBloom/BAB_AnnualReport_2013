@@ -27,9 +27,8 @@ a, ul a, p a{
 button{
 	color:$white;
 	background-color:$action-color;
-	//padding:1em 1.25em;
-	padding:.25em;
-	margin:1em 0;
+	padding:1em 1.25em;
+	margin:1em auto;
 	outline:none;
 	border:none;
 	display:block;
@@ -180,7 +179,7 @@ li{
 	}
 	#toggle-btn{
 		position:absolute;
-		width:100%;
+		width:2.5em;
 		background-color:$white;
 		margin:0;
 		padding: 1em .9em;
