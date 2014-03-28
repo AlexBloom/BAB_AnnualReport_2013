@@ -14,12 +14,8 @@ $(document).ready(function () {
 			$('.full-screen').css('min-height',$(window).height());
 			$('.article-slider').css('min-height',$(window).height());
 		});
-		
-		
-	
-	
+
 	//Menu Toggle
-	//$('#primary').prepend('<div id='menu-icon'>TFI SANDBOX <span> </span> </div>');
 	$('#primary-nav').addClass('closed');
 	$('#main').addClass('menu-closed');
 
@@ -44,25 +40,10 @@ $(document).ready(function () {
   	 });
    
 	$('#primary-nav a').click(function(){
-	//$('#primary-nav').toggleClass('closed');
-	//$('#primary-nav').toggleClass('open');
+	$('#primary-nav').addClass('closed');
+	$('#primary-nav').removeClass('open');
   	});
 
-   /* $('#main').click(function(){
-        var navopen = window.pageYOffset;
-        var scroll_pos_test = 400;             
-    	// set to whatever you want it to be
-        if(y_scroll_pos = scroll_pos_test) {
-    	   $('#top').addClass('fadein');
- 	   $('#top').removeClass('fadeout');
-        }
-    	else
-    	{
- 		$('#top').removeClass('fadein');
-    		$('#top').addClass('fadeout');
-    	}
-    });*/
-   
    
    //Show Top Link After Scrolling
    $('#top').addClass('fadeout')
@@ -85,29 +66,8 @@ $(document).ready(function () {
    //Fire Swipe Classes for Sliders
    window.orgfigures = $('#orgfigures').Swipe().data('Swipe');
    window.grantacc = $('#grantacc').Swipe().data('Swipe');
-   window.highlightedgrantees = $('#highlighted-grantees').Swipe().data('Swipe');
+   //window.highlightedgrantees = $('#highlighted-grantees').Swipe().data('Swipe');
    
-  /*
-   //Close Secondary & Tertiary Links
-   $('.secondary').addClass('visuallyhidden');
-   //$('.tertiary').addClass('visuallyhidden');
-   
-   //Open Specific Secondary Menus
-   $('#discover').click(function(){
-	   $('#discover-secondary').toggleClass('visuallyhidden');
-   });
-   
-   $('#participate').click(function(){
-	   $('#participate-secondary').toggleClass('visuallyhidden');
-   });
-   
-   $('#build').click(function(){
-	   $('#build-secondary').toggleClass('visuallyhidden');
-   });
-   
-   //Open Specific Tertiary Menus
-   
-   */
    
    
   // Show and Play Full Screen Videos
@@ -123,14 +83,24 @@ $(document).ready(function () {
  
    
    
-   
-   //Open and Close Projects
-$('.project-content').addClass('collapsed');
-       
-	   $('#project-1 .project-header').click(function() {
-           $('#project-1 .project-content').toggleClass('collapsed');
-       });
+// TABS Initiations
 	   
+	   
+	   $('#granteeTab a').click(function (e) {
+	     e.preventDefault()
+	     $(this).tab('show')
+	   })
+	   
+	   $('#riderTab a').click(function (e) {
+	     e.preventDefault()
+	     $(this).tab('show')
+	   })
+	   // You can activate individual tabs in several ways:
+	   // 
+	   // $('#myTab a[href="#profile"]').tab('show') // Select tab by name
+	   // $('#myTab a:first').tab('show') // Select first tab
+	   // $('#myTab a:last').tab('show') // Select last tab
+	   // $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
 
 });

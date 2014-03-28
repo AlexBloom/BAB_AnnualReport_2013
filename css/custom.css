@@ -724,6 +724,24 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.15); }
 
+.overlay-wrap-35 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35); }
+
+.overlay-dkblue {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(3, 29, 64, 0.75); }
+
 .floating-text {
   display: block;
   margin: auto;
@@ -754,12 +772,11 @@ article {
     article {
       width: 80%;
       margin: 3em 0 3em 10%; } }
-  article header, article footer {
+  article > header, article > footer {
     width: 90%;
     padding: 2em 5%;
     text-align: center; }
   article h3 {
-    border-top: 1px solid;
     padding-top: 1em; }
   article aside {
     font-size: .85em;
@@ -776,11 +793,11 @@ article {
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
       border-radius: 50%; }
-      @media screen and (min-width: 86.66667em) {
+      @media screen and (min-width: 80em) {
         article aside img {
           width: 100%;
           margin: 0 0 2em 0; } }
-    @media screen and (min-width: 86.66667em) {
+    @media screen and (min-width: 80em) {
       article aside {
         position: absolute;
         width: 30%;
@@ -819,9 +836,10 @@ article {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0;
-  padding: 1em;
-  opacity: 0.5; }
+  margin: 1em;
+  padding: 0;
+  opacity: 0.5;
+  z-index: 1000; }
   .close-video:hover {
     opacity: 1; }
   .close-video .icon-close {
@@ -830,8 +848,7 @@ article {
     margin: 0;
     width: 1em;
     height: 1em;
-    padding: .25em;
-    border: 4px solid white;
+    padding: 0em;
     font-size: 2em;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -969,208 +986,69 @@ article {
 
 #external-nav {
   width: 95%;
-  padding: 0 2.5%; }
+  padding: 0 2.5%;
+  margin: 0 auto;
+  max-width: 32.66667em; }
   #external-nav ul {
     margin: 0;
     padding: 0; }
   #external-nav li {
     float: left;
-    padding: 0 1em 0 0; }
+    padding: 0 1em; }
 
 #copyright {
   display: block;
   width: 95%;
   margin: 0 2.5%; }
 
-#home-video-container {
-  background-image: url("../img/content/prototype/full-bleed-bg-image.jpg"); }
-
-#hacks-video-container {
-  background-image: url("../img/content/prototype/project-image.jpg"); }
-
-.subnav {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 50em;
-  padding: 1em 0;
-  text-indent: none; }
-  .subnav dt, .subnav dd {
-    font-size: 1.25em;
-    float: left;
-    padding: .5em .75em; }
-  .subnav dt {
-    font-style: italic;
-    color: #888888; }
-  .subnav .active {
-    color: #e2231a;
-    border: 1px solid #e2231a; }
-
-.jury {
-  padding: 1em 0;
-  background-color: #222222;
-  color: white; }
-
-.jury-members {
-  list-style-type: none;
-  padding: 1em 5%;
-  width: 90%; }
-  .jury-members li {
-    display: block;
-    float: left;
-    width: 90%;
-    padding: 1em 5%;
-    text-align: center; }
-    .jury-members li img {
-      width: 100%;
-      display: block;
-      clear: both;
-      margin-bottom: 1em;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%; }
-    .jury-members li span {
-      width: 100%; }
-    @media screen and (min-width: 32em) {
-      .jury-members li {
-        width: 45%;
-        padding: 1em 2.5% 1em 2.5%; } }
-    @media screen and (min-width: 53.33333em) {
-      .jury-members li {
-        width: 20%;
-        padding: 1em 2.5% 1em 2.5%; } }
-
-.projects-title {
-  background-color: #888888;
-  color: white;
-  padding: 1em 0;
-  margin: 0; }
-
-.projects {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-
-.project {
-  padding: 0;
-  margin: 0; }
-
-.project-header {
-  background-color: #777;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  height: 300px; }
-  @media screen and (min-width: 53.33333em) {
-    .project-header {
-      height: 500px; } }
-  .project-header img {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 2; }
-  .project-header .expand-icon {
-    display: block;
-    clear: both;
-    width: 100%;
-    padding: .5em 0;
-    opacity: 0;
-    -webkit-transition-duration: .25s;
-    -moz-transition-duration: .25s;
-    -ms-transition-duration: .25s;
-    -o-transition-duration: .25s;
-    transition-duration: .25s; }
-  .project-header:hover .expand-icon {
-    padding: .75em 0 .25em 0;
-    opacity: 1; }
-
-.project-url {
+.nav-tabs {
   position: absolute;
-  bottom: 1em;
-  right: 1em; }
-
-.project-content, .project-content-expanded {
-  width: 80%;
-  margin: 3em auto;
-  max-width: 50em;
-  -webkit-transition-duration: .5s;
-  -moz-transition-duration: .5s;
-  -ms-transition-duration: .5s;
-  -o-transition-duration: .5s;
-  transition-duration: .5s; }
-  .project-content img, .project-content-expanded img {
-    width: 100%; }
-
-.project-content .collapsed {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  -webkit-transition-duration: .5s;
-  -moz-transition-duration: .5s;
-  -ms-transition-duration: .5s;
-  -o-transition-duration: .5s;
-  transition-duration: .5s; }
-
-.project-content .expanded {
-  max-height: auto;
-  overflow: auto;
-  opacity: 1;
-  -webkit-transition-duration: .5s;
-  -moz-transition-duration: .5s;
-  -ms-transition-duration: .5s;
-  -o-transition-duration: .5s;
-  transition-duration: .5s; }
-
-.key-speakers {
-  list-style-type: none;
-  padding: 0; }
-  .key-speakers li {
-    display: block;
+  z-index: 500;
+  padding: 0;
+  font-size: .9em;
+  font-weight: 600; }
+  .nav-tabs li {
     float: left;
-    width: 90%;
-    padding: 1em 5%;
-    text-align: left; }
-    .key-speakers li img {
-      width: 33%;
+    list-style-type: none;
+    background-color: white;
+    margin: 0 .5em 0 0;
+    padding: 0;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    border-radius: 0.5em; }
+    .nav-tabs li:hover, .nav-tabs li:active {
+      background-color: white; }
+    .nav-tabs li a {
       display: block;
-      float: left;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%;
-      margin: 0 1em 2em 0; }
-    .key-speakers li span {
-      width: 100%;
-      padding: 1em 0; }
-    @media screen and (min-width: 53.33333em) {
-      .key-speakers li {
-        width: 45%;
-        padding: 1em 5% 1em 0; } }
+      padding: .5em .75em;
+      margin: 0;
+      text-decoration: none; }
+      .nav-tabs li a:hover, .nav-tabs li a:active {
+        color: #67b2e7;
+        text-decoration: none; }
+  .nav-tabs .active {
+    background-color: #67b2e7;
+    color: white; }
 
-.core-team {
-  list-style-type: none;
-  padding: 0; }
-  .core-team li {
-    display: block;
-    float: left;
-    width: 90%;
-    padding: 1em 5%;
-    text-align: center; }
-    @media screen and (min-width: 53.33333em) {
-      .core-team li {
-        width: 29%;
-        padding: 1em 4% 1em 0; } }
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
+.tab-pane header {
+  position: relative;
+  color: white;
+  text-align: left;
+  padding: 5em 0 2em; }
 
 h1 {
   text-transform: uppercase;
   letter-spacing: .15em; }
 
+/*=================================01 intro	*/
 #intro {
   background-image: url(../img/content/01intro/cover.jpg); }
   @media screen and (min-width: 53.33333em) {
@@ -1188,6 +1066,7 @@ h1 {
       width: 80%;
       padding: 0 10%; }
 
+/*=================================02 letter*/
 #letter {
   color: #031d40; }
 
@@ -1203,13 +1082,16 @@ h1 {
   .signatures img {
     width: 100%; }
 
+/*=================================03 Housing*/
 #housing {
   background-image: url(../img/content/03housing/housing.jpg); }
 
+/*=================================04 about*/
 #about {
   color: white;
   background-color: #e2231a; }
 
+/*=================================05 accomplishments*/
 #accomplishments h2, #accomplishments h3 {
   color: #67b2e7; }
 #accomplishments .figures {
@@ -1242,20 +1124,20 @@ h1 {
         font-size: 10em; } }
   #accomplishments .figures h4 {
     padding-bottom: 3em; }
-#accomplishments #figure-donated {
-  background-image: url(../img/content/05accomplishments/figures/donated.jpg); }
-#accomplishments #figure-pedaled {
-  background-image: url(../img/content/05accomplishments/figures/pedaled.jpg); }
-#accomplishments #figure-buildhours {
-  background-image: url(../img/content/05accomplishments/figures/buildhours.jpg); }
-#accomplishments #figure-buildsites {
-  background-image: url(../img/content/05accomplishments/figures/buildsites.jpg); }
-#accomplishments #figure-riders {
-  background-image: url(../img/content/05accomplishments/figures/riders.jpg); }
-#accomplishments #figure-organizations {
-  background-image: url(../img/content/05accomplishments/figures/organizations.jpg); }
-#accomplishments #figure-averageraised {
-  background-image: url(../img/content/05accomplishments/figures/averageraised.jpg); }
+  #accomplishments .figures #figure-donated {
+    background-image: url(../img/content/05accomplishments/figures/donated.jpg); }
+  #accomplishments .figures #figure-pedaled {
+    background-image: url(../img/content/05accomplishments/figures/pedaled.jpg); }
+  #accomplishments .figures #figure-buildhours {
+    background-image: url(../img/content/05accomplishments/figures/buildhours.jpg); }
+  #accomplishments .figures #figure-buildsites {
+    background-image: url(../img/content/05accomplishments/figures/buildsites.jpg); }
+  #accomplishments .figures #figure-riders {
+    background-image: url(../img/content/05accomplishments/figures/riders.jpg); }
+  #accomplishments .figures #figure-organizations {
+    background-image: url(../img/content/05accomplishments/figures/organizations.jpg); }
+  #accomplishments .figures #figure-averageraised {
+    background-image: url(../img/content/05accomplishments/figures/averageraised.jpg); }
 #accomplishments .figure-slider {
   min-height: 33.33333em;
   text-align: center; }
@@ -1298,9 +1180,39 @@ h1 {
           -o-border-radius: 50%;
           border-radius: 50%; } }
 
-#scholarship aside {
-  top: 0; }
+/*=================================06 scholarships*/
+#scholarship {
+  color: #eeeeee;
+  background-color: #222222; }
+  #scholarship aside {
+    top: 0; }
+  #scholarship #recipients {
+    margin: 0 0 1em 0;
+    padding: 0; }
+    #scholarship #recipients li {
+      color: #222222;
+      list-style-type: none;
+      float: left;
+      width: 40%;
+      margin: 1em 2.5%;
+      padding: 1em 2.5%;
+      text-align: center;
+      background-color: #eeeeee;
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      -ms-border-radius: 0.5em;
+      -o-border-radius: 0.5em;
+      border-radius: 0.5em; }
+    #scholarship #recipients img {
+      border: 1px solid #888888;
+      width: 100%;
+      -webkit-border-radius: 1em;
+      -moz-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -o-border-radius: 1em;
+      border-radius: 1em; }
 
+/*=================================07 Grantees*/
 #grantees {
   background-color: white;
   color: #031d40;
@@ -1308,27 +1220,51 @@ h1 {
   #grantees .swipe {
     background-color: #031d40; }
 
+#grantee-1 .bg-wrap {
+  background-image: url(../img/content/07grantees/grantee_antelopevalley.jpg); }
+
+#grantee-2 .bg-wrap {
+  background-image: url(../img/content/07grantees/grantee_portland.jpg); }
+
+#grantee-3 .bg-wrap {
+  background-image: url(../img/content/07grantees/grantee_nola.jpg); }
+
+#grantee-4 .bg-wrap {
+  background-image: url(../img/content/07grantees/grantee_colorado.jpg); }
+
+#grantee-1, #grantee-2, #grantee-3, #grantee-4 {
+  position: relative; }
+  #grantee-1 .bg-wrap, #grantee-2 .bg-wrap, #grantee-3 .bg-wrap, #grantee-4 .bg-wrap {
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #grantee-1 header, #grantee-2 header, #grantee-3 header, #grantee-4 header {
+    padding: 15em 10% 5em;
+    background-color: rgba(3, 29, 64, 0.75); }
+  #grantee-1 .content, #grantee-2 .content, #grantee-3 .content, #grantee-4 .content {
+    padding: 2em 10%;
+    max-width: 53.33333em;
+    text-align: left; }
+
 .grantee-slider {
   text-align: left; }
   .grantee-slider:before {
     background-color: #031d40; }
 
-#grantee-1 {
-  background-image: url(../img/content/07grantees/grantee_antelopevalley.jpg); }
-
-#grantee-2 {
-  background-image: url(../img/content/07grantees/grantee_portland.jpg); }
-
-#grantee-3 {
-  background-image: url(../img/content/07grantees/grantee_nola.jpg); }
-
-#grantee-4 {
-  background-image: url(../img/content/07grantees/grantee_colorado.jpg); }
-
+/*=================================08 hosts*/
 #hosts {
-  color: #031d40;
-  background-color: #67b2e7; }
+  padding-top: 0 !important; }
+  #hosts header {
+    padding: 22em 8% 2em;
+    position: relative;
+    color: white;
+    background-image: url(../img/content/08hosts/hosts.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -5em; }
 
+/*=================================09 Riders*/
 #riders {
   color: #67b2e7;
   background-color: #031d40; }
@@ -1349,6 +1285,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: .25em; }
 
+/*=================================10 alumni*/
 #alumni {
   background-color: #67b2e7; }
 
@@ -1364,24 +1301,31 @@ h1 {
     @media screen and (min-width: 40em) {
       .alumni-list li {
         width: 45%;
-        padding: 1em 5% 1em 0; } }
-    @media screen and (min-width: 76.66667em) {
+        padding: .5em 5% .5em 0; } }
+    @media screen and (min-width: 66.66667em) {
       .alumni-list li {
-        width: 29%;
-        padding: 1em 4% 1em 0; } }
-    @media screen and (min-width: 120em) {
+        width: 30%;
+        padding: .5em 3% .5em 0; } }
+    @media screen and (min-width: 93.33333em) {
       .alumni-list li {
-        width: 20%;
-        padding: 1em 5% 1em 0; } }
+        width: 22%;
+        padding: .5em 3% .5em 0; } }
+    @media screen and (min-width: 133.33333em) {
+      .alumni-list li {
+        width: 16%;
+        padding: .5em 3% .5em 0; } }
 
+/*=================================11 financials*/
 #financials {
   text-align: left !important;
   padding: 2em 5% !important; }
 
+/*=================================12 support*/
 #support {
   color: #031d40;
   background-color: #67b2e7; }
 
+/*=================================14 contact*/
 .board, .staff {
   list-style-type: none;
   padding: 0;

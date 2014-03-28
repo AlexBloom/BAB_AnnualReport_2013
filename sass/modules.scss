@@ -34,8 +34,7 @@ button{
 	display:block;
 	clear:both;
 	font-weight:400;
-	@include half-em-border-radius;
-	
+	@include half-em-border-radius;	
 	a{
 		color:$white;
 		text-transform:uppercase;
@@ -45,8 +44,7 @@ button{
 			text-decoration:none;
 			color:$black;
 		}
-	}	
-	
+	}		
 	.icon-play{
 		font-size:2em;
 		display:block;
@@ -562,6 +560,24 @@ body{
 	right:0;
 	background-color:rgba(0,0,0,0.15);
 }
+.overlay-wrap-35{
+	position:absolute;
+	z-index:2;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(0,0,0,0.35);
+}
+.overlay-dkblue{
+	position:absolute;
+	z-index:2;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(003,029,064,.75);
+}
 .floating-text{
 	display:block;
 	margin: auto;
@@ -598,7 +614,7 @@ article{
 		margin:3em 0 3em 10%;
 	}
 	
-	header, footer{
+	>header, >footer{
 		width:90%;
 		padding:2em 5%;
 		text-align:center;
@@ -607,7 +623,7 @@ article{
 		
 	}
 	h3{
-		border-top:1px solid;
+		//border-top:1px solid;
 		padding-top:1em;
 	}
 	aside{
@@ -623,13 +639,13 @@ article{
 			border:2px solid $white;
 			@include perfect-circle;
 			
-			@media screen and (min-width:(em(1300))){
+			@media screen and (min-width:(em(1200))){
 				width:100%;
 				margin:0 0 2em 0;
 			}
 		}
 		
-		@media screen and (min-width:(em(1300))){
+		@media screen and (min-width:(em(1200))){
 			position:absolute;
 			width:30%;
 			right:-35%;
@@ -676,9 +692,10 @@ article{
 	position:absolute;
 	top:0;
 	right:0;
-	margin:0;
-	padding:1em;
+	margin:1em;
+	padding:0;
 	opacity:0.5;
+	z-index:1000;
 	//font-size:2em;
 	&:hover{
 		opacity:1;
@@ -689,8 +706,7 @@ article{
 			margin:0;
 			width:1em;
 			height:1em;
-			padding:.25em;
-			border:4px solid $white;
+			padding:0em;
 			font-size:2em;
 			@include perfect-circle;
 		}
@@ -868,13 +884,15 @@ article{
 #external-nav{
 	width:95%;
 	padding:0 2.5%;
+	margin:0 auto;
+	max-width:(em(490));
 	ul{
 		margin:0;
 		padding:0;
 	}
 	li{
 		float:left;
-		padding:0 1em 0 0;
+		padding:0 1em;
 	}
 }
 #copyright{
@@ -882,3 +900,59 @@ article{
 	width:95%;
 	margin:0 2.5%;
 }
+
+
+
+//Tabs
+.nav-tabs{
+	position:absolute;
+	z-index:500;
+	//margin:1em 10%;
+	padding:0;
+	font-size:.9em;
+	font-weight:600;
+	li{
+		float:left;
+		list-style-type:none;
+		background-color:$white;
+		margin:0 .5em 0 0;
+		padding:0;
+		@include half-em-border-radius;
+		&:hover, &:active{
+			
+			background-color:$white;
+		}
+		a{
+			display:block;
+			padding:.5em .75em;
+			margin:0;			
+			text-decoration:none;
+			&:hover, &:active{
+				color:$ltblue;
+				text-decoration:none;
+			}
+		}
+	}
+	.active{
+		background-color:$ltblue;
+		color:$white;
+	}
+}  
+  .tab-content > .tab-pane {
+    display: none;
+  }
+  .tab-content > .active {
+    display: block;
+  }
+  
+  .tab-pane{
+  	header{
+  		position:relative;
+  		color:$white;
+  		text-align:left;
+		padding:5em 0 2em;
+  	}
+  }
+  
+
+

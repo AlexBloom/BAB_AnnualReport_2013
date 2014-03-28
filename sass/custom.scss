@@ -8,236 +8,13 @@
 @import "typography";
 @import "modules";
 
-
-#home-callouts{
-	
-}
-
-
-#home-video-container{
-	background-image: url('../img/content/prototype/full-bleed-bg-image.jpg');
-}
-
-#hacks-video-container{
-	background-image: url('../img/content/prototype/project-image.jpg');
-}
-
-
-// PROJECT PAGES
-
-.subnav{
-	margin: 0 auto;
-	width:80%;
-	max-width:50em;
-	padding:1em 0;
-	text-indent:none;
-	dt, dd{
-		font-size:1.25em;
-		float:left;
-		padding:.5em .75em;
-	}
-	dt{
-		font-style:italic;
-		color:$medium-grey;
-	}
-	.active{
-		color:$action-color;
-		border:1px solid $action-color;
-	}
-}
-
-//Jury
-
-.jury{
-	padding:1em 0;
-	background-color:$dark-grey;
-	color:$white;
-}
-
-.jury-members{
-	list-style-type:none;
-	padding:1em 5%;
-	width:90%;
-	
-	li{
-		display:block;
-		float:left;
-		width:90%;
-		padding:1em 5%;
-		text-align:center;
-		
-		img{
-			width:100%;
-			display:block;
-			clear:both;
-			margin-bottom:1em;
-			@include perfect-circle;
-		}
-		
-		span{
-			width:100%;
-		}
-		@media screen and (min-width:(em(480))){
-			width:45%;
-			padding:1em 2.5% 1em 2.5%;
-		}
-		
-		@media screen and (min-width:(em(800))){
-			width:20%;
-			padding:1em 2.5% 1em 2.5%;
-		}
-	}
-}
-
-//Project Lists
-.projects-title{
-	background-color:$medium-grey;
-	color:$white;
-	padding:1em 0;
-	margin:0;
-}
-.projects{
-	list-style-type:none;
-	padding:0;
-	margin:0;
-}
-
-.project{
-	padding:0;
-	margin:0;
-}
-
-.project-header{
-	background-color:#777;
-	cursor:pointer;
-	position:relative;
-	overflow:hidden;
-	height:300px;
-	
-	@media screen and (min-width:(em(800))){
-		height:500px;
-	}
-	
-	img{
-		display:block;
-		position:absolute;
-		left:0;
-		right:0;
-		top:0;
-		bottom:0;
-		width:100%;
-		z-index:2;
-	}
-	.overlay-wrap{
-		
-	}
-	.expand-icon{
-		display:block;
-		clear:both;
-		width:100%;
-		padding:.5em 0;
-		opacity:0;
-		@include quarter-second-transition;
-	}
-	&:hover{
-		.expand-icon{
-			padding:.75em 0 .25em 0;
-			opacity:1;
-		}
-	}
-}
-
-.project-url{
-	position:absolute;
-	bottom:1em;
-	right:1em;
-}
-
-.project-content, .project-content-expanded{
-	width:80%;
-	margin:3em auto;
-	max-width:50em;
-	@include half-second-transition;
-	
-	img{
-		width:100%;
-	}
-}
-
-.project-content .collapsed{
-	max-height:0;
-	overflow:hidden;
-	opacity:0;
-	@include half-second-transition;
-}
-
-.project-content .expanded{
-	max-height:auto;
-	overflow:auto;
-	opacity:1;
-	@include half-second-transition;
-}
-
-.key-speakers{
-	list-style-type:none;
-	padding:0;
-	li{
-		display:block;
-		float:left;
-		width:90%;
-		padding:1em 5%;
-		text-align:left;		
-		img{
-			width:33%;
-			display:block;
-			float:left;
-			//clear:both;
-			@include perfect-circle;
-			margin:0 1em 2em 0;
-		}
-		span{
-			width:100%;
-			padding:1em 0;
-		}
-		@media screen and (min-width:(em(800))){
-			width:45%;
-			padding:1em 5% 1em 0;
-		}
-		
-	}
-}
-
-
-.core-team{
-	list-style-type:none;
-	padding:0;
-	li{
-		display:block;
-		float:left;
-		width:90%;
-		padding:1em 5%;
-		text-align:center;
-		
-		@media screen and (min-width:(em(800))){
-			width:29%;
-			padding:1em 4% 1em 0;
-		}
-	}
-}
-
-
-
-
-
 //Individual Section Backgrounds & Tweaks
-
 h1{
 	text-transform:uppercase;
 	letter-spacing:.15em;
 }
 
-
-//01intro
+/*=================================01 intro	*/
 #intro{
 	background-image:url(../img/content/01intro/cover.jpg);
 	
@@ -259,11 +36,9 @@ h1{
 			padding:0 10%;
 		}
 	}
-	
-	
 }
 
-//02letter
+/*=================================02 letter*/
 #letter{
 	color:$dkblue;
 	
@@ -289,24 +64,22 @@ h1{
 	}
 }
 
-//03 Housing
+/*=================================03 Housing*/
 #housing{
 	background-image:url(../img/content/03housing/housing.jpg);
 }
 
-//04about
+/*=================================04 about*/
 #about{
 	color:$white;
 	background-color:$red;
 }
 
-//05accomplishments
+/*=================================05 accomplishments*/
 #accomplishments{	
 	h2, h3{
 		color:$ltblue;
-	}
-	
-
+}
 .figures{
 	list-style-type:none;
 	margin:0;
@@ -342,30 +115,28 @@ h1{
 	h4{
 		padding-bottom:3em;
 	}
+	#figure-donated{
+		background-image:url(../img/content/05accomplishments/figures/donated.jpg);
+	}
+	#figure-pedaled{
+		background-image:url(../img/content/05accomplishments/figures/pedaled.jpg);
+	}
+	#figure-buildhours{
+		background-image:url(../img/content/05accomplishments/figures/buildhours.jpg);
+	}
+	#figure-buildsites{
+		background-image:url(../img/content/05accomplishments/figures/buildsites.jpg);
+	}
+	#figure-riders{
+		background-image:url(../img/content/05accomplishments/figures/riders.jpg);
+	}
+	#figure-organizations{
+		background-image:url(../img/content/05accomplishments/figures/organizations.jpg);
+	}
+	#figure-averageraised{
+		background-image:url(../img/content/05accomplishments/figures/averageraised.jpg);
+	}
 }
-
-#figure-donated{
-	background-image:url(../img/content/05accomplishments/figures/donated.jpg);
-}
-#figure-pedaled{
-	background-image:url(../img/content/05accomplishments/figures/pedaled.jpg);
-}
-#figure-buildhours{
-	background-image:url(../img/content/05accomplishments/figures/buildhours.jpg);
-}
-#figure-buildsites{
-	background-image:url(../img/content/05accomplishments/figures/buildsites.jpg);
-}
-#figure-riders{
-	background-image:url(../img/content/05accomplishments/figures/riders.jpg);
-}
-#figure-organizations{
-	background-image:url(../img/content/05accomplishments/figures/organizations.jpg);
-}
-#figure-averageraised{
-	background-image:url(../img/content/05accomplishments/figures/averageraised.jpg);
-}
-
 .figure-slider{
 	min-height:(em(500));
 	text-align:center;
@@ -376,7 +147,6 @@ h1{
 		background-color:$ltblue;
 	}
 }
-
 #orgfigures{
 	padding:2em 0;
 }
@@ -415,19 +185,37 @@ h1{
 	}
 }
 }
-//06scholarships
+
+/*=================================06 scholarships*/
 #scholarship{
-	//color:$dkblue;
-	//background-color:$ltblue;
-	
+	color:$light-grey;
+	background-color:$dark-grey;
 	aside{
 		top:0;
-		//color:$ltblue;
+	}
+	#recipients{
+		margin:0 0 1em 0;
+		padding:0;
+		li{
+			color:$dark-grey;
+			list-style-type:none;
+			float:left;
+			width:40%;
+			margin:1em 2.5%;
+			padding:1em 2.5%;
+			text-align:center;
+			background-color:$light-grey;
+			@include half-em-border-radius;
+		}
+		img{
+			border:1px solid $medium-grey;
+			width:100%;
+			@include one-em-border-radius;
+		}
 	}
 }
 
-//07 Grantees
-
+/*=================================07 Grantees*/
 #grantees{
 	background-color:$white;
 	color:$dkblue;
@@ -436,7 +224,43 @@ h1{
 		background-color:$dkblue;
 	}
 }
-
+	#grantee-1{
+		.bg-wrap{
+			background-image:url(../img/content/07grantees/grantee_antelopevalley.jpg);
+	 	}
+	 }
+	#grantee-2{
+		.bg-wrap{
+		background-image:url(../img/content/07grantees/grantee_portland.jpg);
+	 	}
+	 }
+	#grantee-3{
+		.bg-wrap{
+		background-image:url(../img/content/07grantees/grantee_nola.jpg);	
+		}
+	 }
+	#grantee-4{
+		.bg-wrap{
+		background-image:url(../img/content/07grantees/grantee_colorado.jpg);
+	 	}
+	 }
+#grantee-1, #grantee-2, #grantee-3, #grantee-4{
+	position:relative;
+	
+	.bg-wrap{
+		@include full-bleed-background;
+	}
+	header{
+		padding:15em 10% 5em;
+		background-color:rgba(003,029,064,.75);
+	}
+	.content{
+		padding:2em 10%;
+		max-width:(em(800));
+		text-align:left;
+	}
+}
+ 
 .grantee-slider{
 	text-align:left;
 	&:before{
@@ -444,26 +268,20 @@ h1{
 	}
 }
 
-#grantee-1{
-background-image:url(../img/content/07grantees/grantee_antelopevalley.jpg);
- }
-#grantee-2{
-background-image:url(../img/content/07grantees/grantee_portland.jpg);
- }
-#grantee-3{
-background-image:url(../img/content/07grantees/grantee_nola.jpg);
- }
-#grantee-4{
-background-image:url(../img/content/07grantees/grantee_colorado.jpg);
- }
-
-//08hosts
+/*=================================08 hosts*/
 #hosts{
-	color:$dkblue;
-	background-color:$ltblue;
+	padding-top:0!important;
+	header{
+		padding:22em 8% 2em;
+		position:relative;
+		color:$white;
+		background-image:url(../img/content/08hosts/hosts.jpg);
+		@include full-bleed-background;
+		background-position:center -5em;
+	}
 }
 
-//09Riders
+/*=================================09 Riders*/
 #riders{
 	color:$ltblue;
 	background-color:$dkblue;
@@ -484,7 +302,7 @@ background-image:url(../img/content/07grantees/grantee_colorado.jpg);
 	}
 }
 
-//10alumni
+/*=================================10 alumni*/
 #alumni{
 	background-color:$ltblue;
 }
@@ -499,27 +317,29 @@ background-image:url(../img/content/07grantees/grantee_colorado.jpg);
 		text-align:left;
 		@media screen and (min-width:(em(600))){
 			width:45%;
-			padding:1em 5% 1em 0;
+			padding:.5em 5% .5em 0;
 		}
-		@media screen and (min-width:(em(1150))){
-			width:29%;
-			padding:1em 4% 1em 0;
+		@media screen and (min-width:(em(1000))){
+			width:30%;
+			padding:.5em 3% .5em 0;
 		}
-		@media screen and (min-width:(em(1800))){
-			width:20%;
-			padding:1em 5% 1em 0;
+		@media screen and (min-width:(em(1400))){
+			width:22%;
+			padding:.5em 3% .5em 0;
+		}
+		@media screen and (min-width:(em(2000))){
+			width:16%;
+			padding:.5em 3% .5em 0;
 		}
 		
 	}
 }
 
-//11financials
-
+/*=================================11 financials*/
 #financials{
 	text-align:left!important;
 	padding:2em 5%!important;
 }
-
 #expenses{
 	td{
 		&:last-child{
@@ -528,18 +348,17 @@ background-image:url(../img/content/07grantees/grantee_colorado.jpg);
 	}
 }
 
-//12support
+/*=================================12 support*/
 #support{
 	color:$dkblue;
 	background-color:$ltblue;
 }
 
-//14contact
+/*=================================14 contact*/
 #contact{
 	//color:$white;
 	//background-color:$dkblue;
 }
-
 .board, .staff{
 	list-style-type:none;
 	padding:0;
@@ -577,20 +396,17 @@ background-image:url(../img/content/07grantees/grantee_colorado.jpg);
 		}
 	}
 }
-
 .staff{
 	max-width:(em(1100));
 	li{
 		@media screen and (min-width:(em(800))){
 			width:20%!important;
-			
-			//img{
-//				width:80%;
-//				margin:0 10% 2em 10%;
-//			}
 		}
 	}
 }
+
+
+
 
 
 /* ==========================================================================
