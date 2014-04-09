@@ -53,7 +53,7 @@
 		<div class="video-overlay">
 			<div class="video-inner">
 				<button class="close-video circle" id="close-home"> <span class="icon icon-close"></span> </button>
-				<iframe width="100%" src="//www.youtube.com/embed/lhfpxB8MADs" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" src="//www.youtube.com/embed/_lGmXUt4yEM" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 		
@@ -113,10 +113,7 @@
 			</div>
 			<div class="button prev" onclick='orgfigures.prev()'> <span class="icon icon-left"> </span> </div> 
 	    	<div class="button next" onclick='orgfigures.next()'> <span class="icon icon-right"> </span> </div>
-		</section>
-	
-		
-		
+		</section>	
 		<div class="col1 clearfix">
 			<div>
 				<h3> Grantee Accomplishments </h3>
@@ -131,32 +128,32 @@
 				<hr>
 		
 				<p class="intro">Bike &amp; Build also developed grantee spotlight videos for nine of these nonprofits.</p> 
-				<ul class="figures clearfix">
-					<li> <strong>North Shore Community Center </strong> <br>
+				<ul class="figures clearfix">					
+					<li> <strong> <a href="https://www.youtube.com/watch?v=0NvZ4Xk3AGY"target=_blank> North Shore Community Center</a> </strong> <br>
 						Salem, MA                     
 					</li>
-					<li> <strong>The Epicenter </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=JplAPzmJNQI"target=_blank> The Epicenter</a> </strong> <br>
 						Green River, UT                              
 					</li>
-					<li> <strong>Sussex County Habitat for Humanity </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=1ckFIZXDhBA"target=_blank> Sussex County Habitat for Humanity</a> </strong> <br>
 						Georgetown, DE          
 					</li>
-					<li> <strong>Flatirons Habitat for Humanity </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=pJCaiW454Cw"target=_blank> Flatirons Habitat for Humanity</a> </strong> <br>
 						Lafayette, CO               
 					</li>
-					<li> <strong>Habitat for Humanity of the Chesapeake </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=pZLEDIy8lPg"target=_blank> Habitat for Humanity of the Chesapeake</a> </strong> <br>
 						Baltimore, MD       
 					</li>
-					<li> <strong>Habitat for Humanity of Kent County </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=pJswuAwhNL4"target=_blank> Habitat for Humanity of Kent County</a> </strong> <br>
 						Grand Rapids, MI       
 					</li>
-					<li> <strong>Crispus Attucks Association </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=9VqOPLZm8EI"target=_blank> Crispus Attucks Association</a> </strong> <br>
 						York, PA                       
 					</li>
-					<li> <strong>Habitat for Humanity of the Greater Teton Area </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=eV4qOA9OvtY"target=_blank> Habitat for Humanity of the Greater Teton Area</a> </strong> <br>
 						Jackson, WY 
 					</li>
-					<li> <strong>Rebuilding Together Springfield </strong> <br>
+					<li> <strong> <a href="https://www.youtube.com/watch?v=TdJW38xcDM0"target=_blank> Rebuilding Together Springfield</a> </strong> <br>
 						Springfield, MA 			 
 					</li>
 				</ul>
@@ -927,25 +924,31 @@
 				
 			<h3>Board of Directors</h3>
 			<ul class="board clearfix">
-				<li> <img src="img/content/14contact/StevenTruong.jpg" alt="StevenTruong">
+				<li> <img src="img/content/14contact/StevenTruong.jpg" alt="Steven Truong">
 					<strong> Steve Truong </strong> </br> 
 					<em> Chairman of the Board </em> </br>
 					Albridge Analytics, Director, Sales and Relationship Manager</br>
 					Wayne, PA 
 				</li>
-				<li> <img src="img/content/14contact/JeanineLee.jpg" alt="JeanineLee">
+				<li> <img src="img/content/14contact/GeorgeJones.jpg" alt="George Jones">
+					<strong>George Jones</strong> </br>
+					<em>Treasurer</em> (2014)</br>
+					Gidus Solutions, LLCX, Consultant</br>
+					Sicklerville, NJ
+				</li>
+				<li> <img src="img/content/14contact/JeanineLee.jpg" alt="Jeanine Lee">
 					<strong> Jeanine Lee </strong> </br> 
-					<em> Treasurer</em> </br>
+					<em> Treasurer</em> (2013) </br>
 					Propeller Industries, Accounting Manager</br>
 					Brooklyn, NY
 				</li>
-				<li> <img src="img/content/14contact/CharlieHenderson.jpg" alt="CharlieHenderson">
+				<li> <img src="img/content/14contact/CharlieHenderson.jpg" alt="Charlie Henderson">
 					<strong> Charlie Henderson </strong> </br> 
 					<em> Member At-Large </em> </br>
 					Henderson Consulting &amp; Risk Management, Owner</br>
 					Newtown Square, PA 
 				</li>
-				<li> <img src="img/content/14contact/JohnLeonti.jpg" alt="JohnLeonti">
+				<li> <img src="img/content/14contact/JohnLeonti.jpg" alt="John Leonti">
 					<strong> John Leonti </strong> </br> 
 					<em> Member At-Large </em> </br>
 					Troutman Sanders LLP, Attorney</br>
@@ -957,24 +960,35 @@
 					President, Lancer Systems</br>
 					Collegeville, PA  
 				</li>
-				<li> <img src="img/content/14contact/KristianSekse.jpg" alt="KristianSekse">
+				<li> <img src="img/content/14contact/EdHarris.jpg"  alt="Ed Harris">
+					<strong>Ed Harris</strong></br>
+					<em>Member At-Large, Digital Marketing Specialist</em></br>
+					eBay Enterprises, Director of Marketing</br>
+					Narberth, PA
+				</li>
+ 			   	<li> <img src="img/content/14contact/DavidMichaluk.jpg"  alt="David Michaluk">
+					<strong>David Michaluk</strong> </br>
+					<em>Member At-Large , Partnership Marketing Specialist</em></br>
+					Oaklyn, NJ
+				</li>
+				<li> <img src="img/content/14contact/KristianSekse.jpg" alt="Kristian Sekse">
 					<strong> Kristian Sekse </strong> </br> 
 					<em> Member At-Large </em> </br> 
 					Board of Child Care, Director of Development</br>
 					Baltimore, MD  
 				</li>
-				<li> <img src="img/content/14contact/BillWest.jpg" alt="BillWest">
+				<li> <img src="img/content/14contact/BillWest.jpg" alt="Bill West">
 					<strong> Bill West </strong> </br> 
 					<em> Member At-Large </em> </br>
 					The Atlantic Partners, Managing Partner</br>
 					Greenville, SC  
 				</li>
-				<li> <img src="img/content/14contact/KyleMagida.jpg" alt="KyleMagida">
+				<li> <img src="img/content/14contact/KyleMagida.jpg" alt="Kyle Magida">
 					<strong> Kyle Magida </strong> </br> 
 					<em> Alumni Council Co-Chair </em> </br>
 					Madison, WI
 				</li>
-				<li> <img src="img/content/prototype/person-image.jpg"  alt="Person Image">
+				<li> <img src="img/content/14contact/DavidNierenburg.jpg"  alt="David Nierenburg">
 					<strong> David Nierenburg </strong> </br> 
 					<em> Alumni Council Co-Chair </em> </br>
 					Atlanta, GA

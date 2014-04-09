@@ -40,8 +40,12 @@ $(document).ready(function () {
   	 });
    
 	$('#primary-nav a').click(function(){
-	$('#primary-nav').addClass('closed');
-	$('#primary-nav').removeClass('open');
+		$('#primary-nav').addClass('closed');
+		$('#primary-nav').removeClass('open');
+		$('#main').removeClass('menu-open');
+		$('#main').addClass('menu-closed');
+		$('#toggle').removeClass('close');
+		$('body').removeClass('overflow-hidden')
   	});
 
    
@@ -103,5 +107,101 @@ $(document).ready(function () {
 	   // $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
 
 
+// Active Link Highlighting
+
+ // Add Current Class to ScrollNav of Currently Depressed Item
+  	$('.scrollnav-link').click(function() {
+  		$('.scrollnav-link').removeClass('current');
+  		$(this).addClass('current');
+  	});	   
+	
+//Side Nav The Long Hard Stupid Way  
+		$('#intro').waypoint(
+		function(direction) {   
+		 // This div is level with the top  
+		 if(direction == 'down'){
+		    $('.scrollnav-link').removeClass('current');
+		     $('#link-1').addClass('current');
+		 }
+		   else  $('#link-1').removeClass('current');
+		},
+		{offset: 0}
+		);
+		
+		$('#letter').waypoint(
+		function(direction) {   
+		 // This div is level with the top  
+		 if(direction == 'down'){
+		    $('.scrollnav-link').removeClass('current');
+		     $('#link-2').addClass('current');
+		 }
+		   else  $('#link-2').removeClass('current');
+		},
+		{offset: 0}
+		);
+		
+		$('#housing').waypoint(
+		function(direction) {   
+		 // This div is level with the top  
+		 if(direction == 'down'){
+		    $('.scrollnav-link').removeClass('current');
+		     $('#link-3').addClass('current');
+		 }
+		   else  $('#link-3').removeClass('current');
+		},
+		{offset: 0}
+		);
+		
+		$('#about').waypoint(
+		function(direction) {   
+		 // This div is level with the top  
+		 if(direction == 'down'){
+		    $('.scrollnav-link').removeClass('current');
+		     $('#link-4').addClass('current');
+		 }
+		   else  $('#link-4').removeClass('current');
+		},
+		{offset: 0}
+		);
+		$('#about').waypoint(
+		function(direction) {   
+		 // This div is level with the top  
+		 if(direction == 'down'){
+		    $('.scrollnav-link').removeClass('current');
+		     $('#link-4').addClass('current');
+		 }
+		   else  $('#link-4').removeClass('current');
+		   		 //$('#link-3').addClass('current');
+		},
+		{offset: 0}
+		);
+		$('#about').waypoint(
+		function(direction) {   
+		 // This div is level with the top  
+		 if(direction == 'down'){
+		    $('.scrollnav-link').removeClass('current');
+		     $('#link-4').addClass('current');
+		 }
+		   else  $('#link-4').removeClass('current');
+		   		 //$('#link-3').addClass('current');
+		},
+		{offset: 0}
+		);
+		$('#about').waypoint(
+		function(direction) {   
+		 // This div is level with the top  
+		 if(direction == 'down'){
+		    $('.scrollnav-link').removeClass('current');
+		     $('#link-4').addClass('current');
+		 }
+		   else  $('#link-4').removeClass('current');
+		   		 //$('#link-3').addClass('current');
+		},
+		{offset: 0}
+		);
+		
+
+
+	   // Close of Doc Ready Function
 });
    

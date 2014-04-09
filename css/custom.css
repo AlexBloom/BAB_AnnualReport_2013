@@ -573,6 +573,10 @@ li img {
       background-color: #e2231a;
       color: white;
       text-decoration: none; }
+  .primary li a.current, nav ol li a.current {
+    background-color: #e2231a;
+    color: white;
+    text-decoration: none; }
   .primary .toc-number, nav ol .toc-number {
     padding-right: 1em; }
   .primary .toc-name, nav ol .toc-name {

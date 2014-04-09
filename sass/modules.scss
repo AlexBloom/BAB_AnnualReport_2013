@@ -395,7 +395,8 @@ $button-size : 2em;
 			&:hover{background-color:$white;color:$red;text-decoration:none;}
 			&:active{background-color:$red;color:$white;text-decoration:none;}
 			
-		}	
+		}
+		a.current{background-color:$red;color:$white;text-decoration:none;}	
 	}
 	.toc-number{
 		padding-right:1em;

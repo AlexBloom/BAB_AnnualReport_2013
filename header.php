@@ -39,20 +39,62 @@
 		</div>
 		<!-- <h5>Table of Contents</h5> -->
 		<ol id="primary">
-			<li> <a href="#intro"> 				<span class="toc-number">01 </span>	<span class="toc-name"> Introduction				</span>	</a> </li>
-			<li> <a href="#letter"> 			<span class="toc-number">02 </span>	<span class="toc-name"> Board and Staff Message		</span>	</a> </li>
-			<li> <a href="#housing"> 			<span class="toc-number">03 </span>	<span class="toc-name"> Housing Shortage			</span>	</a> </li>
-			<li> <a href="#about"> 				<span class="toc-number">04 </span>	<span class="toc-name"> What is Bike &amp; Build?	</span>	</a> </li>
-			<li> <a href="#accomplishments"> 	<span class="toc-number">05 </span>	<span class="toc-name"> 2013 Accomplishments		</span>	</a> </li>
-			<li> <a href="#scholarship"> 		<span class="toc-number">06 </span>	<span class="toc-name"> Bike &amp; Build Scholarship</span>	</a> </li>
-			<li> <a href="#grantees"> 			<span class="toc-number">07 </span>	<span class="toc-name"> Grantee Profiles			</span>	</a> </li>
-			<li> <a href="#hosts"> 				<span class="toc-number">08 </span>	<span class="toc-name"> To Our Hosts				</span>	</a> </li>
-			<li> <a href="#riders"> 			<span class="toc-number">09 </span>	<span class="toc-name"> 2013 rider Profiles			</span>	</a> </li>
-			<li> <a href="#alumni"> 			<span class="toc-number">10 </span>	<span class="toc-name"> Alumni Spotlight			</span>	</a> </li>
-			<li> <a href="#financials"> 		<span class="toc-number">11 </span>	<span class="toc-name"> Statement of Financials		</span>	</a> </li>
-			<li> <a href="#support"> 			<span class="toc-number">12 </span>	<span class="toc-name"> Supporting Bike &amp; Build	</span>	</a> </li>
-			<li> <a href="#getinvolved"> 		<span class="toc-number">13 </span>	<span class="toc-name"> How To Get Involved			</span>	</a> </li>
-			<li> <a href="#contact"> 			<span class="toc-number">14 </span>	<span class="toc-name"> Contact						</span>	</a> </li>
+			<li> <a class="scrollnav-link" id="link-1" href="#intro"> 				
+				<span class="toc-number">01 </span>	<span class="toc-name"> Introduction				</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-2" href="#letter"> 			
+				<span class="toc-number">02 </span>	<span class="toc-name"> Board and Staff Message		</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-3" href="#housing"> 			
+				<span class="toc-number">03 </span>	<span class="toc-name"> What is Affordable Housing?	</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-4" href="#about"> 				
+				<span class="toc-number">04 </span>	<span class="toc-name"> What is Bike &amp; Build?	</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-5" href="#accomplishments"> 	
+				<span class="toc-number">05 </span>	<span class="toc-name"> 2013 Accomplishments		</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-6" href="#scholarship"> 		
+				<span class="toc-number">06 </span>	<span class="toc-name"> Bike &amp; Build Scholarship</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-7" href="#grantees"> 			
+				<span class="toc-number">07 </span>	<span class="toc-name"> Grantee Profiles			</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-8" href="#hosts"> 				
+				<span class="toc-number">08 </span>	<span class="toc-name"> Thanks to Our Hosts			</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-9" href="#riders"> 			
+				<span class="toc-number">09 </span>	<span class="toc-name"> 2013 Rider Profiles			</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-10" href="#alumni"> 			
+				<span class="toc-number">10 </span>	<span class="toc-name"> Alumni Spotlight			</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-11" href="#financials"> 		
+				<span class="toc-number">11 </span>	<span class="toc-name"> Statement of Financials		</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-12" href="#support"> 			
+				<span class="toc-number">12 </span>	<span class="toc-name"> Supporting Bike &amp; Build	</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-13" href="#getinvolved"> 		
+				<span class="toc-number">13 </span>	<span class="toc-name"> How To Get Involved			</span>	
+				</a> 
+			</li>
+			<li> <a class="scrollnav-link" id="link-14" href="#contact"> 			
+				<span class="toc-number">14 </span>	<span class="toc-name"> Contact						</span>	
+				</a> 
+			</li>
 		</ol>
 	
 		<a class="" id="top" href="#intro"> <span class="icon icon-up"></span> </a>
