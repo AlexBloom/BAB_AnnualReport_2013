@@ -84,18 +84,56 @@ $(document).ready(function () {
   		$('.video-overlay').css("display","none");
   		$('#header').css("display","block");
   	});
+	
+	
+	function onYouTubePlayerAPIReady() {
+
+	}
+	//Function for Player
+	var player;
+
+	function onYouTubePlayerAPIReady() {
+	  // create the global player from the specific iframe (#video)
+	  player = new YT.Player('video', {
+	    events: {
+	      // call this function when player is ready to use
+	      'onReady': onPlayerReady
+	    }
+	  });
+	}
+	
+	//Function For Player Event
+	function onPlayerReady(event) {
+  
+	  // bind events
+	  var playButton = document.getElementById("play-button");
+	  playButton.addEventListener("click", function() {
+	    player.playVideo();
+	  });
+  
+	  var pauseButton = document.getElementById("pause-button");
+	  pauseButton.addEventListener("click", function() {
+	    player.pauseVideo();
+	  });
+  
+	}
  
    
    
 // TABS Initiations
 	   
 	   
-	   $('#granteeTab a').click(function (e) {
+	   $('#grantee-tabs a').click(function (e) {
 	     e.preventDefault()
 	     $(this).tab('show')
 	   })
 	   
-	   $('#riderTab a').click(function (e) {
+	   $('#rider-tabs a').click(function (e) {
+	     e.preventDefault()
+	     $(this).tab('show')
+	   })
+	   
+	   $('#alumni-tabs a').click(function (e) {
 	     e.preventDefault()
 	     $(this).tab('show')
 	   })
@@ -116,91 +154,20 @@ $(document).ready(function () {
   	});	   
 	
 //Side Nav The Long Hard Stupid Way  
-		$('#intro').waypoint(
-		function(direction) {   
-		 // This div is level with the top  
-		 if(direction == 'down'){
-		    $('.scrollnav-link').removeClass('current');
-		     $('#link-1').addClass('current');
-		 }
-		   else  $('#link-1').removeClass('current');
-		},
-		{offset: 0}
-		);
-		
-		$('#letter').waypoint(
-		function(direction) {   
-		 // This div is level with the top  
-		 if(direction == 'down'){
-		    $('.scrollnav-link').removeClass('current');
-		     $('#link-2').addClass('current');
-		 }
-		   else  $('#link-2').removeClass('current');
-		},
-		{offset: 0}
-		);
-		
-		$('#housing').waypoint(
-		function(direction) {   
-		 // This div is level with the top  
-		 if(direction == 'down'){
-		    $('.scrollnav-link').removeClass('current');
-		     $('#link-3').addClass('current');
-		 }
-		   else  $('#link-3').removeClass('current');
-		},
-		{offset: 0}
-		);
-		
-		$('#about').waypoint(
-		function(direction) {   
-		 // This div is level with the top  
-		 if(direction == 'down'){
-		    $('.scrollnav-link').removeClass('current');
-		     $('#link-4').addClass('current');
-		 }
-		   else  $('#link-4').removeClass('current');
-		},
-		{offset: 0}
-		);
-		$('#about').waypoint(
-		function(direction) {   
-		 // This div is level with the top  
-		 if(direction == 'down'){
-		    $('.scrollnav-link').removeClass('current');
-		     $('#link-4').addClass('current');
-		 }
-		   else  $('#link-4').removeClass('current');
-		   		 //$('#link-3').addClass('current');
-		},
-		{offset: 0}
-		);
-		$('#about').waypoint(
-		function(direction) {   
-		 // This div is level with the top  
-		 if(direction == 'down'){
-		    $('.scrollnav-link').removeClass('current');
-		     $('#link-4').addClass('current');
-		 }
-		   else  $('#link-4').removeClass('current');
-		   		 //$('#link-3').addClass('current');
-		},
-		{offset: 0}
-		);
-		$('#about').waypoint(
-		function(direction) {   
-		 // This div is level with the top  
-		 if(direction == 'down'){
-		    $('.scrollnav-link').removeClass('current');
-		     $('#link-4').addClass('current');
-		 }
-		   else  $('#link-4').removeClass('current');
-		   		 //$('#link-3').addClass('current');
-		},
-		{offset: 0}
-		);
-		
-
+	
+$(function(){
+    $(document).scroll(function(){
+        $('.anchor').each(function(){
+            var $this = $(this),
+            pos   = $this.offset().top - $(window).scrollTop();
+            if(pos < 50 ){
+                $('.scrollnav-link').removeClass('current');
+                $('.scrollnav-link[href="#'+$this.attr('id')+'"]').addClass('current');
+            }
+        });
+        
+    });
+});
 
 	   // Close of Doc Ready Function
 });

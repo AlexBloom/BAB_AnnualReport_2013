@@ -8,16 +8,22 @@
 				<li><a href="mailto:info@bikeandbuild.org" target=_blank> Contact Us </a> </li>
 			</ul>
 		</nav>
-		<small class="clearfix" id="copyright">All content &copy; Bike &amp; Build 2014. Site by <a href="http://digitalfrontiersman.com">The Digital Frontiersman</a></small>
+		<small class="clearfix" id="copyright">All content &copy; Bike &amp; Build 2014. Site by <a href="http://digitalfrontiersman.com">Alex Bloom</a></small>
 	</footer>
 
  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	
+	<script>
+		var tag = document.createElement('script');
+		tag.src = "//www.youtube.com/player_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	</script>
 
 	<script src="js/plugins.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
 	<script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-	<script src="js/waypoints.min.js"></script>
 	<script src="js/swipe.js"></script>
 	<script src="js/main.js"></script>
 	

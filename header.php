@@ -27,7 +27,7 @@
 
 	<header class="clearfix" id="header">			
 			<div id="logo">
-				<a href="http://bikeandbuild.org"target=_blank><img src="img/ui/bb-logo.gif" alt="Bike And Build Logo"></a>	        
+				<a href="http://bikeandbuild.org"target=_blank><img src="img/ui/bb-logo-borderless.gif" alt="Bike And Build Logo"></a>	        
 			</div>
 
 	<nav  class="clearfix" id="primary-nav" class="closed">
@@ -87,12 +87,12 @@
 				<span class="toc-number">12 </span>	<span class="toc-name"> Supporting Bike &amp; Build	</span>	
 				</a> 
 			</li>
-			<li> <a class="scrollnav-link" id="link-13" href="#getinvolved"> 		
+			<!-- <li> <a class="scrollnav-link" id="link-13" href="#getinvolved"> 		
 				<span class="toc-number">13 </span>	<span class="toc-name"> How To Get Involved			</span>	
 				</a> 
-			</li>
-			<li> <a class="scrollnav-link" id="link-14" href="#contact"> 			
-				<span class="toc-number">14 </span>	<span class="toc-name"> Contact						</span>	
+			</li> -->
+			<li> <a class="scrollnav-link" id="link-13" href="#contact"> 			
+				<span class="toc-number">13 </span>	<span class="toc-name"> Contact						</span>	
 				</a> 
 			</li>
 		</ol>

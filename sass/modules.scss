@@ -173,7 +173,20 @@ li{
 		width:3.5em;
 		height:3.5em;
 		right:0;
-		padding:.75em;
+		margin:.75em;
+		border:2px solid transparent;
+		@include quarter-second-transition;
+		@include perfect-circle;
+		
+		&:hover, &:active{
+			border:2px solid $red;
+		}
+		
+		@media screen and (min-width:(em(800))){
+			width:4em;
+			height:4em;
+		}
+		
 	}
 	#toggle-btn{
 		position:absolute;
@@ -396,7 +409,12 @@ $button-size : 2em;
 			&:active{background-color:$red;color:$white;text-decoration:none;}
 			
 		}
-		a.current{background-color:$red;color:$white;text-decoration:none;}	
+		a.current{
+			background-color:$red;
+			color:$white;
+			text-decoration:none;
+			//@include quarter-second-transition;
+		}	
 	}
 	.toc-number{
 		padding-right:1em;
@@ -477,6 +495,9 @@ body{
 		>div, >li{
 			width:45%;
 			padding:1em 2.5%;
+		}
+		img{
+			width:100%;
 		}
 	}
 }
@@ -603,6 +624,17 @@ body{
 
 
 //Articles / Content 
+
+.wrapper{
+	header{
+		text-align:left;
+		padding:22em 10% 2em;
+		position:relative;
+		color:$white;
+		@include full-bleed-background;
+	}
+}
+
 article{
 	position:relative;
 	text-align:left;
@@ -669,11 +701,11 @@ article{
 	display:none;	
 	position:fixed;	
 	height: 100%;
-	width: 100%;
+	//width: 100%;
 	top: 0;
 	bottom: 0;
 	right: 0;
-	left: 0;
+	left: 4em;
 	z-index:499;
 	.video-inner{
 		position: absolute;
@@ -692,14 +724,23 @@ article{
 .close-video{
 	position:absolute;
 	top:0;
-	right:0;
-	margin:1em;
+	bottom:0;
+	left:-4em;
+	width:4em;
+	margin:0;
 	padding:0;
-	opacity:0.5;
 	z-index:1000;
-	//font-size:2em;
+	background-color:$black;
+	border-right:1px solid $dark-grey;
+	border-radius:0;
+	-ms-border-radius:0;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	@include quarter-second-transition;
 	&:hover{
 		opacity:1;
+		color:$red;
+		//color:$white;
 	}
 		.icon-close{
 			display:block;
@@ -707,9 +748,9 @@ article{
 			margin:0;
 			width:1em;
 			height:1em;
-			padding:0em;
+			padding:.5em;
 			font-size:2em;
-			@include perfect-circle;
+			//@include perfect-circle;
 		}
 }
 
@@ -875,31 +916,29 @@ article{
 
 //Primary Footer
 #footer{
-	background-color:$dkblue;
-	color:$ltblue;
-	width:100%;
-	padding:1em 0;
-	text-align:center;
+	background-color:$black;
+	color:darken($medium-grey,25%);
+	width:80%;
+	padding:2em 10%;
+	text-align:left;
 	
 }
 #external-nav{
-	width:95%;
-	padding:0 2.5%;
-	margin:0 auto;
-	max-width:(em(490));
+	font-weight:600;
+	//margin:0 auto;
+	//max-width:(em(500));
 	ul{
 		margin:0;
 		padding:0;
 	}
 	li{
 		float:left;
-		padding:0 1em;
+		padding:0 1em 0 0;
 	}
 }
 #copyright{
 	display:block;
-	width:95%;
-	margin:0 2.5%;
+	margin:0;
 }
 
 
@@ -908,37 +947,108 @@ article{
 .nav-tabs{
 	position:absolute;
 	z-index:500;
-	//margin:1em 10%;
+	margin:2em 10%;
 	padding:0;
-	font-size:.9em;
+	font-size:.7em;
 	font-weight:600;
+	@media screen and (min-width:(em(800))){
+		font-size:.75em;
+	}
+	@media screen and (min-width:(em(1000))){
+		font-size:.85em;
+	}
 	li{
 		float:left;
 		list-style-type:none;
-		background-color:$white;
-		margin:0 .5em 0 0;
+		margin:0 0 0 0;
 		padding:0;
-		@include half-em-border-radius;
-		&:hover, &:active{
-			
-			background-color:$white;
-		}
+		
 		a{
 			display:block;
-			padding:.5em .75em;
+			padding:.5em 1em;
 			margin:0;			
 			text-decoration:none;
+			border-top:2px solid $white;
+			border-left:2px solid $white;
+			border-bottom:2px solid $white;
+			
+			//@include half-em-border-radius;
 			&:hover, &:active{
-				color:$ltblue;
 				text-decoration:none;
+				background-color:$white;
 			}
 		}
 	}
-	.active{
-		background-color:$ltblue;
-		color:$white;
+	li:first-child a{
+		border-radius:.75em 0 0 .75em;
 	}
-}  
+	li:last-child a{
+		border-right:2px solid $white;
+		border-radius:0 .75em .75em 0;
+	}
+	.active{
+		a{
+			background-color:$white;
+		}
+	}
+} 
+
+.abbr{
+	@media screen and (min-width:(em(800))){
+		display:none;
+	}
+} 
+.full-name{
+	display:none;
+	@media screen and (min-width:(em(800))){
+		display:inline;
+	}
+}
+
+#grantee-tabs{
+li{
+	a{
+		color:$white;
+		color:$translucent-white;
+		&:hover, &:active{
+		color:$red!important;
+		}
+	}
+}
+.active a{
+	color:$red;
+}
+}
+#rider-tabs{
+li{
+	a{
+		color:$white;
+		color:$translucent-white;
+		&:hover, &:active{
+		color:$ltblue!important;
+		}
+	}
+}
+.active a{
+	color:$ltblue;
+}
+}
+#alumni-tabs{
+li{
+	a{
+		color:$white;
+		color:$translucent-white;
+		&:hover, &:active{
+		color:$ltblue!important;
+		}
+	}
+}
+.active a{
+	color:$ltblue;
+}
+}
+
+
   .tab-content > .tab-pane {
     display: none;
   }

@@ -13,13 +13,15 @@ $text-color:#333;
 
 //TFI New Media Fund Colors
 
-$dkblue:rgba(003,029,064,1);
-$ltblue:rgba(103,178,231,1);
-$red:rgba(226,035,026,1);
+$dkblue:rgb(003,029,064);
+$ltblue:rgb(103,178,231);
+$red:rgb(226,035,026);
+$action-color:rgb(226,035,026);
 
-$action-color:rgba(226,035,026,1);
-
-
+$dkblue-translucent:rgba(003,029,064,.85);
+$ltblue-translucent:rgba(103,178,231,.85);
+$red-translucent:rgba(226,035,026,.85);
+$translucent-white:rgba(255,255,255,.75);
 
 
 /* EMS ======= */
