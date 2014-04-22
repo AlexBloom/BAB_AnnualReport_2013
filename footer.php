@@ -27,7 +27,41 @@
 	<script src="js/swipe.js"></script>
 	<script src="js/main.js"></script>
 	
-	
+	<script>
+	// VIDEO VANILLA JS
+
+		function onYouTubePlayerAPIReady() {
+
+		}
+		//Function for Player
+		var player;
+
+		function onYouTubePlayerAPIReady() {
+		  // create the global player from the specific iframe (#video)
+		  player = new YT.Player('ah-video', {
+		    events: {
+		      // call this function when player is ready to use
+		      'onReady': onPlayerReady
+		    }
+		  });
+		}
+
+		//Function For Player Event
+		function onPlayerReady(event) {
+
+		  // bind events
+		  var playButton = document.getElementById("play-home");
+		  playButton.addEventListener("click", function() {
+		    player.playVideo();
+		  });
+
+		  var pauseButton = document.getElementById("close-home");
+		  pauseButton.addEventListener("click", function() {
+		    player.pauseVideo();
+		  });
+
+		}
+	</script>
 
 	<script>
 	    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

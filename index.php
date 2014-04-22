@@ -53,7 +53,7 @@
 		<div class="video-overlay">
 			<div class="video-inner">
 				<button class="close-video" id="close-home"> <span class="icon icon-close"></span> </button>
-				<iframe width="100%" src="//www.youtube.com/embed/_lGmXUt4yEM" frameborder="0" allowfullscreen></iframe>
+				<iframe width="100%" src="//www.youtube.com/embed/_lGmXUt4yEM?enablejsapi=1" frameborder="0" allowfullscreen id="ah-video"></iframe>
 			</div>
 		</div>
 		
@@ -1063,45 +1063,5 @@
 
 </section>
 
-<!-- End Index Page -->
-
-		<script type="text/javascript">
-
-		var myColor = ["#ECD078","#D95B43","#C02942","#542437","#53777A"];
-		var myData = [1000,30,20,60,40];
-
-		function getTotal(){
-		var myTotal = 0;
-		for (var j = 0; j < myData.length; j++) {
-		myTotal += (typeof myData[j] == 'number') ? myData[j] : 0;
-		}
-		return myTotal;
-		}
-
-		function plotData() {
-		var canvas;
-		var ctx;
-		var lastend = 0;
-		var myTotal = getTotal();
-
-		canvas = document.getElementById("canvas");
-		ctx = canvas.getContext("2d");
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-		for (var i = 0; i < myData.length; i++) {
-		ctx.fillStyle = myColor[i];
-		ctx.beginPath();
-		ctx.moveTo(200,150);
-		ctx.arc(200,150,150,lastend,lastend+
-		  (Math.PI*2*(myData[i]/myTotal)),false);
-		ctx.lineTo(200,150);
-		ctx.fill();
-		lastend += Math.PI*2*(myData[i]/myTotal);
-		}
-		}
-
-		plotData();
-
-		</script>
     
 <?php include_once 'footer.php' ?>
