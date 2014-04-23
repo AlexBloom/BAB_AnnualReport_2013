@@ -27,7 +27,7 @@
 
 	<header class="clearfix" id="header">			
 			<div id="logo">
-				<a href="http://bikeandbuild.org"target=_blank><img src="img/ui/bb-logo-borderless.gif" alt="Bike And Build Logo"></a>	        
+				<a href="http://bikeandbuild.org"target=_blank><img src="img/ui/bb-logo-transparent.png" alt="Bike And Build Logo"></a>	        
 			</div>
 
 	<nav  class="clearfix" id="primary-nav" class="closed">

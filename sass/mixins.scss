@@ -51,6 +51,15 @@ transition-duration: .25s;
 transition-duration: .5s;
 }
 
+@mixin ten-second-transition{
+-webkit-transition-duration: 1s;
+-moz-transition-duration: 1s;
+-ms-transition-duration: 1s;
+-o-transition-duration: 1s;
+transition-duration: 1s;
+}
+
+
 @mixin one-em-border-radius{
 -webkit-border-radius: 1em;
 -moz-border-radius: 1em;

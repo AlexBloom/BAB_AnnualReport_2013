@@ -404,19 +404,25 @@ li img {
   height: 3.5em;
   right: 0;
   margin: .75em;
-  border: 2px solid transparent;
-  -webkit-transition-duration: .25s;
-  -moz-transition-duration: .25s;
-  -ms-transition-duration: .25s;
-  -o-transition-duration: .25s;
-  transition-duration: .25s;
+  -webkit-transition-duration: .5s;
+  -moz-transition-duration: .5s;
+  -ms-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%; }
-  #header #logo:hover, #header #logo:active {
-    border: 2px solid #e2231a; }
+  #header #logo:hover {
+    background-color: white;
+    -ms-transform: rotate(45deg);
+    /* IE 9 */
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(45deg); }
+  #header #logo:active {
+    background-color: #67b2e7; }
   @media screen and (min-width: 53.33333em) {
     #header #logo {
       width: 4em;
@@ -555,12 +561,21 @@ li img {
   bottom: 0;
   left: 0;
   max-width: 20em;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden; }
   #primary-nav h3 {
     color: #031d40; }
 
-.primary, nav ol {
+#primary::-webkit-scrollbar {
+  display: none; }
+
+#primary::-webkit-scrollbar {
+  width: 0 !important; }
+
+#primary {
+  -ms-overflow-style: none; }
+
+#primary, nav ol {
   position: absolute;
   width: 20em;
   padding: 2.5em 0 3.5em 0;
@@ -569,13 +584,13 @@ li img {
   top: 0;
   bottom: 0;
   left: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   list-style-type: none;
   width: 100%;
   color: #031d40;
   margin: 1em 0 .5em; }
-  .primary li a, nav ol li a {
+  #primary li a, nav ol li a {
     display: block;
     position: relative;
     text-decoration: none;
@@ -583,21 +598,21 @@ li img {
     font-size: 1em;
     padding: .75em 1.5em;
     line-height: 150%; }
-    .primary li a:hover, nav ol li a:hover {
+    #primary li a:hover, nav ol li a:hover {
       background-color: white;
       color: #e2231a;
       text-decoration: none; }
-    .primary li a:active, nav ol li a:active {
+    #primary li a:active, nav ol li a:active {
       background-color: #e2231a;
       color: white;
       text-decoration: none; }
-  .primary li a.current, nav ol li a.current {
+  #primary li a.current, nav ol li a.current {
     background-color: #e2231a;
     color: white;
     text-decoration: none; }
-  .primary .toc-number, nav ol .toc-number {
+  #primary .toc-number, nav ol .toc-number {
     padding-right: 1em; }
-  .primary .toc-name, nav ol .toc-name {
+  #primary .toc-name, nav ol .toc-name {
     opacity: 0;
     width: 16em;
     display: block;

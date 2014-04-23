@@ -174,12 +174,16 @@ li{
 		height:3.5em;
 		right:0;
 		margin:.75em;
-		border:2px solid transparent;
-		@include quarter-second-transition;
+		@include half-second-transition;
 		@include perfect-circle;
-		
-		&:hover, &:active{
-			border:2px solid $red;
+		&:hover{
+			background-color:$white;
+			-ms-transform: rotate(45deg); /* IE 9 */
+			-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+			transform: rotate(45deg);
+		}
+		&:active{
+			background-color:$ltblue;
 		}
 		
 		@media screen and (min-width:(em(800))){
@@ -373,16 +377,20 @@ $button-size : 2em;
 	bottom:0;
 	left:0;
 	max-width:20em;
-	overflow-y:scroll;
-	overflow-x:hidden;
-	//@include quarter-second-transition;		
-	
+	overflow-y:hidden;
+	overflow-x:hidden;	
 	h3{
 		color:$dkblue;		
 	}
 }
 
-.primary, nav ol {
+// Hide Scrollbars on Closed T.O.C.
+#primary::-webkit-scrollbar { display: none; }
+#primary::-webkit-scrollbar { width: 0 !important }
+#primary{-ms-overflow-style: none; }
+
+
+#primary, nav ol {
 	position:absolute;
 	width:20em;
 	padding:2.5em 0 3.5em 0;
@@ -391,12 +399,13 @@ $button-size : 2em;
 	top:0;
 	bottom:0;
 	left:0;
-	overflow-y:scroll;
-	overflow-x:hidden;
+	overflow-y:auto;
+	overflow-x:hidden;	
 	list-style-type:none;
 	width:100%;
 	color:$dkblue;
 	margin:1em 0 .5em;
+	
 	li{
 		a{
 			display:block;
